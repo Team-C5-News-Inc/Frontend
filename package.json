@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "Frontend of news inc project by ...",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+"scripts": {
+		"build": "webpack --mode production",
+		"dev": "webpack-dev-server",
+		"test": "jest",
+		"test:watch": "jest --watch"
+	},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Team-C5-cheaPlatzi/Frontend.git"
@@ -50,5 +53,22 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-router-dom": "^5.2.0"
-  }
+  },
+  "jest": {
+		"verbose": true,
+		"setupFilesAfterEnv": [
+			"<rootDir>./setupTest.js"
+		],
+		"moduleNameMapper": {
+			"\\.(css|less|scss|sss|styl)$": "<rootDir>/node_modules/jest-css-modules"
+		},
+		"transform": {
+			"^.+\\.[t|j]sx?$": "babel-jest"
+		}
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "npm run test"
+		}
+	}
 }
