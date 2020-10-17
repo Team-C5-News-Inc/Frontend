@@ -25,6 +25,9 @@
   },
   "homepage": "https://github.com/Team-C5-cheaPlatzi/Frontend#readme",
   "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
     "webpack": "^4.44.2",
     "webpack-cli": "^4.0.0",
     "webpack-dev-server": "^3.11.0"
