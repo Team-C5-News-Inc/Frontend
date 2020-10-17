@@ -1,0 +1,32 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "Frontend of news inc project by ...",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Team-C5-cheaPlatzi/Frontend.git"
+  },
+  "keywords": [
+    "react.js",
+    "frontend",
+    "js",
+    "enzyme",
+    "jest",
+    "husky"
+  ],
+  "author": "Team 5",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Team-C5-cheaPlatzi/Frontend/issues"
+  },
+  "homepage": "https://github.com/Team-C5-cheaPlatzi/Frontend#readme",
+  "devDependencies": {
+    "webpack": "^4.44.2",
+    "webpack-cli": "^4.0.0",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
