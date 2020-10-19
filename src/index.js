@@ -1,10 +1,12 @@
-//import react
+// import react
 import React from 'react';
-//import render method
+// import render method
 import { render } from 'react-dom';
+// import app component
+import App from './components/App';
 
-//crete root const
+// crete root const
 const root = document.getElementById('root');
 
-//render the app
-render(<h1>Im alive</h1>, root);
+// render the app
+render(<App />, root);
