@@ -12,4 +12,12 @@ describe('<Hero />', () => {
     expect(wrapper.exists()).toBe(true)
   });
 
+  it('are there a container?', () => {
+    expect(wrapper.find('.home__hero-container').exists()).toBe(true)
+  });
+
+  it('are container have one child?', () => {
+    expect(wrapper.find('.home__hero-container').children.length).toBe(1)
+  });
+
 });

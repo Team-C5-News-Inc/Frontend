@@ -4,11 +4,11 @@ import React from 'react';
 import './styles.styl';
 
 // create and export Hero component
-const Hero = ({ background }) => (
+const Hero = ({ background, caption }) => (
   <div className="home__hero-container">
     <figure className="home__hero-figure">
-      <img className="home__hero-image" src={background}/>
-      <h1 className="home__hero-caption">I&apos;m the Hero</h1>
+      <img className="home__hero-image" src={background} />
+      <h1 className="home__hero-caption">{caption}</h1>
     </figure>
   </div>
 );
