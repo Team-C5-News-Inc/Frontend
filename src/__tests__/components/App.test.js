@@ -13,4 +13,8 @@ describe('<App />', () => {
   it('is render the app?', () => {
     expect(wrapper.exists()).toBe(true)
   });
+
+  it('are there home page?', () => {
+    expect(wrapper.find('Home').exists()).toBe(true)
+  });
 });
