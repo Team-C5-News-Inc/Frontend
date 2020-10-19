@@ -2,6 +2,11 @@
 import React from 'react';
 
 // create and export Hero component
-const Hero = () => <h1>I&apos;m the Hero</h1>;
+const Hero = () => (
+  <>
+    <h1>I&apos;m the Hero</h1>
+
+  </>
+);
 
 export default Hero;
