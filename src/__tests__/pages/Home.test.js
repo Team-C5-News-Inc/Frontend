@@ -6,7 +6,7 @@ import Home from '../../pages/Home';
 // import toJson
 // import toJson from 'enzyme-to-json';
 
-describe('<App />', () => {
+describe('<Home />', () => {
   const wrapper = shallow(<Home />);
 
   it('is render the home?', () => {

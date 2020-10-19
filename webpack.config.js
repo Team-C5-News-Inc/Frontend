@@ -25,7 +25,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      title: 'marketing site',
+      title: 'NEWS INC',
       template: './public/index.html',
     }),
   ],
