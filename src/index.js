@@ -4,6 +4,8 @@ import React from 'react';
 import { render } from 'react-dom';
 // import app component
 import App from './components/App';
+//import global styles
+import './globalStyles.styl'
 
 // crete root const
 const root = document.getElementById('root');

@@ -3,8 +3,8 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 //css rules
 const cssRules = {
-  test: /\.css$/i,
-  use: ['style-loader', 'css-loader'],
+  test: /\.styl$/i,
+  use: ['style-loader', 'css-loader', 'stylus-loader'],
 };
 
 //babel rules
