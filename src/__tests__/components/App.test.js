@@ -3,7 +3,7 @@ import React from 'react';
 // import shallow
 import { shallow } from 'enzyme';
 // import app component
-import App from '../../components/App';
+import App from '../../components/App/index.jsx';
 
 describe('<App />', () => {
   const wrapper = shallow(<App />);
