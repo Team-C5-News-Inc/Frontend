@@ -2,14 +2,15 @@
  margin: 5% auto;
  display: flex;
  justify-content: center
- max-width: 60vw;
- max-height: 60vh;
+ max-width: 70vw;
+ max-height: 50vh;
  background: rgba(0,0,0,1);
  z-index: 10;
  position: relative;
 
 .home__hero-figure
  z-index: -1;
+ width: 100%;
 
 .home__hero-image
  width: 100%;
@@ -17,6 +18,9 @@
  background-size: cover;
  object-fit: cover;
  opacity: .5;
+ &:hover
+  opacity: .8;
+  transition: .3s;
 
 .home__hero-caption
  position: absolute;
