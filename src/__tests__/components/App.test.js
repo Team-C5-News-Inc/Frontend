@@ -15,4 +15,16 @@ describe('<App />', () => {
   it('are there home page?', () => {
     expect(wrapper.find('Home').exists()).toBe(true)
   });
+
+  it('is there switch component?', () => {
+    expect(wrapper.find('Switch').exists()).toBe(true)
+  });
+
+  it('is there router component?', () => {
+    expect(wrapper.find('HashRouter').exists()).toBeTruthy()
+  })
+
+  it('switch has one child?', () => {
+    expect(wrapper.find('Switch').children().length).toBe(1)
+  })
 });

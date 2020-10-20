@@ -1,7 +1,7 @@
 // import react
 import React from 'react';
 // import hash router
-import { HashRouter as Router } from 'react-router-dom';
+import { HashRouter as Router, Switch } from 'react-router-dom';
 // import Home page
 import Home from '../../pages/Home/index.jsx';
 
@@ -9,7 +9,9 @@ import Home from '../../pages/Home/index.jsx';
 const App = () => {
   return (
     <Router basename="/">
-      <Home />
+      <Switch>
+        <Home />
+      </Switch>
     </Router>
   );
 };
