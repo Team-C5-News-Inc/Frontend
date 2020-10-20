@@ -9,14 +9,14 @@ const cssRules = {
 
 //babel rules
 const babelRules = {
-  test: /\.(js)$/,
+  test: /\.(js|jsx)$/,
   exclude: /node_modules/,
   loader: 'babel-loader',
 };
 
 //export config
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/index.jsx',
   output: {
     filename: 'bundle.[contentHash].js',
   },

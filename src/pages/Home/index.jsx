@@ -2,7 +2,7 @@
 // import react
 import React from 'react';
 // import hero component
-import Hero from '../../components/Hero'
+import Hero from '../../components/Hero/index.jsx'
 
 // create and export Home page
 const Home = () =>
