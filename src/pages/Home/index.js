@@ -1,7 +1,10 @@
 // import react
 import React from 'react';
 
+import Header from '../../components/Header';
+
+
 // create and export Home page
-const Home = () => <h1>I&apos;m the Home page</h1>
+const Home = () => <Header />
 
 export default Home;
