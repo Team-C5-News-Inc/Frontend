@@ -1,10 +1,13 @@
 import React from 'react';
 import './styles.styl';
 
-const Card = () => {
+const Card = ({ image, title }) => {
   return (
     <div className="card">
-      <h2 className="card__title">Headline and whatever comes with it</h2>
+      <div className="card__content">
+        <img className="card__content--image" src={image}/>
+        <h2 className="card__content--title">{title}</h2>
+      </div>
     </div>
   )
 }
