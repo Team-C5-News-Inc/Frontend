@@ -9,13 +9,16 @@ import './styles.styl';
 
 window.onload = () => {
   const grid = document.querySelector('.masonry')
-  const layout = new MasonryLayout(grid);
+  const layout = new MasonryLayout(grid, {
+    itemSelector: '.card',
+    gutter: 10,
+  });
 }
 
 const Masonry = () => {
   return (
     <section className="masonry">
-      <Card title="Milos Foreman saca un nuevo disco" image="https://i.imgur.com/umQqEfs.png" />
+      <Card title="Milos Foreman saca un nuevo disco" image="https://i.imgur.com/umQqEfs.png"/>
       <Card title="Jorge Garcia saca a pasear a la cheve" image="https://i.imgur.com/ZiGz0xk.jpg"/>
       <Card title="Edicion 20 de checa mi setup" image="https://i.imgur.com/RbQI86x.jpg"/>
       <Card title="Milos Foreman saca un nuevo disco" image="https://i.imgur.com/QORYDiJ.jpg" />

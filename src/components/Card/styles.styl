@@ -1,10 +1,12 @@
 @import '../../globalStyles.styl'
 
 .card
-  max-width: 371px
-  display: block
+  width: 32%
+  display: inline-block
   font-family: Font1
-  margin: 0 .8rem 1rem .8rem
+  margin-bottom: 1rem
+  &:hover
+    cursor: pointer
   &__content
     position: relative
     z-index: 2
@@ -22,3 +24,24 @@
       font-size: 3.3rem
       font-weight: 800
       color: white
+
+@media screen and (max-width: 480px)
+  .card
+    width: 80%
+    &__content--title
+      font-size: 2rem
+@media screen and (min-width: 481px)
+  .card
+    width: 48%
+    &__content--title
+      font-size: 3rem
+@media screen and (min-width: 768px)
+  .card
+    width: 48%
+    &__content--title
+      font-size: 3.2rem
+@media screen and (min-width: 1024px)
+  .card
+    width: 32%
+    &__content--title
+      font-size: 3.3rem
