@@ -1,7 +1,7 @@
 ###### tags: `react` `Documentation`
 # Frontend of NEWS INC.
 
-Folder strcture :construction: 
+Folder structure :construction: 
 - public :eye: 
 - src :file_folder: 
   - tests :female-scientist: 
