@@ -26,18 +26,6 @@ describe('<Hero type=small/>', () => {
     expect(wrapper.hasClass('home__hero-container')).toBe(true);
   });
 
-  it('are there correct the type?', () => {
-    const type = '';
-
-    expect(
-      wrapper.containsMatchingElement(
-        <div
-          className={`home__hero-container ${type === 'small' && 'small'}`}
-        />,
-      ),
-    );
-  });
-
   it('matches the snap shot', () => {
     expect(toJson(wrapper)).toMatchSnapshot();
   });

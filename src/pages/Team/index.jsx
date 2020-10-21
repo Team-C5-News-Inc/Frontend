@@ -6,19 +6,22 @@ import Hero from '../../components/Hero/index.jsx';
 // create and export Team page
 const Team = () => (
   <>
-    <Hero type="small" caption="Top 10 amazing things 2020" background="https://vignette.wikia.nocookie.net/haikyuu/images/5/55/Shoyo_Hinata.png/revision/latest/scale-to-width-down/150?cb=20200310172635" />
+    <a href="www.google.com">
+      <Hero type="small" caption="Bernardo Aguayo" background="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
+    </a>
+    <Hero type="small" caption="Franklin Leandro" background="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
 
-    <Hero caption="Top 10 amazing things 2020" background="https://images.unsplash.com/photo-1601907532353-3c9176919f38?ixlib=rb-1.2.1&auto=format&fit=crop&w=982&q=80" />
+    <Hero type="small" caption="Johan Avila" background="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
 
-    <Hero caption="Top 10 amazing things 2020" background="https://images.unsplash.com/photo-1601907532353-3c9176919f38?ixlib=rb-1.2.1&auto=format&fit=crop&w=982&q=80" />
+    <Hero type="small" caption="Alejandro Gonzales" background="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
 
-    <Hero caption="Top 10 amazing things 2020" background="https://images.unsplash.com/photo-1601907532353-3c9176919f38?ixlib=rb-1.2.1&auto=format&fit=crop&w=982&q=80" />
+    <Hero type="small" caption="Julian Cubillos" background="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
 
-    <Hero caption="Top 10 amazing things 2020" background="https://images.unsplash.com/photo-1601907532353-3c9176919f38?ixlib=rb-1.2.1&auto=format&fit=crop&w=982&q=80" />
+    <Hero type="small" caption="Oscar Eduardo" background="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
 
-    <Hero caption="Top 10 amazing things 2020" background="https://images.unsplash.com/photo-1601907532353-3c9176919f38?ixlib=rb-1.2.1&auto=format&fit=crop&w=982&q=80" />
+    <Hero type="small" caption="Xavier Garcia" background="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
 
-    <Hero caption="Top 10 amazing things 2020" background="https://images.unsplash.com/photo-1601907532353-3c9176919f38?ixlib=rb-1.2.1&auto=format&fit=crop&w=982&q=80" />
+    <Hero type="small" caption="Estefany" background="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
   </>
 );
 

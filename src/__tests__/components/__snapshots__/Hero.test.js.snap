@@ -2,6 +2,7 @@
 
 exports[`<Hero type=small/> matches the snap shot 1`] = `
 <div
+  aria-label={true}
   className="home__hero-container small"
 >
   <h1
