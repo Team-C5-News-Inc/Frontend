@@ -2,7 +2,8 @@
 import React from 'react';
 
 import '../Header/Header.styl'
-import Logo from '../../assets/Logo' 
+import Logo from '../../assets/Logo'
+//import arrow from '../../assets/arrow.svg'
 
 //create and export app component
 const Header = () =>  (
@@ -12,8 +13,13 @@ const Header = () =>  (
 				<Logo />
 			</a>
 			<ul className="nav-right-section">
-				<li>
-					<a href="#">Search</a>
+				<li className="search">
+					<div> 
+					<a href="#">
+  						<img src="" alt="" />
+  					Search
+					</a>
+					</div> 
 				</li>
 				<li className="menu_icon">
 					<a href="#">Menu</a>
