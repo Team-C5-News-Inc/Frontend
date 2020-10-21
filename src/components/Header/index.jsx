@@ -6,7 +6,7 @@ import Logo from '../../assets/Logo'
 import '../Header/Header.styl'
 
 //create and export app component
-const Header = () =>  (
+const Header = () => (
   <header>
     <nav>
       <a href="#">
@@ -35,6 +35,5 @@ const Header = () =>  (
     </nav>
   </header>
 );
-
 
 export default Header;
