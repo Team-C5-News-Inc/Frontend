@@ -7,9 +7,20 @@ const cssRules = {
   use: ['style-loader', 'css-loader', 'stylus-loader'],
 };
 
+//images rules
+const imgRules = {
+  test: /\.(jpg|png|svg)$/,
+  use: {
+    loader: 'url-loader',
+    options: {
+      limit: 90000,
+    }
+  }
+}
+
 //babel rules
 const babelRules = {
-  test: /\.(js)$/,
+  test: /\.(js|jsx)$/,
   exclude: /node_modules/,
   loader: 'babel-loader',
 };
@@ -21,7 +32,7 @@ module.exports = {
     filename: 'bundle.[contentHash].js',
   },
   module: {
-    rules: [babelRules, cssRules],
+    rules: [babelRules, cssRules, imgRules],
   },
   plugins: [
     new HtmlWebPackPlugin({
