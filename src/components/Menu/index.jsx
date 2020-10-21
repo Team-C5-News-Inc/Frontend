@@ -6,11 +6,11 @@ import './styles.styl'
 // create and export Home page
 const Menu = () => {
   // use state
-  const [showMenu, setShowMenu] = useState(true);
+  const [showMenu, setShowMenu] = useState(false);
 
   return (
     <>
-      <i onClick={() => setShowMenu(!showMenu)} className="fa fa-angle-down fa-4x" />
+      <i onClick={() => setShowMenu(value => !value)} className="fa fa-angle-down fa-4x" />
       {showMenu && (
         <div className="menu">Hey there</div>
       )}
