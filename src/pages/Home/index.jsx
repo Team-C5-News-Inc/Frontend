@@ -6,7 +6,6 @@ import React from 'react';
 // create and export Home page
 const Home = () => (
   <>
-    <h1>este es un masonry</h1>
   </>
 );
 
