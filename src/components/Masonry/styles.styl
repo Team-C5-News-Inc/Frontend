@@ -3,14 +3,29 @@
 .masonry
   width: 1200px
   margin: 0 auto
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-gap: 1rem
 
 @media screen and (max-width: 480px)
   .masonry
     width: 100%
+    grid-template-columns: repeat(1, 1fr)
 @media screen and (min-width: 481px)
   .masonry
     width: 100%
+    grid-template-columns: repeat(1, 1fr)
+@media screen and (min-width: 768px)
+  .masonry
+    width: 100%
+    grid-template-columns: repeat(2, 1fr)
 @media screen and (min-width: 1024px)
   .masonry
+    width: 100%
+    grid-template-columns: repeat(3, 1fr)
+@media screen and (min-width: 1200px)
+  .masonry
     width: 1200px
+    grid-template-columns: repeat(3, 1fr)
+
 

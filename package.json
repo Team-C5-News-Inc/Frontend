@@ -60,7 +60,6 @@
 	},
 	"dependencies": {
 		"disqus-react": "^1.0.10",
-		"masonry-layout": "^4.2.2",
 		"react": "^16.14.0",
 		"react-dom": "^16.14.0",
 		"react-router-dom": "^5.2.0",
@@ -85,7 +84,12 @@
 			".test.(js)$/",
 			"node"
 		],
-		"moduleDirectories":["node_modules", "bower_components", "shared", "masonry-layout"]
+		"moduleDirectories": [
+			"node_modules",
+			"bower_components",
+			"shared",
+			"masonry-layout"
+		]
 	},
 	"husky": {
 		"hooks": {

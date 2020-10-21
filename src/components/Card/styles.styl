@@ -1,7 +1,7 @@
 @import '../../globalStyles.styl'
 
 .card
-  width: 32%
+  width: 100%
   display: inline-block
   font-family: Font1
   margin-bottom: 1.5rem
@@ -12,7 +12,7 @@
     z-index: 2
     background-color: black
     &--image
-      max-width: 100%
+      width: 100%
       object-fit: cover
       opacity: .6
     &--title
@@ -27,21 +27,17 @@
 
 @media screen and (max-width: 480px)
   .card
-    width: 80%
     &__content--title
-      font-size: 2rem
+      font-size: 2.8rem
 @media screen and (min-width: 481px)
   .card
-    width: 48%
     &__content--title
-      font-size: 3rem
-@media screen and (min-width: 768px)
+      font-size: 3.5rem
+@media screen and (min-width: 767px)
   .card
-    width: 48%
     &__content--title
       font-size: 3.2rem
 @media screen and (min-width: 1024px)
   .card
-    width: 32%
     &__content--title
       font-size: 3.3rem

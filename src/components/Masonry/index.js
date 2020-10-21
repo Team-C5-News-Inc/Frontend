@@ -1,20 +1,9 @@
 // import React
 import React from 'react';
-// import masonry library
-import Masonry from 'masonry-layout';
 // import card
 import Card from '../Card';
 // import styles
 import './styles.styl';
-
-window.onload = () => {
-  const grid = document.querySelector('.masonry')
-  // eslint-disable-next-line no-unused-vars
-  const layout = new Masonry(grid, {
-    itemSelector: '.card',
-    gutter: 10,
-  });
-};
 
 const Grid = () => {
   return (
