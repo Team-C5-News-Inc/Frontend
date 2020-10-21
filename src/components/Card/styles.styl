@@ -1,0 +1,46 @@
+@import '../../globalStyles.styl'
+
+.card
+  width: 100%
+  display: inline-block
+  font-family: Font1
+  border-radius: 10px
+  &__content
+    position: relative
+    z-index: 2
+    background: linear-gradient(0deg, black 50%, transparent)
+    // background-color: rgba(0,0,0,.8)
+    border-radius: 10px
+    &:hover
+      cursor: pointer
+      background: linear-gradient(0deg, #08c, transparent)
+    &--image
+      width: 100%
+      opacity: .6
+      border-radius: 10px
+    &--title
+      z-index: 3
+      position: absolute
+      bottom: 0
+      padding: .9rem
+      line-height: 1.1
+      font-size: 3.3rem
+      font-weight: 800
+      color: white
+
+@media screen and (max-width: 480px)
+  .card
+    &__content--title
+      font-size: 2.8rem
+@media screen and (min-width: 481px)
+  .card
+    &__content--title
+      font-size: 3.5rem
+@media screen and (min-width: 767px)
+  .card
+    &__content--title
+      font-size: 3.2rem
+@media screen and (min-width: 1024px)
+  .card
+    &__content--title
+      font-size: 3.3rem
