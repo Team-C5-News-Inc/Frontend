@@ -6,7 +6,7 @@ import Grid from '../../components/Grid';
 // create and export Home page
 const Home = () => (
   <>
-    <Grid/>
+    <h1>este es un masonry</h1>
   </>
 );
 
