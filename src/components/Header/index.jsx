@@ -2,6 +2,8 @@
 import React from 'react';
 // import Logo
 import Logo from '../../assets/Logo'
+// import menu component
+import Menu from '../Menu/index.jsx'
 // import header styles
 import '../Header/Header.styl'
 
@@ -20,16 +22,16 @@ const Header = () => (
                 <input className="searchbox" name="q" type="search" />
               </form>
             </div>
-            <a href="#" className="search">
+            <span href="#" className="search">
               <i className="fa fa-search fa-2x" />
-            </a>
+            </span>
 
           </div>
         </li>
         <li className="menu_icon">
-          <a href="#" id="arrow">
-            <i className="fa fa-angle-down fa-4x" />
-          </a>
+          <span href="#" id="arrow">
+            <Menu />
+          </span>
         </li>
       </ul>
     </nav>
