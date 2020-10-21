@@ -1,21 +1,22 @@
 // import React
 import React from 'react';
 // import masonry library
-import MasonryLayout from 'masonry-layout';
+// import Masonry from 'masonry-layout';
 // import card
 import Card from '../Card';
 // import styles
 import './styles.styl';
 
-window.onload = () => {
-  const grid = document.querySelector('.masonry')
-  const layout = new MasonryLayout(grid, {
-    itemSelector: '.card',
-    gutter: 10,
-  });
-}
+// window.onload = () => {
+//   const grid = document.querySelector('.masonry')
+//   // eslint-disable-next-line no-unused-vars
+//   const layout = new Masonry(grid, {
+//     itemSelector: '.card',
+//     gutter: 10,
+//   });
+// };
 
-const Masonry = () => {
+const Grid = () => {
   return (
     <section className="masonry">
       <Card title="Milos Foreman saca un nuevo disco" image="https://i.imgur.com/umQqEfs.png"/>
@@ -38,4 +39,4 @@ const Masonry = () => {
   );
 };
 
-export default Masonry;
+export default Grid;
