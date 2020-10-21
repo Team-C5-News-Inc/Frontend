@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Hero type=small/> matches the snap shot 1`] = `
+<div
+  aria-label={true}
+  className="home__hero-container small"
+>
+  <h1
+    className="home__hero-caption"
+  />
+  <figure
+    className="home__hero-figure"
+  >
+    <img
+      className="home__hero-image"
+    />
+  </figure>
+</div>
+`;

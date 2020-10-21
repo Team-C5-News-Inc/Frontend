@@ -27,7 +27,7 @@ const babelRules = {
 
 //export config
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/index.jsx',
   output: {
     filename: 'bundle.[contentHash].js',
   },
