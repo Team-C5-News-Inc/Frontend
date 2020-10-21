@@ -1,13 +1,14 @@
 {
 	"name": "frontend",
 	"version": "1.0.0",
-	"description": "Frontend of news inc project by ...",
+	"description": "Frontend of news inc project by master5-7.inc",
 	"main": "index.js",
 	"scripts": {
 		"build": "webpack --mode production",
 		"dev": "webpack-dev-server",
 		"test": "jest",
-		"test:watch": "jest --watch"
+		"test:watch": "jest --watch",
+		"test:coverage": "jest --coverage"
 	},
 	"repository": {
 		"type": "git",
@@ -21,7 +22,7 @@
 		"jest",
 		"husky"
 	],
-	"author": "Team 5",
+	"author": "Master5-7.inc",
 	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/Team-C5-cheaPlatzi/Frontend/issues"
