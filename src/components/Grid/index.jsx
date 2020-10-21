@@ -3,7 +3,7 @@ import React from 'react';
 // import masonry
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 // import card
-import Card from '../Card';
+import Card from '../Card/index.jsx';
 // import styles
 import './styles.styl';
 
