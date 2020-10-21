@@ -8,8 +8,6 @@ const Menu = () => {
   // use state
   const [showMenu, setShowMenu] = useState(true);
 
-  console.log(showMenu)
-
   return (
     <>
       <i onClick={() => setShowMenu(!showMenu)} className="fa fa-angle-down fa-4x" />
