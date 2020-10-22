@@ -3,7 +3,7 @@
 .menu
  transition: .3s;
  position: fixed;
- right: 0;
+ right: -200px;
  top: 10%;
  background: lightGray;
  height: 80%;
@@ -18,3 +18,24 @@
  justify-content: space-evenly;
  align-items: center;
  flex-direction: column;
+
+.menu__list-item
+ font-size: 2rem
+
+.slide-left
+ animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+@keyframes slide-left
+ 0%
+  transform: translateX(0);
+ 100% 
+  transform: translateX(-200px);
+
+.slide-right
+ animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+@keyframes slide-right
+ 0%
+  transform: translateX(0);
+ 100% 
+  transform: translateX(200px);
