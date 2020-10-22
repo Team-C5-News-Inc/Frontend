@@ -1,37 +1,38 @@
 @import "../../globalStyles.styl";
 
 .footer
-    color: #FFFFFF
-    background-image: linear-gradient(#4D7080, #325A6C)
-    font-family: Font1
-    display: flex
-    width: 100%
-    height 210px
-    flex-direction: column
-    justify-content: space-evenly
-    align-items: center
-    bottom: 0
-
-.footer__social--icons
+  color: #FFFFFF
+  background: linear-gradient(0deg, #4D7080, #325A6C)
+  display: flex
+  width: 100%
+  height 300px
+  flex-direction: column
+  justify-content: space-evenly
+  align-items: center
+  bottom: 0
+  margin-top: 10px
+  &__social--icons
     width: 35px
     background-color: white
     border-radius: 50%
     padding: 5px
     border: 1px solid white
-    margin: 0px 6px
-
-.footer__title
-    font-weight: 700
-    font-size: 3em
-
-
-.footer__subtitle
+    margin: 15px 10px 0px
+  &__subtitle
     display: flex
     justify-content: space-around
-    width: 30%
-
-.footer__subtitle h2
-    font-size: 1.5em
-
-.footer__comments
     font-weight: 200
+    font-family: Font1
+    width: 30%
+    margin-bottom: 20px
+  &__subtitle h2
+    font-family: Font1
+    font-weight: 500
+    font-size: 2rem
+  &__comments
+    font-weight: 400
+    font-family: Font2
+  &__logo
+    margin: 0
+    width: 500px
+    height: 120px
