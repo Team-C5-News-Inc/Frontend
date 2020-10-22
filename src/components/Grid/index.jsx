@@ -11,7 +11,7 @@ const Grid = () => {
   return (
     <div className="masonry">
       <ResponsiveMasonry
-        columnsCountBreakPoints={{ 480: 1, 768: 2, 1024: 3 }}
+        columnsCountBreakPoints={{ 480: 1, 700: 2, 1000: 3 }}
       >
         <Masonry gutter="20px">
           <Card title="Milos Foreman saca un nuevo disco" image="https://i.imgur.com/umQqEfs.png"/>

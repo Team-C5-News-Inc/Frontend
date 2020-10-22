@@ -8,15 +8,16 @@
   &__content
     position: relative
     z-index: 2
-    background: linear-gradient(0deg, black 50%, transparent)
-    // background-color: rgba(0,0,0,.8)
+    // background: linear-gradient(0deg, black 50%, transparent)
+    background-color: rgba(0,0,0,.8)
     border-radius: 5px
     &:hover
       cursor: pointer
       background: linear-gradient(0deg, #08c, transparent)
+      transition: .3s;
     &--image
       width: 100%
-      opacity: .6
+      opacity: .7
       border-radius: 5px
     &--title
       z-index: 3
@@ -27,6 +28,7 @@
       font-size: 3.3rem
       font-weight: 800
       color: white
+      text-shadow: 2px 3px black;
 
 @media screen and (max-width: 480px)
   .card

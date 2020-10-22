@@ -5,16 +5,16 @@ import Logo from '../../assets/Logo'
 // import menu component
 import Menu from '../Menu/index.jsx'
 // import header styles
-import './Header.styl'
+import './styles.styl'
 
 //create and export app component
 const Header = () => (
-  <header>
-    <nav>
+  <header className="header">
+    <nav className="nav">
       <a href="#">
-        <Logo />
+        <Logo className="nav__logo"/>
       </a>
-      <ul className="nav-right-section">
+      <ul className="nav__right">
         <li>
           <div className="searchContainer">
             <div id="searchform" className="searchform">
@@ -28,7 +28,7 @@ const Header = () => (
 
           </div>
         </li>
-        <li className="menu_icon">
+        <li className="nav__right--menu">
           <span href="#" id="arrow">
             <Menu />
           </span>
