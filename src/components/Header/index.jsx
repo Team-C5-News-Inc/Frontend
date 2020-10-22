@@ -4,8 +4,11 @@ import React from 'react';
 import Logo from '../../assets/Logo'
 // import menu component
 import Menu from '../Menu/index.jsx'
+// import search component
+import Search from '../Search/index.jsx'
 // import header styles
 import './styles.styl'
+
 
 //create and export app component
 const Header = () => (
@@ -16,17 +19,7 @@ const Header = () => (
       </a>
       <ul className="nav__right">
         <li>
-          <div className="searchContainer">
-            <div id="searchform" className="searchform">
-              <form action="#" name="top_search">
-                <input className="searchbox" name="q" type="search" />
-              </form>
-            </div>
-            <span href="#" className="search">
-              <i className="fa fa-search fa-2x" />
-            </span>
-
-          </div>
+          <Search />
         </li>
         <li className="nav__right--menu">
           <span href="#" id="arrow">
