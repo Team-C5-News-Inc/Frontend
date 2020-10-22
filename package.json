@@ -4,8 +4,8 @@
 	"description": "Frontend of news inc project by master5-7.inc",
 	"main": "index.js",
 	"scripts": {
-    "build": "webpack --config webpack.config.prod.js",
-    "dev": "webpack --watch --config webpack.config.dev.js",
+		"build": "webpack --config ./webpack.config.prod.js",
+		"dev": "webpack --watch --config ./webpack.config.dev.js",
 		"server": "webpack-dev-server",
 		"test": "jest",
 		"test:watch": "jest --watch",
@@ -57,7 +57,8 @@
 		"url-loader": "^4.1.1",
 		"webpack": "^4.44.2",
 		"webpack-cli": "^3.3.12",
-		"webpack-dev-server": "^3.11.0"
+		"webpack-dev-server": "^3.11.0",
+		"webpack-merge": "^5.2.0"
 	},
 	"dependencies": {
 		"disqus-react": "^1.0.10",
