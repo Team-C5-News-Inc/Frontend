@@ -9,19 +9,14 @@ const Search = () => {
   const [showSearch, setShowSearch] = useState(false);
 
   return (
-    <>
-      <div>
-        <div id="" className={`searchformOff ${showSearch ? 'slide_search-left searchform' : 'off'}`}> 
-          <form action="#" name="form_search">  
-            <input name="search" type="search" /> 
-          </form> 
-        </div> 
+    <div>
+      <div id="" className={`searchformOff ${showSearch ? 'slide_search-left searchform' : 'off'}`}>
+        <input name="search" type="search" />
+      </div>
       <a href="#" className="search" onClick={() => setShowSearch(value => !value)}>
-        <i className="fa fa-search fa-2x"></i>
+        <i className="fa fa-search fa-2x" />
       </a>
-    
-    </div> 
-    </>
+    </div>
   )
 }
 
