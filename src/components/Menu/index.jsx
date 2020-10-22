@@ -6,7 +6,7 @@ import './styles.styl'
 // create and export Home page
 const Menu = () => {
   // use state
-  const [showMenu, setShowMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState(true);
 
   return (
     <>

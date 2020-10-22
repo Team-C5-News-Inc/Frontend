@@ -5,13 +5,13 @@ import Logo from '../../assets/Logo'
 // import menu component
 import Menu from '../Menu/index.jsx'
 // import header styles
-import '../Header/Header.styl'
+import './Header.styl'
 
 //create and export app component
 const Header = () => (
   <header>
     <nav>
-      <a href="#">
+      <a to="/">
         <Logo />
       </a>
       <ul className="nav-right-section">
