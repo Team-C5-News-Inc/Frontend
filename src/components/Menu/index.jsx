@@ -11,20 +11,18 @@ const Menu = () => {
   return (
     <>
       <i onClick={() => setShowMenu(value => !value)} className="fa fa-angle-down fa-4x" />
-      {showMenu && (
-        <div className="menu">
-          <ul className="menu__list">
-            <li className="menu__list-item">Category</li>
-            <li className="menu__list-item">Category</li>
-            <li className="menu__list-item">Category</li>
-            <li className="menu__list-item">Category</li>
-            <li className="menu__list-item">Category</li>
-            <li className="menu__list-item">Category</li>
-            <li className="menu__list-item">Category</li>
-            <li className="menu__list-item">Category</li>
-          </ul>
-        </div>
-      )}
+      <div className={`menu ${showMenu ? 'slide-left' : 'slide-right'}`}>
+        <ul className="menu__list">
+          <li className="menu__list-item">Category</li>
+          <li className="menu__list-item">Category</li>
+          <li className="menu__list-item">Category</li>
+          <li className="menu__list-item">Category</li>
+          <li className="menu__list-item">Category</li>
+          <li className="menu__list-item">Category</li>
+          <li className="menu__list-item">Category</li>
+          <li className="menu__list-item">Category</li>
+        </ul>
+      </div>
     </>
   )
 }
