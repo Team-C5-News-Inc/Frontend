@@ -5,8 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"build": "webpack --config ./webpack.config.prod.js",
-		"dev": "webpack --watch --config ./webpack.config.dev.js",
-		"server": "webpack-dev-server",
+		"dev": "webpack-dev-server --config ./webpack.config.dev.js",
 		"test": "jest",
 		"test:watch": "jest --watch",
 		"test:coverage": "jest --coverage"
