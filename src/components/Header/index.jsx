@@ -11,7 +11,7 @@ import './Header.styl'
 const Header = () => (
   <header>
     <nav>
-      <a to="/">
+      <a href="#">
         <Logo />
       </a>
       <ul className="nav-right-section">

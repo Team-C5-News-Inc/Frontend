@@ -5,7 +5,7 @@ import { render } from 'react-dom';
 // import app component
 import App from './components/App/index.jsx';
 //import global styles
-import './globalStyles.styl'
+import './stylus/globalStyles.styl'
 
 // crete root const
 const root = document.getElementById('root');
