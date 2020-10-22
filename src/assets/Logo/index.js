@@ -4,8 +4,8 @@ import * as React from 'react'
 function Logo(props) {
   return (
     <svg
-      width={150}
-      height={60}
+      width={200}
+      height={90}
       viewBox="80.88 0.187 338.24 149.625"
       style={{
         background: '0 0',

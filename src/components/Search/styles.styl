@@ -10,10 +10,10 @@
   margin-right: 10px
 
   input
-    height:28px
+    height:35px
 
 .slide_search-left
-  animation: slide_search-left 0.5s
+  animation: slide_search-left 2s
 
 @keyframes slide_search-left
   0%
@@ -28,3 +28,8 @@
     -webkit-transform: scale(1)
     transform: scale(1)
     opacity: 1
+
+@media screen and (max-width: 480px)
+  .searchform
+    input
+      height: 50px

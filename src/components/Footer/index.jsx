@@ -7,7 +7,7 @@ const Facebook = 'https://www.flaticon.es/svg/static/icons/svg/733/733605.svg';
 const Twitter = 'https://www.flaticon.es/svg/static/icons/svg/733/733635.svg';
 const Instagram = 'https://www.flaticon.es/svg/static/icons/svg/87/87390.svg';
 // import logo
-import Logo from '../../assets/Logo';
+import Logo from '../../assets/Logo/index.js';
 // import styles
 import './styles.styl';
 
