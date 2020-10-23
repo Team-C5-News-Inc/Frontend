@@ -10,7 +10,7 @@ const Search = () => {
 
   return (
     <div>
-      <div id="" className={`searchformOff ${showSearch ? 'slide_search-left searchform' : 'off'}`}>
+      <div className={`searchformOff ${showSearch ? 'slide_search-left searchform' : 'off'}`}>
         <input name="search" type="search" />
       </div>
       <a href="#" className="search" onClick={() => setShowSearch(value => !value)}>
