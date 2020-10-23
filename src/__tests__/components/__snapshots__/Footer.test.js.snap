@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> matches the snap shot 1`] = `
+<footer
+  className="footer"
+>
+  <div
+    className="footer__social"
+  >
+    <img
+      alt="Facebook"
+      className="footer__social--icons"
+      src="https://www.flaticon.es/svg/static/icons/svg/733/733605.svg"
+    />
+    <img
+      alt="Twitter"
+      className="footer__social--icons"
+      src="https://www.flaticon.es/svg/static/icons/svg/733/733635.svg"
+    />
+    <img
+      alt="Instagram"
+      className="footer__social--icons"
+      src="https://www.flaticon.es/svg/static/icons/svg/87/87390.svg"
+    />
+  </div>
+  <Logo
+    className="footer__logo"
+  />
+  <div
+    className="footer__subtitle"
+  >
+    <Link
+      to="/about"
+    >
+      <h2>
+        About
+      </h2>
+    </Link>
+    <Link
+      to="/team"
+    >
+      <h2>
+        Team
+      </h2>
+    </Link>
+  </div>
+  <p
+    className="footer__comments"
+  >
+    2020 by Masters INC. Proudly created with React JS
+  </p>
+</footer>
+`;

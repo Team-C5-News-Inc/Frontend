@@ -17,7 +17,7 @@ const Team = () => {
 
   return (
     <div className="team__grid">
-      <a ref={ref} href="https://github.com/BernardoAguayoOrtega">
+      <a className={`refLocation ${ref !== undefined && 'ref-is-different'}`} ref={ref} href="https://github.com/BernardoAguayoOrtega">
         <Hero
           type="small"
           caption="Bernardo Aguayo"
