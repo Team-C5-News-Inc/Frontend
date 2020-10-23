@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Hero type=small/> matches the snap shot 1`] = `
+exports[`<Article ...props/> matches the snap shot 1`] = `
 <article
   className="container"
 >

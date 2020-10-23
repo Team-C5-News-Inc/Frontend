@@ -7,10 +7,9 @@ import toJson from 'enzyme-to-json';
 // import app component
 import Article from '../../pages/Article';
 
-describe('<Hero type=small/>', () => {
+describe('<Article ...props/>', () => {
   const wrapper = shallow(
     <Article
-      type="small"
       title="title"
       subtitle="subtitle"
       author="Juan"
@@ -24,6 +23,13 @@ describe('<Hero type=small/>', () => {
     expect(wrapper.exists()).toBe(true);
   });
 
+  it('is render the title, subtitle, author and date properties?', () => {
+    expect(wrapper.find('.content__headline').text()).toEqual('titlesubtitleJuan - 00/00/00')
+  });
+
+  it('is render the src?', () => {
+    expect(wrapper.find('.content__image').first().props().src).toBe('random');
+  });
 
   it('matches the snap shot', () => {
     expect(toJson(wrapper)).toMatchSnapshot();
