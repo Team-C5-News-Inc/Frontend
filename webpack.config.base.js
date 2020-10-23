@@ -5,6 +5,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const cssRules = {
   test: /\.styl$/i,
   use: ['style-loader', 'css-loader', 'stylus-loader'],
+  exclude: /node_modules/,
 };
 
 //images rules
