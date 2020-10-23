@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Menu /> matches the snap shot 1`] = `
+<Menu>
+  <i
+    className="fa fa-angle-down fa-4x"
+    onClick={[Function]}
+  />
+  <div
+    className="menu slide-left"
+  >
+    <ul
+      className="menu__list"
+    >
+      <li
+        className="menu__list-item"
+      >
+        Category
+      </li>
+      <li
+        className="menu__list-item"
+      >
+        Category
+      </li>
+      <li
+        className="menu__list-item"
+      >
+        Category
+      </li>
+      <li
+        className="menu__list-item"
+      >
+        Category
+      </li>
+      <li
+        className="menu__list-item"
+      >
+        Category
+      </li>
+      <li
+        className="menu__list-item"
+      >
+        Category
+      </li>
+      <li
+        className="menu__list-item"
+      >
+        Category
+      </li>
+      <li
+        className="menu__list-item"
+      >
+        Category
+      </li>
+    </ul>
+  </div>
+</Menu>
+`;
