@@ -13,7 +13,6 @@ exports[`<Search /> matches the snap shot 1`] = `
     </div>
     <a
       className="search"
-      href="#"
       onClick={[Function]}
     >
       <i
