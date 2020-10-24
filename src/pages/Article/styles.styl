@@ -14,16 +14,16 @@
         font-size: 8rem
         letter-spacing: .5rem
         line-height: 8rem
-      h2
-        font-family: Font2
-        font-size: 3rem
-      span
-        text-shadow: 0px 0px 1px black
-        color: gray
-        font-family: Font2
-        font-size: 1.5rem
+      // h2
+      //   font-family: Font2
+      //   font-size: 3rem
+      // span
+      //   text-shadow: 0px 0px 1px black
+      //   color: gray
+      //   font-family: Font2
+      //   font-size: 1.5rem
     &__image
-      margin-top: .5rem
+      margin-top: 1.8rem
       object-fit: cover
       width: 800px
       height: 400px
@@ -37,6 +37,22 @@
         font-family: Font2
         font-size: 1.28rem
 
+@media screen and (max-width: 480px)
+  .postContainer
+    .content
+      &__headline
+        h1
+          font-size: 2rem
+          line-height: 2rem
+
+@media screen and (min-width: 480px)
+  .postContainer
+    .content
+      &__headline
+        h1
+          font-size: 3rem
+          line-height: 3rem
+
 @media screen and (max-width: 520px)
   .postContainer
     .content
@@ -44,17 +60,21 @@
         p
           font-size: 1rem
 
-@media screen and (max-width: 761px)
+@media screen and (min-width: 580px)
   .postContainer
     .content
       &__headline
         h1
-          font-size: 3rem
-          line-height: 4rem
-        h2
-          font-size: 1.8rem
-        span
-          font-size: 1.2rem
+          font-size: 4rem
+          line-height: 3.5rem
+
+@media screen and (min-width: 761px)
+  .postContainer
+    .content
+      &__headline
+        h1
+          font-size: 5rem
+          line-height: 4.5rem
 
 @media screen and (max-width: 1200px)
   .postContainer
