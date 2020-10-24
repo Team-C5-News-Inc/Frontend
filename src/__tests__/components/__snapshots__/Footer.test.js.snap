@@ -30,6 +30,7 @@ exports[`<Footer /> matches the snap shot 1`] = `
     className="footer__subtitle"
   >
     <Link
+      className="about-link"
       to="/about"
     >
       <h2>
@@ -37,6 +38,7 @@ exports[`<Footer /> matches the snap shot 1`] = `
       </h2>
     </Link>
     <Link
+      className="team-link"
       to="/team"
     >
       <h2>
