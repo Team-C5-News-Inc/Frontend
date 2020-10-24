@@ -1,5 +1,7 @@
 // import react
 import React from 'react';
+// import link from react router dom
+import { Link } from 'react-router-dom';
 // import Logo
 import Logo from '../../assets/Logo/index.js'
 // import menu component
@@ -13,15 +15,15 @@ import './styles.styl'
 const Header = () => (
   <header className="header">
     <nav className="nav">
-      <a href="#">
+      <Link to="/">
         <Logo className="nav__logo"/>
-      </a>
+      </Link>
       <ul className="nav__right">
         <li className="nav__right--search">
           <Search />
         </li>
         <li className="nav__right--menu">
-          <span href="#" id="arrow">
+          <span id="arrow">
             <Menu />
           </span>
         </li>

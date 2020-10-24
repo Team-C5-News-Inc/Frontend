@@ -20,10 +20,10 @@ const Footer = () => (
     </div>
     <Logo className="footer__logo" />
     <div className="footer__subtitle">
-      <Link to="/about">
+      <Link className="about-link" to="/about">
         <h2>About</h2>
       </Link>
-      <Link to="/team">
+      <Link className="team-link" to="/team">
         <h2>Team</h2>
       </Link>
     </div>
