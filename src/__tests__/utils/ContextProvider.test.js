@@ -12,4 +12,8 @@ describe('<ContextProvider />', () => {
     expect(wrapper.exists()).toBe(true)
   });
 
+  it('are value property?', () => {
+    expect(wrapper.someWhere(n => n.props().value)).toBe(true)
+  });
+
 });
