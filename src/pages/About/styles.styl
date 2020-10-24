@@ -1,0 +1,52 @@
+@import '../../stylus/variables.styl'
+
+.container
+  margin: 0 auto
+  width: 1200px
+  .content
+    margin: 0 auto
+    padding-top: 5%
+    margin-bottom: 2rem
+    width: 800px
+    &__headline
+      h1
+        font-family: Font1
+        font-size: 6rem
+        letter-spacing: .5rem
+        line-height: 8rem
+        text-align: center
+    &__image
+      margin-top: .5rem
+      object-fit: cover
+      width: 800px
+      height: 400px
+    &__text
+      margin-top: 2rem
+      h2
+        font-family: Font2
+        font-size: 3rem
+      span
+        text-shadow: 0px 0px 1px black
+        color: gray
+        font-family: Font2
+        font-size: 1.5rem
+      p
+        text-shadow: 0px 0px 1px black
+        color: gray
+        text-align: justify
+        line-height: 2rem
+        font-family: Font2
+        font-size: 1.28rem
+
+      .tech__icons 
+        display: grid
+        grid-template-columns: repeat(6, 1fr)
+        margin-top: 10px 
+        img 
+          width: 100px
+          height 100px
+          border-top-left-radius: 50% 50%;
+          border-top-right-radius: 50% 50%;
+          border-bottom-right-radius: 50% 50%;
+          border-bottom-left-radius: 50% 50%;
+          object-fit: contain;

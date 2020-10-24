@@ -8,6 +8,8 @@ import Home from '../../pages/Home/index.jsx';
 import Team from '../../pages/Team/index.jsx';
 // import article page
 import Article from '../../pages/Article/index.jsx';
+//import about page
+import About from '../../pages/About/index.jsx'
 // import layout component
 import Layout from '../Layout/index.jsx';
 
@@ -25,6 +27,9 @@ const App = () => {
           </Route>
           <Route path="/article/:name" exact>
             <Article/>
+          </Route>
+          <Route path="/about">
+            <About />
           </Route>
         </Switch>
       </Layout>
