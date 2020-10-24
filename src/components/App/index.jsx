@@ -25,11 +25,11 @@ const App = () => {
           <Route path="/team">
             <Team />
           </Route>
-          <Route path="/article/:name" exact>
-            <Article/>
-          </Route>
           <Route path="/about">
             <About />
+          </Route>
+          <Route path="/article/:name" exact>
+            <Article/>
           </Route>
         </Switch>
       </Layout>

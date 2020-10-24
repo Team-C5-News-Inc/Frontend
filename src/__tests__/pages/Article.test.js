@@ -1,17 +1,27 @@
 import React from 'react';
 // import shallow
-import { shallow } from 'enzyme';
-// import app component
+import { mount } from 'enzyme';
+// import context
+import { ContextProvider } from '../../utils/Context/index.jsx';
+// import context
+import { HashRouter } from 'react-router-dom';
+// import Article component
 import Article from '../../pages/Article/index.jsx';
 
 describe('<Article />', () => {
-  const wrapper = shallow(<Article />);
+  const wrapper = mount(
+    <ContextProvider>
+      <HashRouter>
+        <Article />
+      </HashRouter>
+    </ContextProvider>,
+  );
 
   it('is render the Article page?', () => {
-    expect(wrapper.exists()).toBe(true)
+    expect(wrapper.exists()).toBe(true);
   });
 
   it('is there a post Container class?', () => {
-    expect(wrapper.find('.postContainer').exists()).toBe(true)
+    expect(wrapper.find('.postContainer').exists()).toBe(false);
   });
 });

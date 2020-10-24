@@ -8,13 +8,6 @@ import { Context } from '../../utils/Context/index.jsx';
 import './styles.styl';
 
 // create and export Home page
-const Article = ({ title, subtitle, author, date, image, text }) => (
-  <article className="postContainer">
-    <section className="content">
-      <div className="content__headline">
-        <h1>{title}</h1>
-        {/* <h2>{subtitle}</h2>
-        <span>{author} - {date}</span> */}
 const Article = () => {
   // use state
   const [new$, setNew$] = useState()
