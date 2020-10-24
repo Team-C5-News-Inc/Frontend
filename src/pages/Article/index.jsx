@@ -9,8 +9,8 @@ const Article = ({ title, subtitle, author, date, image, text }) => (
     <section className="content">
       <div className="content__headline">
         <h1>{title}</h1>
-        <h2>{subtitle}</h2>
-        <span>{author} - {date}</span>
+        {/* <h2>{subtitle}</h2>
+        <span>{author} - {date}</span> */}
       </div>
       <img src={image} className="content__image"/>
       <div className="content__text">
