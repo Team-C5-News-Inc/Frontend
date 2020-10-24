@@ -31,9 +31,8 @@
 				margin-right: 10px
 				text-decoration:none
 				color:white
-
-			&--menu
-				margin-bottom: 5px
+				&:hover
+					cursor: pointer
 
 			.search i
 				transform: scaleX(-1)
@@ -54,6 +53,14 @@
 					padding-left: 10px
 					background-size: 20px 300px
 
+@media screen and (max-width: 490px)
+	.header
+		height: 170px
+		.nav
+			display: flex
+			flex-direction: column
+			&__right
+				margin-bottom: .5rem
 @media screen and (max-width: 1200px)
 	.nav
 		width: 100%

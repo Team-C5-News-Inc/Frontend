@@ -8,6 +8,13 @@ import { Context } from '../../utils/Context/index.jsx';
 import './styles.styl';
 
 // create and export Home page
+const Article = ({ title, subtitle, author, date, image, text }) => (
+  <article className="postContainer">
+    <section className="content">
+      <div className="content__headline">
+        <h1>{title}</h1>
+        {/* <h2>{subtitle}</h2>
+        <span>{author} - {date}</span> */}
 const Article = () => {
   // use state
   const [new$, setNew$] = useState()
@@ -38,7 +45,6 @@ const Article = () => {
         <p>
       Sed eu tincidunt risus. Cras at lectus viverra, dictum erat nec, maximus ipsum. Aenean ante arcu, aliquam ut lacinia malesuada, pulvinar ac mi. Curabitur iaculis eu dolor nec consectetur. Aliquam semper volutpat diam, id faucibus leo aliquam id. Phasellus mattis in leo in bibendum. Ut aliquet velit purus, eu viverra eros aliquam sed. Vestibulum maximus turpis vel eros vestibulum, in pharetra dui vestibulum.
         </p>
-
       </div>
     </section>
   </article>)
