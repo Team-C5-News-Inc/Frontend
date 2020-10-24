@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .search i
   transform: scaleX(-1)
 
@@ -32,4 +33,40 @@
 @media screen and (max-width: 480px)
   .searchform
     input
+=======
+.search i
+  transform: scaleX(-1)
+
+.searchformOff
+  display: none
+  margin-right: 10px
+
+.searchform
+  display: inline-block
+  margin-right: 10px
+
+  input
+    height:35px
+
+.slide_search-left
+  animation: slide_search-left .5s
+
+@keyframes slide_search-left
+  0%
+    -webkit-transform: translateX(-2000px) scale(0.7)
+    transform: translateX(-2000px) scale(0.7)
+    opacity: 0.7
+  50%
+    -webkit-transform: translateX(0px) scale(0.7)
+    transform: translateX(0px) scale(0.7)
+    opacity: 0.7
+  100%
+    -webkit-transform: scale(1)
+    transform: scale(1)
+    opacity: 1
+
+@media screen and (max-width: 480px)
+  .searchform
+    input
+>>>>>>> 0825818ae5770e15c2e2323bada758aca9624df3
       height: 50px
