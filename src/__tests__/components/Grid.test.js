@@ -5,7 +5,7 @@ import { mount } from 'enzyme';
 //import card component
 import Grid from '../../components/Grid';
 // import router
-import { HashRouter as Router } from 'react-router-dom' 
+import { HashRouter as Router } from 'react-router-dom'
 // import context provider
 import { ContextProvider } from '../../utils/Context/index.jsx';
 
