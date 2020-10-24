@@ -4,14 +4,17 @@ import React from 'react';
 import { mount } from 'enzyme';
 //import card component
 import Grid from '../../components/Grid';
-// import context
+// import router
+import { HashRouter as Router } from 'react-router-dom' 
 // import context provider
 import { ContextProvider } from '../../utils/Context/index.jsx';
 
 describe('<Grid/>', () => {
   const wrapper = mount(
     <ContextProvider>
-      <Grid />
+      <Router>
+        <Grid />
+      </Router> 
     </ContextProvider>,
   );
 

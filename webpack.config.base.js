@@ -40,5 +40,5 @@ module.exports = {
       title: 'NEWS INC',
       template: './public/index.html',
     }),
-  ],
+  ]
 };
