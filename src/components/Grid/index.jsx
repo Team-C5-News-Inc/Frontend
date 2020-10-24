@@ -19,8 +19,8 @@ const Grid = () => {
       <ResponsiveMasonry columnsCountBreakPoints={{ 480: 1, 700: 2, 1000: 3 }}>
         <Masonry gutter="20px">
           {news.map((card, i) => (
-            <Link key={i} to={`/article/${i}`}>
-              <Card title={card?.title} image={card?.image} />{' '}
+            <Link id="RouterNavLink" key={i} to={`/article/${card?.title}`}>
+              <Card title={card?.title} image={card?.image} />
             </Link>
           ))}
         </Masonry>

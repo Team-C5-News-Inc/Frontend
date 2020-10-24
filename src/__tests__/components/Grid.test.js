@@ -14,7 +14,7 @@ describe('<Grid/>', () => {
     <ContextProvider>
       <Router>
         <Grid />
-      </Router> 
+      </Router>
     </ContextProvider>,
   );
 
@@ -40,5 +40,9 @@ describe('<Grid/>', () => {
 
   it('Is there a context provider?', () => {
     expect(wrapper.find('ContextProvider').exists()).toBe(true);
+  });
+
+  it('Is there a link component?', () => {
+    expect(wrapper.find('Link').exists()).toBe(true);
   });
 });
