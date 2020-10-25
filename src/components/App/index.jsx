@@ -30,10 +30,10 @@ const App = () => {
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/article/:name" exact>
+          <Route exact path="/article/:name">
             <Article/>
           </Route>
-          <Route path="/Error404">
+          <Route>
             <Error
               message="ERROR 404"
               subtitle="Pagina no existente."
