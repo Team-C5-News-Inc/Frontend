@@ -36,7 +36,7 @@ const App = () => {
           <Route>
             <Error
               message="ERROR 404"
-              subtitle="Pagina no existente."
+              subtitle="Ups looks like a problem"
             />
           </Route>
         </Switch>
