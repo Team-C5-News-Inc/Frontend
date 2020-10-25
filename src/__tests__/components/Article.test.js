@@ -25,13 +25,13 @@ describe('<Article ...props/>', () => {
   });
 
   it('is render the headline?', () => {
-    expect(wrapper.find('.content__headline').exists()).toBe(true)
+    expect(wrapper.find('.post__content--headline').exists()).toBe(true)
   });
 
   wrapper.setProps({ $news: { title: 'random', image: 'random' } })
 
   it('is render the src?', () => {
-    expect(wrapper.find('.content__image').prop('src')).toBe();
+    expect(wrapper.find('.post__content--image').prop('src')).toBe();
   });
 
   it('matches the snap shot', () => {
