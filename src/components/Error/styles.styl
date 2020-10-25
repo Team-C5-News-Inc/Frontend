@@ -2,7 +2,7 @@
 
 .container
   width: 100vw
-  height: 100vh
+  height: 70vh
   display: flex
   align-items: center
   justify-content: center
@@ -20,23 +20,54 @@
     font-weight: 700
     font-size: 3rem
 
-
 .container__animated
-    animation-duration: 2.5s
-    animation-fill-mode: both
-    animation-iteration-count: infinite
+   animation-duration: 2.5s
+   animation-fill-mode: both
+   animation-iteration-count: infinite
 
 @keyframes rubberBand
-    0%
-        transform: scale(1)
-    30% 
-        transform: scaleX(1.25) scaleY(0.75)
-    40% 
-        transform: scaleX(0.75) scaleY(1.25)
-    60% 
-        transform: scaleX(1.15) scaleY(0.85)
-    100% 
-        transform: scale(1)
+   0%
+       transform: scale(1)
+   30% 
+       transform: scaleX(1.25) scaleY(0.75)
+   40% 
+       transform: scaleX(0.75) scaleY(1.25)
+   60% 
+       transform: scaleX(1.15) scaleY(0.85)
+   100% 
+       transform: scale(1)
 
 .rubberBand
-    animation-name: rubberBand
+  animation-name: rubberBand
+
+@media screen and (max-width: 1023px)
+  .container__text
+    font-size: 7rem
+
+@media screen and (max-width: 768px)
+  .container__text
+    font-size: 6rem
+    font-weight: 600
+  .container__subtitle
+    font-size: 2.5rem
+
+@media screen and (max-width: 425px)
+  .container__text
+    font-size: 4rem
+    font-weight: 500
+  .container__subtitle
+    font-size: 2rem
+
+@media screen and (max-width: 375px)
+  .container__text
+    font-size: 3rem
+    font-weight: 500
+  .container__subtitle
+    font-size: 2rem
+
+@media screen and (max-width: 320px)
+  .container__text
+    font-size: 2.8rem
+    font-weight: 500
+  .container__subtitle
+    font-size: 1.8rem
