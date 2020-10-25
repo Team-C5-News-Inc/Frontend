@@ -34,21 +34,21 @@ exports[`<Article ...props/> matches the snap shot 1`] = `
     >
       <Article>
         <article
-          className="container"
+          className="post"
         >
           <section
-            className="content"
+            className="post__content"
           >
             <div
-              className="content__headline"
+              className="post__content--headline"
             >
               <h1 />
             </div>
             <img
-              className="content__image"
+              className="post__content--image"
             />
             <div
-              className="content__text"
+              className="post__content--text"
             >
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in dui ultricies, tristique justo eu, ornare nisl. Phasellus accumsan vel justo eu volutpat. Mauris augue ipsum, accumsan non nisl ut, rutrum iaculis enim. Pellentesque risus est, mollis sed porttitor sed, efficitur quis enim. Etiam pulvinar lobortis lectus, nec dapibus ex cursus nec. Integer volutpat rutrum turpis ac viverra.

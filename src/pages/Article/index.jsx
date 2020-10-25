@@ -21,13 +21,13 @@ const Article = () => {
   }, [])
 
   return (
-    <article className="container">
-      <section className="content">
-        <div className="content__headline">
+    <article className="post">
+      <section className="post__content">
+        <div className="post__content--headline">
           <h1>{new$?.title}</h1>
         </div>
-        <img src={new$?.image} className="content__image"/>
-        <div className="content__text">
+        <img src={new$?.image} className="post__content--image"/>
+        <div className="post__content--text">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in dui ultricies, tristique justo eu, ornare nisl. Phasellus accumsan vel justo eu volutpat. Mauris augue ipsum, accumsan non nisl ut, rutrum iaculis enim. Pellentesque risus est, mollis sed porttitor sed, efficitur quis enim. Etiam pulvinar lobortis lectus, nec dapibus ex cursus nec. Integer volutpat rutrum turpis ac viverra.
           </p>
