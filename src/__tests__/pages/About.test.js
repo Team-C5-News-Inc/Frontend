@@ -12,7 +12,7 @@ describe('<About />', () => {
   });
 
   it('is a container class?', () => {
-    expect(wrapper.find('.container').exists()).toBe(true)
+    expect(wrapper.find('.about').exists()).toBe(true)
   });
 
   it('are there correct the title?', () => {

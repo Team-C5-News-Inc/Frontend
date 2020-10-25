@@ -5,12 +5,12 @@ import './styles.styl';
 
 // create and export
 const About = () => (
-  <article className="container">
-    <section className="content">
-      <div className="content__headline">
+  <article className="about">
+    <section className="about__content">
+      <div className="about__content--headline">
         <h1>About</h1>
       </div>
-      <div className="content__text">
+      <div className="about__content--text">
         <p>
         We are a team that developed a tool thinking of you, News INC is an online newspaper that publishes news on a large scale every day that allows you to see the most important news in the world instantly and quickly.
         </p>
@@ -37,9 +37,7 @@ const About = () => (
 
           </div>
         </div>
-
       </div>
-
     </section>
   </article>
 );
