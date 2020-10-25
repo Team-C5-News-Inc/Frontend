@@ -1,34 +1,27 @@
 @import '../../stylus/variables.styl'
 
-.postContainer
+.post
   margin: 0 auto
   max-width: 1200px
-  .content
+  &__content
     margin: 0 auto
     padding-top: 10%
     margin-bottom: 2rem
     max-width: 800px
-    &__headline
+    &--headline
       h1
+        text-align: center
         font-family: Font1
         font-size: 8rem
         letter-spacing: .5rem
         line-height: 8rem
-      // h2
-      //   font-family: Font2
-      //   font-size: 3rem
-      // span
-      //   text-shadow: 0px 0px 1px black
-      //   color: gray
-      //   font-family: Font2
-      //   font-size: 1.5rem
-    &__image
+    &--image
       margin-top: 1.8rem
       object-fit: cover
       width: 800px
       height: 400px
       border-radius: 2px
-    &__text
+    &--text
       margin-top: 2rem
       p
         text-shadow: 0px 0px 1px black
@@ -39,53 +32,53 @@
         font-size: 1.28rem
 
 @media screen and (max-width: 480px)
-  .postContainer
-    .content
-      &__headline
+  .post
+    &__content
+      &--headline
         h1
           font-size: 2rem
           line-height: 2rem
 
 @media screen and (min-width: 480px)
-  .postContainer
-    .content
-      &__headline
+  .post
+    &__content
+      &--headline
         h1
           font-size: 3rem
           line-height: 3rem
 
 @media screen and (max-width: 520px)
-  .postContainer
-    .content
-      &__text
+  .post
+    &__content
+      &--text
         p
           font-size: 1rem
 
 @media screen and (min-width: 580px)
-  .postContainer
-    .content
-      &__headline
+  .post
+    &__content
+      &--headline
         h1
           font-size: 4rem
           line-height: 3.5rem
 
 @media screen and (min-width: 761px)
-  .postContainer
-    .content
-      &__headline
+  .post
+    &__content
+      &--headline
         h1
           font-size: 5rem
           line-height: 4.5rem
 
 @media screen and (max-width: 1200px)
-  .postContainer
+  .post
     width: 90%
     margin: 0 auto
-    .content
+    &__content
       width: 100%
-      &__image
+      &--image
         width: 100%
 
 @media screen and (min-width: 1200px)
-  .container
+  .post
     width: 1200px
