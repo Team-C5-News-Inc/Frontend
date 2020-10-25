@@ -63,6 +63,30 @@ exports[`<Article ...props/> matches the snap shot 1`] = `
               </p>
             </div>
           </section>
+          <DiscussionEmbed
+            config={
+              Object {
+                "identifier": "",
+                "language": "zh_TW",
+                "title": "",
+                "url": "",
+              }
+            }
+            shortname="example"
+          >
+            <div
+              config={
+                Object {
+                  "identifier": "",
+                  "language": "zh_TW",
+                  "title": "",
+                  "url": "",
+                }
+              }
+              id="disqus_thread"
+              shortname="example"
+            />
+          </DiscussionEmbed>
         </article>
       </Article>
     </Router>

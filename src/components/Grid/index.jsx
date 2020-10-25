@@ -20,7 +20,12 @@ const Grid = () => {
         <Masonry gutter="20px">
           {news.map((card, i) => (
             <Link id="RouterNavLink" key={i} to={`/article/${card?.title}`}>
-              <Card title={card?.title} image={card?.image} />
+              <Card
+                aria-label={'card'}
+                aria-required="true"
+                title={card?.title}
+                image={card?.image}
+              />
             </Link>
           ))}
         </Masonry>

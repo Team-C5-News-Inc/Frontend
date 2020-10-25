@@ -20,8 +20,8 @@ describe('<Card/>', () => {
     expect(wrapper.find('.card').children().length).toBe(1);
   })
 
-  it('Is there an url element?', () => {
-    expect(wrapper.find('a').exists()).toBe(true);
+  it('Is there an image element?', () => {
+    expect(wrapper.find('img').exists()).toBe(true);
   })
 
   it('Is there an url prop?', () => {

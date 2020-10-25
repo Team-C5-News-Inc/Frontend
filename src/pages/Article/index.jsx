@@ -4,6 +4,8 @@ import React, { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom'
 // import context
 import { Context } from '../../utils/Context/index.jsx';
+// import disqus
+import { DiscussionEmbed } from 'disqus-react';
 // import styles
 import './styles.styl';
 
@@ -41,6 +43,17 @@ const Article = () => {
           </p>
         </div>
       </section>
+      <DiscussionEmbed
+        shortname="example"
+        config={
+          {
+            url: '',
+            identifier: '',
+            title: '',
+            language: 'zh_TW' //e.g. for Traditional Chinese (Taiwan)	
+          }
+        }
+      />
     </article>
   )
 };
