@@ -1,6 +1,6 @@
 @import '../../stylus/variables.styl'
 
-.postContainer
+.container
   margin: 0 auto
   max-width: 1200px
   .content
@@ -14,14 +14,6 @@
         font-size: 8rem
         letter-spacing: .5rem
         line-height: 8rem
-      // h2
-      //   font-family: Font2
-      //   font-size: 3rem
-      // span
-      //   text-shadow: 0px 0px 1px black
-      //   color: gray
-      //   font-family: Font2
-      //   font-size: 1.5rem
     &__image
       margin-top: 1.8rem
       object-fit: cover
@@ -39,7 +31,7 @@
         font-size: 1.28rem
 
 @media screen and (max-width: 480px)
-  .postContainer
+  .container
     .content
       &__headline
         h1
@@ -47,7 +39,7 @@
           line-height: 2rem
 
 @media screen and (min-width: 480px)
-  .postContainer
+  .container
     .content
       &__headline
         h1
@@ -55,14 +47,14 @@
           line-height: 3rem
 
 @media screen and (max-width: 520px)
-  .postContainer
+  .container
     .content
       &__text
         p
           font-size: 1rem
 
 @media screen and (min-width: 580px)
-  .postContainer
+  .container
     .content
       &__headline
         h1
@@ -70,7 +62,7 @@
           line-height: 3.5rem
 
 @media screen and (min-width: 761px)
-  .postContainer
+  .container
     .content
       &__headline
         h1
@@ -78,7 +70,7 @@
           line-height: 4.5rem
 
 @media screen and (max-width: 1200px)
-  .postContainer
+  .container
     width: 90%
     margin: 0 auto
     .content
