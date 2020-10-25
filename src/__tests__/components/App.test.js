@@ -24,7 +24,7 @@ describe('<App />', () => {
     expect(wrapper.find('HashRouter').exists()).toBeTruthy()
   })
 
-  it('are switch has one child?', () => {
-    expect(wrapper.find('Switch').children().length).toBe(4)
+  it('are switch has five children?', () => {
+    expect(wrapper.find('Switch').children().length).toBe(5)
   })
 });

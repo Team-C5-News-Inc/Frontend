@@ -12,6 +12,8 @@ import Article from '../../pages/Article/index.jsx';
 import About from '../../pages/About/index.jsx'
 // import layout component
 import Layout from '../Layout/index.jsx';
+// import page error
+import Error from '../Error/index.jsx';
 
 //create and export app component
 const App = () => {
@@ -30,6 +32,12 @@ const App = () => {
           </Route>
           <Route path="/article/:name" exact>
             <Article/>
+          </Route>
+          <Route path="/Error404">
+            <Error
+              message="ERROR 404"
+              subtitle="Pagina no existente."
+            />
           </Route>
         </Switch>
       </Layout>
