@@ -1,7 +1,7 @@
 // import react
 import React from 'react';
 // import render method
-import { render } from 'react-dom';
+import ReactDom from 'react-dom';
 // import app component
 import App from './components/App/index.jsx';
 // import context provider
@@ -13,7 +13,7 @@ import './stylus/globalStyles.styl';
 const root = document.getElementById('root');
 
 // render the app
-render(
+ReactDom.render(
   <ContextProvider>
     <App />
   </ContextProvider>,

@@ -14,6 +14,13 @@
 
 <body>
   <div id="root"></div>
+
+  <% if(process.env.NODE_ENV === 'production') { %>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-router-dom/5.2.0/react-router-dom.min.js" integrity="sha512-NG4Cm3Ubs7d/nPyzrTFM53RP8tPjQhRT0hea48yJ/qEXsuhq7wGbjX68A5gBiW6BoCQbqE3/M+UOj2lLXPauhw==" crossorigin="anonymous"></script>
+    <% } %>
+
 </body>
 
 </html>
