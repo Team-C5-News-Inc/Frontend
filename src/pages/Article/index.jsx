@@ -50,7 +50,7 @@ const Article = () => {
             url: '',
             identifier: '',
             title: '',
-            language: 'zh_TW' //e.g. for Traditional Chinese (Taiwan)	
+            language: 'zh_TW' //e.g. for Traditional Chinese (Taiwan)
           }
         }
       />
