@@ -44,13 +44,13 @@ const Article = () => {
         </div>
       </section>
       <DiscussionEmbed
-        shortname="example"
+        shortname="article"
         config={
           {
             url: '',
             identifier: '',
             title: '',
-            language: 'zh_TW' //e.g. for Traditional Chinese (Taiwan)
+            language: 'en' //e.g. for Traditional Chinese (Taiwan)
           }
         }
       />
