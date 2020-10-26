@@ -55,6 +55,7 @@
 		"stylus-loader": "^4.1.1",
 		"url-loader": "^4.1.1",
 		"webpack": "^4.44.2",
+		"webpack-bundle-analyzer": "^3.9.0",
 		"webpack-cli": "^3.3.12",
 		"webpack-dev-server": "^3.11.0",
 		"webpack-merge": "^5.2.0"
@@ -95,7 +96,8 @@
 	},
 	"husky": {
 		"hooks": {
-			"pre-commit": "npm run test"
+			"pre-commit": "npm run test",
+			"pre-push": "npm test"
 		}
 	}
 }
