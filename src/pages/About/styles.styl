@@ -2,7 +2,7 @@
 @import '../../stylus/variables.styl'
 
 text()
-  margin-top: 2rem
+  margin-top: 1rem
   h2
     font-family: Font2
     font-size: 3rem
@@ -21,13 +21,12 @@ text()
 
 .about
   margin: 0 auto
-  width: 1200px
-  height: 100%
+  max-width: 1200px
   &__content
     margin: 0 auto
     padding-top: 5%
     margin-bottom: 2rem
-    width: 800px
+    max-width: 800px
     &--headline
       h1
         font-family: Font1
@@ -35,11 +34,6 @@ text()
         letter-spacing: .5rem
         line-height: 8rem
         text-align: center
-    &--image
-      margin-top: .5rem
-      object-fit: cover
-      width: 800px
-      height: 400px
     &--text
       text()
     &--tech
@@ -48,7 +42,11 @@ text()
       &Icons
         display: grid
         grid-template-columns: repeat(6, 1fr)
-        margin-top: 10px
+        justify-items: center
+        margin-top: 1rem
+        margin-bottom: 1rem
+        column-gap: 1rem
+        row-gap: 1rem
         img
           width: 100px
           height 100px
@@ -57,3 +55,61 @@ text()
           border-bottom-right-radius: 50% 50%;
           border-bottom-left-radius: 50% 50%;
           object-fit: contain;
+
+@media screen and (max-width: 400px)
+  .about
+    &__content
+      &--tech
+        &Icons
+          grid-template-columns: repeat(2, 1fr)
+
+@media screen and (min-width: 400px)
+  .about
+    &__content
+      &--tech
+        &Icons
+          grid-template-columns: repeat(3, 1fr)
+
+@media screen and (max-width: 520px)
+  .about
+    &__content
+      &--headline
+        h1
+          font-size: 3rem
+          letter-spacing: .5rem
+          line-height: 5rem
+      &--text
+        p
+          font-size: 1rem
+      &--tech
+        h2
+          font-size: 2rem
+        span
+          font-size: 1.5rem
+
+@media screen and (min-width: 520px)
+  .about
+    &__content
+      &--headline
+        h1
+          font-family: Font1
+          font-size: 4.8rem
+          letter-spacing: .5rem
+          line-height: 8rem
+      &--text
+        p
+      &--tech
+        h2
+          font-size: 3rem
+
+@media screen and (min-width: 761px)
+  .about
+    &__content
+      &--tech
+        &Icons
+          grid-template-columns: repeat(6, 1fr)
+
+@media screen and (max-width: 1200px)
+  .about
+    &__content
+      width: 90%
