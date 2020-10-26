@@ -36,7 +36,7 @@ const App = () => {
           <Route>
             <Error
               message="ERROR 404"
-              subtitle="Ups looks like a problem"
+              subtitle="Ups looks like a problem </3"
             />
           </Route>
         </Switch>
