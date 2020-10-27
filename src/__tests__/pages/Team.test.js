@@ -23,7 +23,7 @@ describe('<Team />', () => {
   });
 
   it('are there refLocation has ref?', () => {
-    expect(wrapper.find('.refLocation').props().className).toBe('refLocation ref-is-different')
+    expect(wrapper.find('.refLocation').props().className).toBe('refLocation')
   });
 
   it('matches the snap shot', () => {

@@ -1,5 +1,5 @@
 // import react
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
 // import Hero
 import Hero from '../../components/Hero/index.jsx';
 // import styles
@@ -7,17 +7,10 @@ import './styles.styl';
 
 // create and export Team page
 const Team = () => {
-  // use ref hooks
-  const ref = useRef(null)
-
-  // use effect
-  useEffect(() => {
-    ref.current.focus()
-  }, [])
 
   return (
     <div className="team__grid">
-      <a className={`refLocation ${ref !== undefined && 'ref-is-different'}`} ref={ref} href="https://github.com/BernardoAguayoOrtega">
+      <a className={'refLocation'} href="https://github.com/BernardoAguayoOrtega">
         <Hero
           type="small"
           caption="Bernardo Aguayo"

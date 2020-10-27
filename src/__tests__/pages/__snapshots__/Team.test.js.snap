@@ -5,7 +5,7 @@ exports[`<Team /> matches the snap shot 1`] = `
   className="team__grid"
 >
   <a
-    className="refLocation ref-is-different"
+    className="refLocation"
     href="https://github.com/BernardoAguayoOrtega"
   >
     <Hero
