@@ -17,7 +17,7 @@ describe('<Home />', () => {
     </ContextProvider>,
   );
 
-  it('is render the home?', () => {
+  it('is render the home? ', () => {
     expect(wrapper.exists()).toBe(true);
   });
 
