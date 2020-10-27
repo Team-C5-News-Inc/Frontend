@@ -61,6 +61,7 @@
 		"webpack-merge": "^5.2.0"
 	},
 	"dependencies": {
+		"@babel/polyfill": "^7.12.1",
 		"disqus-react": "^1.0.10",
 		"react": "^16.14.0",
 		"react-dom": "^16.14.0",
