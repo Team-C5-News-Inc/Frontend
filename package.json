@@ -30,6 +30,7 @@
 	"homepage": "https://github.com/Team-C5-cheaPlatzi/Frontend#readme",
 	"devDependencies": {
 		"@babel/core": "^7.12.3",
+		"@babel/polyfill": "^7.12.1",
 		"@babel/preset-env": "^7.12.1",
 		"@babel/preset-react": "^7.12.1",
 		"babel-jest": "^26.5.2",
@@ -61,7 +62,7 @@
 		"webpack-merge": "^5.2.0"
 	},
 	"dependencies": {
-		"@babel/polyfill": "^7.12.1",
+		"axios": "^0.21.0",
 		"disqus-react": "^1.0.10",
 		"react": "^16.14.0",
 		"react-dom": "^16.14.0",
