@@ -28,19 +28,19 @@ const Article = () => {
         <div className="post__content--headline">
           <h1>{new$?.title}</h1>
         </div>
-        <img src={new$?.image || 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR3OACZKecLGqNCdYg35qC4hY8ByncPpj_6MQ&usqp=CAU '} className="post__content--image"/>
+        <img src={new$?.image || 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80CdYg35qC4hY8ByncPpj_6MQ&usqp=CAU '} className="post__content--image"/>
         <div className="post__content--text">
           {new$?.body?.map((paragraph, i) => <p key={i}>{paragraph}</p>)}
         </div>
       </section>
       <DiscussionEmbed
-        shortname="article"
+        shortname="news-inc"
         config={
           {
-            url: '',
-            identifier: '',
-            title: '',
-            language: 'en' //e.g. for Traditional Chinese (Taiwan)
+            url: `http://localhost:3000/#/article/${new$?.author}`,
+            identifier: new$?._id,
+            title: new$?.title,
+            language: 'en'
           }
         }
       />

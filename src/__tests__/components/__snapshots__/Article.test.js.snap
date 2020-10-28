@@ -46,7 +46,7 @@ exports[`<Article ...props/> matches the snap shot 1`] = `
             </div>
             <img
               className="post__content--image"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR3OACZKecLGqNCdYg35qC4hY8ByncPpj_6MQ&usqp=CAU "
+              src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80CdYg35qC4hY8ByncPpj_6MQ&usqp=CAU "
             />
             <div
               className="post__content--text"
@@ -55,25 +55,25 @@ exports[`<Article ...props/> matches the snap shot 1`] = `
           <DiscussionEmbed
             config={
               Object {
-                "identifier": "",
+                "identifier": undefined,
                 "language": "en",
                 "title": "",
-                "url": "",
+                "url": "http://localhost:3000/#/article/undefined",
               }
             }
-            shortname="article"
+            shortname="news-inc"
           >
             <div
               config={
                 Object {
-                  "identifier": "",
+                  "identifier": undefined,
                   "language": "en",
                   "title": "",
-                  "url": "",
+                  "url": "http://localhost:3000/#/article/undefined",
                 }
               }
               id="disqus_thread"
-              shortname="article"
+              shortname="news-inc"
             />
           </DiscussionEmbed>
         </article>
