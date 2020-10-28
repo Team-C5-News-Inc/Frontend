@@ -1,31 +1,20 @@
 // import react
 import React from 'react';
 // import shallow
-import { mount } from 'enzyme';
-//import card component
-import CardStructure from '../../components/Card/CardStructure';
+import { shallow } from 'enzyme';
+// import toJson
+import toJson from 'enzyme-to-json';
+// import app component
+import Card from '../../components/Card/index.jsx';
 
-describe('<CardStructure/>', () => {
-  const wrapper = mount(<CardStructure/>);
+describe('<Card/>', () => {
+  const wrapper = shallow(<Card/>);
 
-  it('Renders the card component', () => {
+  it('is rendering the Card?', () => {
     expect(wrapper.exists()).toBe(true);
   })
 
-  it('Is there a class card component?', () => {
-    expect(wrapper.find('.card').exists()).toBe(true);
-  })
-
-  it('Only one child?', () => {
-    expect(wrapper.find('.card').children().length).toBe(1);
-  })
-
-  it('Is there an image element?', () => {
-    expect(wrapper.find('img').exists()).toBe(true);
-  })
-
-  it('Is there an url prop?', () => {
-    const url = '';
-    expect(wrapper.find('.card__content').containsMatchingElement(<a href={url}/>));
-  })
+  it('matches the snap shot', () => {
+    expect(toJson(wrapper)).toMatchSnapshot();
+  });
 })

@@ -17,16 +17,7 @@ const Hero = ({ background, caption }) => {
     }, 2000);
   }, [])
 
-  if (loading) {
-    return (
-      <HeroSkeleton />
-    )
-  // eslint-disable-next-line no-else-return
-  } else {
-    return (
-      <HeroStructure background={background} caption={caption} />
-    );
-  }
+  return loading ? <HeroSkeleton /> : <HeroStructure background={background} caption={caption} />;
 }
 
 export default Hero;

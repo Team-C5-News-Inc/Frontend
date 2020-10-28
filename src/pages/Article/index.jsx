@@ -17,16 +17,7 @@ const Article = () => {
     }, 2000);
   }, [])
 
-  if (loading) {
-    return (
-      <ArticleSkeleton/>
-    )
-  // eslint-disable-next-line no-else-return
-  } else {
-    return (
-      <ArticleStructure/>
-    )
-  }
+  return loading ? <ArticleSkeleton/> : <ArticleStructure/>;
 };
 
 export default Article;

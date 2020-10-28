@@ -16,16 +16,7 @@ const Card = ({ image, title }) => {
     }, 2000);
   }, []);
 
-  if (loading) {
-    return (
-      <CardSkeleton />
-    )
-  // eslint-disable-next-line no-else-return
-  } else {
-    return (
-      <CardStructure image={image} title={title}/>
-    );
-  }
+  return loading ? <CardSkeleton/> : <CardStructure image={image} title={title}/>;
 };
 
 export default Card;
