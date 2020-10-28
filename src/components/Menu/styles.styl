@@ -6,7 +6,7 @@
   right: -220px;
   top: 20%;
   background: lightGray;
-  height: 100vh;
+  height: 40vh;
   width: 20%;
   z-index: 11;
   font-family: Font1;
@@ -14,14 +14,14 @@
 
 .menu__list
   list-style: none;
-  height: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center
   flex-direction: column;
 
 .menu__list-item
   font-size: 2rem
+  padding: .4rem
 
 .slide-left
   animation: slide-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -43,22 +43,23 @@
 
 @media screen and (max-width: 500px)
   .menu
-    top: 30% 
+    top: 30%;
     width: 100%;
   .menu__list-item
     font-size: 2rem;
-    padding: 1rem;
 
 @media screen and (min-width: 501px)
   .menu
     width: 50%;
-    top: 17% 
+    top: 17%;
 
 @media screen and (min-width: 700px)
   .menu
     width: 35%;
-    top: 17% 
+    top: 17% ;
 
 @media screen and (min-width: 1200px)
   .menu
     width: 30%;
+  .menu__list
+    display: grid;

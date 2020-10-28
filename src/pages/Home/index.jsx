@@ -21,8 +21,6 @@ const Home = () => {
     setNew$(news?.[Math.floor(Math.random() * news.length)])
   }, []);
 
-  console.log(new$)
-
   return (
     <>
       <Link to={`/article/${new$?.title}`} >
