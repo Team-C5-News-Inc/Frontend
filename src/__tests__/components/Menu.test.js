@@ -10,19 +10,19 @@ import Menu from '../../components/Menu/index.jsx';
 describe('<Menu />', () => {
   const wrapper = mount(<Menu />);
 
-  it('is render the Menu?', () => {
+  it('is rendering the Menu?', () => {
     expect(wrapper.exists()).toBe(true);
   });
 
-  it('is there i element?', () => {
+  it('is there an i element?', () => {
     expect(wrapper.find('i').exists()).toBe(true);
   });
 
-  it('is there slide right class name?', () => {
+  it('is there a class named slide right?', () => {
     expect(wrapper.find('div').props().className).toBe('menu slide-right');
   });
 
-  it('is there slide left class name?', () => {
+  it('is there a class named slide left?', () => {
     // expect(wrapper.find('div').props)
 
     wrapper.find('i').simulate('click')

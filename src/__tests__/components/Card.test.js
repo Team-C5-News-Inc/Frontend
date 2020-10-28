@@ -1,14 +1,14 @@
 // import react
 import React from 'react';
 // import shallow
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 //import card component
-import Card from '../../components/Card';
+import CardStructure from '../../components/Card/CardStructure';
 
-describe('<Card/>', () => {
-  const wrapper = shallow(<Card/>);
+describe('<CardStructure/>', () => {
+  const wrapper = mount(<CardStructure/>);
 
-  it('Render the card component', () => {
+  it('Renders the card component', () => {
     expect(wrapper.exists()).toBe(true);
   })
 

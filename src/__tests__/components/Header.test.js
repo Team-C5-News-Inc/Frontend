@@ -12,15 +12,15 @@ import Header from '../../components/Header/index.jsx';
 describe('<Header /> shallow', () => {
   const wrapper = shallow(<Header />);
 
-  it('is render the Header?', () => {
+  it('is the Header rendering?', () => {
     expect(wrapper.exists()).toBe(true);
   });
 
-  it('are there a header tag?', () => {
+  it('is there a header tag?', () => {
     expect(wrapper.find('header').exists()).toBe(true);
   });
 
-  it('should header have only child?', () => {
+  it('header has an only child?', () => {
     expect(wrapper.find('header').children().length).toBe(1);
   });
 
@@ -36,23 +36,23 @@ describe('<Header /> mount', () => {
     </Router>,
   );
 
-  it('is render the Header?', () => {
+  it('is the Header rendering?', () => {
     expect(wrapper.exists()).toBe(true);
   });
 
-  it('are there a header tag?', () => {
+  it('is there a header tag?', () => {
     expect(wrapper.find('header').exists()).toBe(true);
   });
 
-  it('should header have only child?', () => {
+  it('header has an only child?', () => {
     expect(wrapper.find('header').children().length).toBe(1);
   });
 
-  it('should header link component?', () => {
+  it('header has a link component?', () => {
     expect(wrapper.find('Link').exists()).toBe(true);
   });
 
-  it('should header link component has the correct route?', () => {
+  it('does the header link component has the correct route?', () => {
     expect(wrapper.find('Link').prop('to')).toBe('/');
   });
 });

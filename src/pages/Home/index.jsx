@@ -4,7 +4,7 @@ import React from 'react';
 // import hero component
 import Hero from '../../components/Hero/index.jsx';
 // import Masonry
-import Grid from '../../components/Grid/index.jsx'
+import Grid from '../../components/Grid/index.jsx';
 
 // create and export Home page
 const Home = () => (

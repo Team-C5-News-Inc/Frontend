@@ -32,7 +32,7 @@ exports[`<Article ...props/> matches the snap shot 1`] = `
         }
       }
     >
-      <Article>
+      <ArticleStructure>
         <article
           className="post"
         >
@@ -88,7 +88,7 @@ exports[`<Article ...props/> matches the snap shot 1`] = `
             />
           </DiscussionEmbed>
         </article>
-      </Article>
+      </ArticleStructure>
     </Router>
   </HashRouter>
 </ContextProvider>

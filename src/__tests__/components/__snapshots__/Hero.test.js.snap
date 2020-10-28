@@ -1,23 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Hero type=small/> matches the snap shot 1`] = `
-<div
-  aria-label="hero content"
-  className="home__hero-container small"
+exports[`<HeroStructure type=small/> matches the snap shot 1`] = `
+<HeroStructure
+  type="small"
 >
-  <h1
-    aria-label="hero title"
-    className="home__hero-caption"
-  />
-  <figure
-    aria-label="hero figure"
-    className="home__hero-figure"
+  <div
+    aria-label="hero content"
+    className="home__hero-container small"
   >
-    <img
-      alt="undefined image"
-      aria-label="hero image"
-      className="home__hero-image"
+    <h1
+      aria-label="hero title"
+      className="home__hero-caption"
     />
-  </figure>
-</div>
+    <figure
+      aria-label="hero figure"
+      className="home__hero-figure"
+    >
+      <img
+        alt="undefined image"
+        aria-label="hero image"
+        className="home__hero-image"
+      />
+    </figure>
+  </div>
+</HeroStructure>
 `;

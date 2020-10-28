@@ -10,19 +10,19 @@ import Search from '../../components/Search/index.jsx';
 describe('<Search />', () => {
   const wrapper = mount(<Search />);
 
-  it('is render the Search?', () => {
+  it('is the Search rendering?', () => {
     expect(wrapper.exists()).toBe(true);
   });
 
-  it('is there searchformOff class?', () => {
+  it('is there a searchformOff class?', () => {
     expect(wrapper.find('.searchformOff').exists()).toBe(true);
   });
 
-  it('is there off off class name?', () => {
+  it('is there a class named off off?', () => {
     expect(wrapper.find('.searchformOff').props().className).toBe('searchformOff off');
   });
 
-  it('is there slide left class name?', () => {
+  it('is there a class named slide left?', () => {
     wrapper.find('.search').simulate('click')
 
     expect(wrapper.find('.searchformOff').props().className).toBe('searchformOff slide_search-left searchform');
