@@ -5,6 +5,7 @@
   display: inline-block
   font-family: Font1
   border-radius: 5px
+  overflow: hidden;
   &__content
     position: relative
     z-index: 2
@@ -25,24 +26,7 @@
       bottom: 0
       padding: .9rem
       line-height: 1.1
-      font-size: 3.3rem
+      font-size: 2.8vh
       font-weight: 800
       color: white
       text-shadow: 2px 3px black;
-
-@media screen and (max-width: 480px)
-  .card
-    &__content--title
-      font-size: 2.8rem
-@media screen and (min-width: 481px)
-  .card
-    &__content--title
-      font-size: 3.5rem
-@media screen and (min-width: 767px)
-  .card
-    &__content--title
-      font-size: 3.2rem
-@media screen and (min-width: 1024px)
-  .card
-    &__content--title
-      font-size: 3.3rem
