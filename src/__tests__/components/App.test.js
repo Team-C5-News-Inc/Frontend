@@ -8,23 +8,23 @@ import App from '../../components/App/index.jsx';
 describe('<App />', () => {
   const wrapper = shallow(<App />);
 
-  it('is render the app?', () => {
+  it('is the app rendering?', () => {
     expect(wrapper.exists()).toBe(true)
   });
 
-  it('are there home page?', () => {
+  it('is there a home page?', () => {
     expect(wrapper.find('Home').exists()).toBe(true)
   });
 
-  it('is there switch component?', () => {
+  it('is there a switch component?', () => {
     expect(wrapper.find('Switch').exists()).toBe(true)
   });
 
-  it('is there router component?', () => {
+  it('is there a router component?', () => {
     expect(wrapper.find('HashRouter').exists()).toBeTruthy()
   })
 
-  it('are switch has five children?', () => {
+  it('the switch has five children?', () => {
     expect(wrapper.find('Switch').children().length).toBe(5)
   })
 });

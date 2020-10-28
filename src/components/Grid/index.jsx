@@ -18,13 +18,13 @@ const Grid = () => {
     <div className="masonry">
       <ResponsiveMasonry columnsCountBreakPoints={{ 480: 1, 700: 2, 1000: 3 }}>
         <Masonry gutter="20px">
-          {news.map((card, i) => (
-            <Link id="RouterNavLink" key={i} to={`/article/${card?.title}`}>
+          {news?.data?.map((card, i) => (
+            <Link id="RouterNavLink" key={i} to={`/article/${card?.author}`}>
               <Card
                 aria-label={'card'}
                 aria-required="true"
                 title={card?.title}
-                image={card?.image}
+                image={card?.image || 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80 '}
               />
             </Link>
           ))}

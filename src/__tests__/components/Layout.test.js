@@ -10,15 +10,15 @@ import Layout from '../../components/Layout/index.jsx';
 describe('<Layout />', () => {
   const wrapper = shallow(<Layout />);
 
-  it('is render the Layout?', () => {
+  it('is the Layout rendering?', () => {
     expect(wrapper.exists()).toBe(true);
   });
 
-  it('are there footer component?', () => {
+  it('is there a footer component?', () => {
     expect(wrapper.find('Footer').exists()).toBe(true);
   });
 
-  it('are there header component?', () => {
+  it('is there a header component?', () => {
     expect(wrapper.find('Header').exists()).toBe(true);
   });
 

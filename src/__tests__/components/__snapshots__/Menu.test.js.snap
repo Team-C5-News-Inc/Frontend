@@ -47,11 +47,6 @@ exports[`<Menu /> matches the snap shot 1`] = `
       >
         Category
       </li>
-      <li
-        className="menu__list-item"
-      >
-        Category
-      </li>
     </ul>
   </div>
 </Menu>

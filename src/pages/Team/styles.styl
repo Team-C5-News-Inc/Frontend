@@ -1,3 +1,13 @@
 .team__grid
- display: grid
- grid-template-columns: repeat(2, 1fr)
+  width: 1200px
+  margin: 0 auto
+
+@media screen and (max-width: 1023px)
+  .team__grid
+    width: 98%
+@media screen and (min-width: 1024px)
+  .team__grid
+    width: 98%
+@media screen and (min-width: 1200px)
+  .team__grid
+    width: 1200px

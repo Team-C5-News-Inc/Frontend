@@ -20,7 +20,6 @@ const Menu = () => {
           <li className="menu__list-item">Category</li>
           <li className="menu__list-item">Category</li>
           <li className="menu__list-item">Category</li>
-          <li className="menu__list-item">Category</li>
         </ul>
       </div>
     </>

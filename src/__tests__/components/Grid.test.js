@@ -42,6 +42,10 @@ describe('<Grid/>', () => {
     expect(wrapper.find('ContextProvider').exists()).toBe(true);
   });
 
+  it('Is there a MasonryResponsive component?', () => {
+    expect(wrapper.find('MasonryResponsive').prop('columnsCountBreakPoints')).toStrictEqual({ '1000': 3, '480': 1, '700': 2 });
+  });
+
   it('Is there a link component?', () => {
     expect(wrapper.find('Link').exists()).toBe(true);
   });

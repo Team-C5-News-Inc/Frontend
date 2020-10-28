@@ -1,28 +1,28 @@
-import React from 'react';
+// import react
+import React, { useState, useEffect } from 'react';
+// import card skeleton
+import CardStructure from './CardStructure/index.jsx';
+// import card skeleton
+import CardSkeleton from './CardSkeleton/index.jsx';
+// import styles
 import './styles.styl';
 
 const Card = ({ image, title }) => {
-  return (
-    <div className="card" aria-label="card" >
-      <div
-        className="card__content"
-        aria-label="card content"
-      >
-        <img
-          aria-label="card image"
-          className="card__content--image"
-          src={image}
-          alt={`image +${title}`}
-        />
-        <h2
-          aria-label="image title"
-          className="card__content--title"
-        >
-          {title}
-        </h2>
-      </div>
-    </div>
-  );
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = () => setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    timer()
+
+    return () => {
+      clearTimeout(timer)
+    }
+  }, [])
+
+  return loading ? <CardSkeleton/> : <CardStructure image={image} title={title}/>;
 };
 
 export default Card;
