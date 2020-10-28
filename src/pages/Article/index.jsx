@@ -19,7 +19,7 @@ const Article = () => {
   const { name } = useParams()
   // use effect
   useEffect(() => {
-    setNew$(news?.data?.find(item => item?.title === name && item))
+    setNew$(news?.data?.find(item => item?.author === name && item))
   }, [])
 
   return (
@@ -28,19 +28,9 @@ const Article = () => {
         <div className="post__content--headline">
           <h1>{new$?.title}</h1>
         </div>
-        <img src={new$?.images || 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR3OACZKecLGqNCdYg35qC4hY8ByncPpj_6MQ&usqp=CAU '} className="post__content--image"/>
+        <img src={new$?.image || 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR3OACZKecLGqNCdYg35qC4hY8ByncPpj_6MQ&usqp=CAU '} className="post__content--image"/>
         <div className="post__content--text">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in dui ultricies, tristique justo eu, ornare nisl. Phasellus accumsan vel justo eu volutpat. Mauris augue ipsum, accumsan non nisl ut, rutrum iaculis enim. Pellentesque risus est, mollis sed porttitor sed, efficitur quis enim. Etiam pulvinar lobortis lectus, nec dapibus ex cursus nec. Integer volutpat rutrum turpis ac viverra.
-          </p>
-          <br/>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in dui ultricies, tristique justo eu, ornare nisl. Phasellus accumsan vel justo eu volutpat. Mauris augue ipsum, accumsan non nisl ut, rutrum iaculis enim. Pellentesque risus est, mollis sed porttitor sed, efficitur quis enim. Etiam pulvinar lobortis lectus, nec dapibus ex cursus nec. Integer volutpat rutrum turpis ac viverra.
-          </p>
-          <br/>
-          <p>
-            Sed eu tincidunt risus. Cras at lectus viverra, dictum erat nec, maximus ipsum. Aenean ante arcu, aliquam ut lacinia malesuada, pulvinar ac mi. Curabitur iaculis eu dolor nec consectetur. Aliquam semper volutpat diam, id faucibus leo aliquam id. Phasellus mattis in leo in bibendum. Ut aliquet velit purus, eu viverra eros aliquam sed. Vestibulum maximus turpis vel eros vestibulum, in pharetra dui vestibulum.
-          </p>
+          {new$?.body?.map((paragraph, i) => <p key={i}>{paragraph}</p>)}
         </div>
       </section>
       <DiscussionEmbed

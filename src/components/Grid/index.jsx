@@ -24,7 +24,7 @@ const Grid = () => {
                 aria-label={'card'}
                 aria-required="true"
                 title={card?.title}
-                image={card?.image || 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR3OACZKecLGqNCdYg35qC4hY8ByncPpj_6MQ&usqp=CAU '}
+                image={card?.image || 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80 '}
               />
             </Link>
           ))}
