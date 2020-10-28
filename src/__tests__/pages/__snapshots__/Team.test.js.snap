@@ -4,76 +4,94 @@ exports[`<Team /> matches the snap shot 1`] = `
 <div
   className="team__grid"
 >
-  <a
-    className="refLocation ref-is-different"
-    href="https://github.com/BernardoAguayoOrtega"
+  <MasonryResponsive
+    className={null}
+    columnsCountBreakPoints={
+      Object {
+        "480": 1,
+        "700": 2,
+      }
+    }
+    style={null}
   >
-    <Hero
-      background="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-      caption="Bernardo Aguayo"
-      type="small"
-    />
-  </a>
-  <a
-    href="https://github.com/fleandro22"
-  >
-    <Hero
-      background="https://images.unsplash.com/photo-1602620502036-e52519d58d92?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-      caption="Franklin Leandro"
-      type="small"
-    />
-  </a>
-  <a
-    href="https://github.com/johan-avila"
-  >
-    <Hero
-      background="https://images.unsplash.com/photo-1594007759138-855170ec8dc0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-      caption="Johan Avila"
-      type="small"
-    />
-  </a>
-  <a
-    href="https://github.com/alejandro1030"
-  >
-    <Hero
-      background="https://images.unsplash.com/photo-1597422009092-e0f9850b5b56?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-      caption="Alejandro Gonzales"
-      type="small"
-    />
-  </a>
-  <a
-    href="https://github.com/JulesCubs"
-  >
-    <Hero
-      background="https://images.unsplash.com/photo-1564412811697-0e26195169ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-      caption="Julian Cubillos"
-      type="small"
-    />
-  </a>
-  <a
-    href="https://github.com/OscarPalominoC"
-  >
-    <Hero
-      background="https://images.unsplash.com/photo-1589539148230-0a5b707cbd7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-      caption="Oscar Eduardo"
-      type="small"
-    />
-  </a>
-  <a
-    href="https://github.com/ElXavs"
-  >
-    <Hero
-      background="https://images.unsplash.com/photo-1590341328520-63256eb32bc3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-      caption="Xavier Garcia"
-      type="small"
-    />
-  </a>
-  <a>
-    <Hero
-      background="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-      caption="Estefany"
-      type="small"
-    />
-  </a>
+    <Masonry
+      className={null}
+      columnsCount={3}
+      gutter="20px"
+      style={Object {}}
+    >
+      <a
+        className="refLocation ref-is-different"
+        href="https://github.com/BernardoAguayoOrtega"
+      >
+        <Hero
+          background="https://images.unsplash.com/photo-1593085512500-5d55148d6f0d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+          caption="Bernardo Aguayo"
+          type="small"
+        />
+      </a>
+      <a
+        href="https://github.com/fleandro22"
+      >
+        <Hero
+          background="https://images.unsplash.com/photo-1602620502036-e52519d58d92?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+          caption="Franklin Leandro"
+          type="small"
+        />
+      </a>
+      <a
+        href="https://github.com/johan-avila"
+      >
+        <Hero
+          background="https://images.unsplash.com/photo-1594007759138-855170ec8dc0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+          caption="Johan Avila"
+          type="small"
+        />
+      </a>
+      <a
+        href="https://github.com/alejandro1030"
+      >
+        <Hero
+          background="https://images.unsplash.com/photo-1597422009092-e0f9850b5b56?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+          caption="Alejandro Gonzales"
+          type="small"
+        />
+      </a>
+      <a
+        href="https://github.com/JulesCubs"
+      >
+        <Hero
+          background="https://images.unsplash.com/photo-1564412811697-0e26195169ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+          caption="Julian Cubillos"
+          type="small"
+        />
+      </a>
+      <a
+        href="https://github.com/OscarPalominoC"
+      >
+        <Hero
+          background="https://images.unsplash.com/photo-1589539148230-0a5b707cbd7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+          caption="Oscar Eduardo"
+          type="small"
+        />
+      </a>
+      <a
+        href="https://github.com/ElXavs"
+      >
+        <Hero
+          background="https://images.unsplash.com/photo-1590341328520-63256eb32bc3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+          caption="Xavier Garcia"
+          type="small"
+        />
+      </a>
+      <a>
+        <Hero
+          background="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+          caption="Estefany"
+          type="small"
+        />
+      </a>
+    </Masonry>
+  </MasonryResponsive>
 </div>
 `;

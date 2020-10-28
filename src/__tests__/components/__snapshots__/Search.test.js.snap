@@ -8,6 +8,7 @@ exports[`<Search /> matches the snap shot 1`] = `
     >
       <input
         name="search"
+        placeholder="Search"
         type="search"
       />
     </div>
