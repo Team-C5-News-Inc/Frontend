@@ -11,7 +11,7 @@ const Search = () => {
   return (
     <div>
       <div className={`searchformOff ${showSearch ? 'slide_search-left searchform' : 'off'}`}>
-        <input name="search" type="search" />
+        <input name="search" type="search" placeholder="Search"/>
       </div>
       <a className="search" onClick={() => setShowSearch(value => !value)}>
         <i className="fa fa-search fa-2x" />

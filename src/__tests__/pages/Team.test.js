@@ -1,6 +1,6 @@
 import React from 'react';
 // import shallow
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 // import toJson
 import toJson from 'enzyme-to-json';
 // import app component
@@ -8,7 +8,7 @@ import Team from '../../pages/Team/index.jsx';
 
 describe('<Team />', () => {
 
-  const wrapper = shallow(<Team />);
+  const wrapper = mount(<Team />);
 
   it('is render the team page?', () => {
     expect(wrapper.exists()).toBe(true)
@@ -18,12 +18,12 @@ describe('<Team />', () => {
     expect(wrapper.find('.team__grid').exists()).toBe(true)
   });
 
-  it('are there refLocation className?', () => {
-    expect(wrapper.find('.refLocation').exists()).toBe(true)
+  it('are there ResponsiveMasonry?', () => {
+    expect(wrapper.find('MasonryResponsive').exists()).toBe(true)
   });
 
-  it('are there refLocation has ref?', () => {
-    expect(wrapper.find('.refLocation').props().className).toBe('refLocation')
+  it('are there Masonry?', () => {
+    expect(wrapper.find('Masonry').exists()).toBe(true)
   });
 
   it('matches the snap shot', () => {
