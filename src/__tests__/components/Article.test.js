@@ -14,6 +14,10 @@ describe('<Article/>', () => {
     expect(wrapper.exists()).toBe(true);
   })
 
+  it('is rendering the skeleton?', () => {
+    expect(wrapper.find('ArticleSkeleton').length).toBe(1);
+  })
+
   it('matches the snap shot', () => {
     expect(toJson(wrapper)).toMatchSnapshot();
   });

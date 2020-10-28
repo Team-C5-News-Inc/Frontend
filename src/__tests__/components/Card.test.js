@@ -14,6 +14,10 @@ describe('<Card/>', () => {
     expect(wrapper.exists()).toBe(true);
   })
 
+  it('is rendering the skeleton?', () => {
+    expect(wrapper.find('CardSkeleton').length).toBe(1);
+  })
+
   it('matches the snap shot', () => {
     expect(toJson(wrapper)).toMatchSnapshot();
   });
