@@ -1,8 +1,8 @@
-// // import axios
-// import axios from 'axios';
+// import axios
+import axios from 'axios';
 
 //create the instance
-export const news = axios.create({
+export const newsAPI = axios.create({
   baseURL: 'https://backend-platzi-news.herokuapp.com/api',
 });
 

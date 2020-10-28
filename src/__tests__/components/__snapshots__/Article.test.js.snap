@@ -46,6 +46,7 @@ exports[`<Article ...props/> matches the snap shot 1`] = `
             </div>
             <img
               className="post__content--image"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR3OACZKecLGqNCdYg35qC4hY8ByncPpj_6MQ&usqp=CAU "
             />
             <div
               className="post__content--text"
