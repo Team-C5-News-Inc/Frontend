@@ -12,9 +12,15 @@ const Hero = ({ background, caption }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
+    const timer = () => setTimeout(() => {
       setLoading(false);
     }, 2000);
+
+    timer()
+
+    return () => {
+      clearTimeout(timer)
+    }
   }, [])
 
   return loading ? <HeroSkeleton /> : <HeroStructure background={background} caption={caption} />;

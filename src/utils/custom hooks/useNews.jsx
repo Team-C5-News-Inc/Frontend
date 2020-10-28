@@ -11,15 +11,18 @@ const useNews = () => {
     // set implementation
     switch (option) {
       case 0: {
-        const getInitialNews = callNewsApi('news')
+        const getInitialNews = callNewsApi('news');
 
-        const fetchData = () => newsAPI.get(getInitialNews()).then(response => setNews(response?.data))
+        const fetchData = () =>
+          newsAPI
+            .get(getInitialNews())
+            .then((response) => setNews(response?.data));
 
-        fetchData()
+        fetchData();
       }
     }
   }, []);
-
+  
   return { news };
 };
 
