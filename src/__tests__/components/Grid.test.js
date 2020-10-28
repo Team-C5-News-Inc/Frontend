@@ -43,6 +43,6 @@ describe('<Grid/>', () => {
   });
 
   it('Is there a link component?', () => {
-    expect(wrapper.find('Link').exists()).toBe(true);
+    expect(wrapper.find('MasonryResponsive').prop('columnsCountBreakPoints')).toStrictEqual({ '1000': 3, '480': 1, '700': 2 });
   });
 });
