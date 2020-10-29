@@ -1,5 +1,5 @@
 // import react
-import React, { useEffect, useContext, useState } from 'react';
+import React, { useEffect, useContext } from 'react';
 // import Article Structure
 import ArticleStructure from './ArticleStructure/index.jsx';
 // import ArticleSkeleton

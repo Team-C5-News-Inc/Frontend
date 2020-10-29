@@ -37,7 +37,7 @@ const ArticleStructure = () => {
             /^https?:\/\/|^http?:\/\//.test(new$?.images[0]) ?
               new$?.images[0] :
               `${/^www?:\/\//.test(new$?.images[0])}` &&
-							`http://${new$?.images[0]}`
+							`https://${new$?.images[0]}`
           }`}
           className="post__content--image"
         />

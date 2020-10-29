@@ -14,7 +14,7 @@ const CardStructure = ({ images = [], title }) => {
             /^https?:\/\/|^http?:\/\//.test(src) ?
               src :
               `${/^www?:\/\//.test(src)}` &&
-                `http://${src}`
+                `https://${src}`
           }`}
           alt={`image +${title}`}
         />
