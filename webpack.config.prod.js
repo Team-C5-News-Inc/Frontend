@@ -12,6 +12,7 @@ module.exports = merge(baseConfig, {
   externals: {
     react: 'React',
     'react-dom': 'ReactDOM',
-    'react-router-dom': 'ReactRouterDOM'
+    'react-router-dom': 'ReactRouterDOM',
+    axios: 'axios'
   }
 })

@@ -1,5 +1,5 @@
 // import react
-import React, { useEffect, useContext } from 'react';
+import React, { useEffect, useContext, useState } from 'react';
 // import Article Structure
 import ArticleStructure from './ArticleStructure/index.jsx';
 // import ArticleSkeleton
@@ -15,11 +15,11 @@ const Article = () => {
 
   useEffect(() => {
     return () => {
-      news.loading = false;
+      news.loading = true;
     };
   }, []);
 
-  return news?.loading ? <ArticleSkeleton /> : <ArticleStructure />;
+  return news?.loading || onlyTest ? <ArticleSkeleton /> : <ArticleStructure />;
 };
 
 export default Article;
