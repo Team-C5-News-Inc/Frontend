@@ -30,17 +30,19 @@ const ArticleStructure = () => {
           {new$?.body?.map((paragraph, i) => <p key={i}>{paragraph}</p>)}
         </div>
       </section>
-      <DiscussionEmbed
-        shortname="news-inc"
-        config={
-          {
-            url: `http://localhost:3000/#/article/${new$?.author}`,
-            identifier: new$?._id,
-            title: new$?.title,
-            language: 'en'
+      <section className="post__comments">
+        <DiscussionEmbed
+          shortname="news-inc"
+          config={
+            {
+              url: `http://localhost:3000/#/article/${new$?.author}`,
+              identifier: new$?._id,
+              title: new$?.title,
+              language: 'en'
+            }
           }
-        }
-      />
+        />
+      </section>
     </article>
   )
 };
