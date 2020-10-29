@@ -18,15 +18,20 @@ const Home = () => {
   const { news } = useContext(Context);
   // use effect
   useEffect(() => {
-    setNew$(news?.data?.[Math.floor(Math.random() * news?.data?.length)])
+    setNew$(news?.data?.[Math.floor(Math.random() * news?.data?.length)]);
   }, [news]);
 
   return (
     <>
-      <Link to={`/article/${new$?._id}`} >
+      <Link to={`/article/${new$?._id}`}>
         <Hero
           caption={new$?.title}
-          background={`https://${new$?.images[0]}` || 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80 '}
+          background={`${
+            /^https?:\/\/|^http?:\/\//.test(new$?.images[0]) ?
+              new$?.images[0] :
+              `${/^www?:\/\//.test(new$?.images[0])}` &&
+							`http://${new$?.images[0]}`
+          }`}
         />
       </Link>
       <Grid />

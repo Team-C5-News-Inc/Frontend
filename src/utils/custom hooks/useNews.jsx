@@ -22,7 +22,7 @@ const useNews = () => {
       }
     }
   }, []);
-  
+
   return { news };
 };
 
