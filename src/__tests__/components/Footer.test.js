@@ -47,6 +47,6 @@ describe('<Footer /> mount', () => {
   });
 
   it('should Footer link component has the correct route?', () => {
-    expect(wrapper.find('Link').last().prop('to')).toBe('/team');
+    expect(wrapper.find('Link').last().prop('to')).toBe('/Privacy_Policy');
   });
 });

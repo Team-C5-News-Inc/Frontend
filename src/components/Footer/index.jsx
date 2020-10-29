@@ -26,6 +26,9 @@ const Footer = () => (
       <Link className="team-link" to="/team">
         <h2>Team</h2>
       </Link>
+      <Link className="policy-link" to="/Privacy_Policy">
+        <h2>Privacy Policy</h2>
+      </Link>
     </div>
     <p className="footer__comments">
 			2020 by Masters INC. Proudly created with React JS
