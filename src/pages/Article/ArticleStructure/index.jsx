@@ -29,6 +29,11 @@ const ArticleStructure = () => {
         <div className="post__content--text">
           {new$?.body?.map((paragraph, i) => <p key={i}>{paragraph}</p>)}
         </div>
+        <div className="post__content--quote">
+          <a href="{url}">
+            <h3>Ir al post original</h3>
+          </a>
+        </div>
       </section>
       <section className="post__comments">
         <DiscussionEmbed
