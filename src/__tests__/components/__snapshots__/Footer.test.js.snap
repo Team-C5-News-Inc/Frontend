@@ -60,6 +60,14 @@ exports[`<Footer /> matches the snap shot 1`] = `
         Team
       </h2>
     </Link>
+    <Link
+      className="policy-link"
+      to="/Privacy_Policy"
+    >
+      <h2>
+        Privacy Policy
+      </h2>
+    </Link>
   </div>
   <p
     className="footer__comments"

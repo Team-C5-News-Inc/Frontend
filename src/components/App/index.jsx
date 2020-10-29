@@ -14,6 +14,8 @@ import About from '../../pages/About/index.jsx'
 import Layout from '../Layout/index.jsx';
 // import page error
 import Error from '../Error/index.jsx';
+// import page privacy policy
+import Policy from '../Policy/index.jsx';
 
 //create and export app component
 const App = () => {
@@ -32,6 +34,9 @@ const App = () => {
           </Route>
           <Route exact path="/article/:name">
             <Article/>
+          </Route>
+          <Route path="/Privacy_Policy">
+            <Policy />
           </Route>
           <Route>
             <Error
