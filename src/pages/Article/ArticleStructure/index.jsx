@@ -25,7 +25,7 @@ const ArticleStructure = () => {
         <div className="post__content--headline">
           <h1>{new$?.title}</h1>
         </div>
-        <img src={new$?.image || 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80CdYg35qC4hY8ByncPpj_6MQ&usqp=CAU '} className="post__content--image"/>
+        <img src={`http://${new$?.images[0]}` || 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80CdYg35qC4hY8ByncPpj_6MQ&usqp=CAU '} className="post__content--image"/>
         <div className="post__content--text">
           {new$?.body?.map((paragraph, i) => <p key={i}>{paragraph}</p>)}
         </div>
