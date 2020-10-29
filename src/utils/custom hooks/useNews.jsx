@@ -6,7 +6,14 @@ import { newsAPI, callNewsApi } from '../requests.js';
 const useNews = () => {
   // use state to handle the state
   const [news, setNews] = useState({
-    data: [{ title: '', images: '' }],
+    data: [
+      { title: '', images: '' },
+      { title: '', images: '' },
+      { title: '', images: '' },
+      { title: '', images: '' },
+      { title: '', images: '' },
+      { title: '', images: '' },
+    ],
     loading: true,
   });
 
@@ -17,15 +24,13 @@ const useNews = () => {
         const getInitialNews = callNewsApi('news');
 
         const fetchData = () =>
-          newsAPI
-            .get(getInitialNews())
-            .then((response) =>
-              setNews({
-                data: response?.data.data,
-                info: response?.data.info,
-                loading: false,
-              }),
-            );
+          newsAPI.get(getInitialNews()).then((response) =>
+            setNews({
+              data: response?.data.data,
+              info: response?.data.info,
+              loading: false,
+            }),
+          );
 
         fetchData();
       }

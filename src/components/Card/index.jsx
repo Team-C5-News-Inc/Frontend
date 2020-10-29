@@ -14,7 +14,7 @@ const Card = ({ images, title }) => {
 
   useEffect(() => {
     return () => {
-      news.loading = false;
+      news.loading = true;
     };
   }, []);
 
