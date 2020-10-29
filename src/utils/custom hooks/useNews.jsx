@@ -18,7 +18,7 @@ const useNews = () => {
 
         const fetchData = () =>
           newsAPI
-            .get(getInitialNews('?page=10'))
+            .get(getInitialNews())
             .then((response) =>
               setNews({
                 data: response?.data.data,
