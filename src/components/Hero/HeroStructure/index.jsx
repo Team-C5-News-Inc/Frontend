@@ -1,7 +1,7 @@
 // import react
 import React from 'react';
 
-const HeroStructure = ({ background, caption, type = 'large' }) => {
+const HeroStructure = ({ background , caption, type = 'large' }) => {
   return (
     <div
       aria-label="hero content"

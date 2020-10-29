@@ -7,7 +7,7 @@ import CardSkeleton from './CardSkeleton/index.jsx';
 // import styles
 import './styles.styl';
 
-const Card = ({ image, title }) => {
+const Card = ({ images, title }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -22,7 +22,7 @@ const Card = ({ image, title }) => {
     }
   }, [])
 
-  return loading ? <CardSkeleton/> : <CardStructure image={image} title={title}/>;
+  return loading ? <CardSkeleton/> : <CardStructure images={images} title={title}/>;
 };
 
 export default Card;
