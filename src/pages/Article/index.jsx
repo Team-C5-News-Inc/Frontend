@@ -15,11 +15,11 @@ const Article = () => {
 
   useEffect(() => {
     return () => {
-      news.loading = true;
+      news.loading = false;
     };
   }, []);
 
-  return news?.loading || onlyTest ? <ArticleSkeleton /> : <ArticleStructure />;
+  return news?.loading ? <ArticleSkeleton /> : <ArticleStructure />;
 };
 
 export default Article;

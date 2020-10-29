@@ -15,7 +15,7 @@ const Hero = ({ background, caption }) => {
 
   useEffect(() => {
     return () => {
-      news.loading = true;
+      news.loading = false;
     };
   }, []);
 

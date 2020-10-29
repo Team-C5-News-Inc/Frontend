@@ -20,13 +20,6 @@ const ArticleStructure = () => {
   useEffect(() => {
     setNew$(news?.data?.find((item) => item?._id === name && item));
   }, []);
-  // disqus config
-  let config = {
-    url: `http://localhost:3000/#/article/${new$?.author}`,
-    identifier: new$?._id,
-    title: new$?.title,
-    language: 'en',
-  };
 
   return (
     <article className="post">
