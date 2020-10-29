@@ -6,6 +6,8 @@ import { useParams } from 'react-router-dom'
 import { Context } from '../../../utils/Context/index.jsx';
 // import disqus
 import { DiscussionEmbed } from 'disqus-react';
+//import tag component
+import Tags from '../../../components/Tags/index.jsx'
 
 const ArticleStructure = () => {
   // use state
@@ -33,6 +35,12 @@ const ArticleStructure = () => {
           <a href="{url}">
             <h3>Ir al post original</h3>
           </a>
+        </div>
+        <div className="post__content--tags">
+          <h4 className="post__content--tagsTitle">Tags:</h4>
+          <div className="post__content--tagsContainer">
+            <Tags text="Economia"/>
+          </div>
         </div>
       </section>
       <section className="post__comments">
