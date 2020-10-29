@@ -10,11 +10,12 @@ const ArticleSkeleton = () => {
         <section className="post__content">
           <div className="post__content--headline">
             <h1>
-              <Skeleton width={800} height={80}/>
-              <Skeleton width={800} height={50}/>
+              <Skeleton height={100}/>
             </h1>
           </div>
-          <Skeleton width={800} height={400}/>
+          <div className="post__content--image">
+            <Skeleton height={400}/>
+          </div>
           <div className="post__content--text">
             <p>
               <Skeleton/>

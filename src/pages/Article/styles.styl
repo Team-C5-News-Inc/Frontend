@@ -19,18 +19,44 @@
     &--image
       margin-top: 1.8rem
       object-fit: cover
-      width: 800px
+      width: 100%
       height: 400px
       border-radius: 2px
     &--text
       margin-top: 2rem
       p
-        text-shadow: 0px 0px 1px black
-        color: gray
+        color: text;
         text-align: justify
         line-height: 2rem
         font-family: Font2
         font-size: 1.28rem
+    &--quote
+      display: flex
+      justify-content: center
+      margin-top: 2rem
+      h3
+        color: #36404E
+        text-align: justify
+        line-height: 1.5rem
+        font-family: Font2
+        font-size: 2rem
+      a
+        text-decoration: none
+        &:hover
+          text-decoration: underline #36404E
+    &--tags
+      margin-top: 2rem
+      &Title
+        color: #36404E
+        text-align: justify
+        line-height: 2rem
+        font-family: Font2
+        font-size: 2rem
+      &Container
+        display: inline
+  &__comments
+      margin: 2rem auto
+      max-width: 830px
 
 @media screen and (max-width: 480px)
   .post
@@ -54,6 +80,9 @@
       &--text
         p
           font-size: 1rem
+      &--quote
+        h3
+          font-size: 1.5rem
 
 @media screen and (min-width: 580px)
   .post

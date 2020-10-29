@@ -18,6 +18,7 @@
       transition: .3s;
     &--image
       width: 100%
+      min-height: 200px
       opacity: .7
       border-radius: 5px
     &--title
@@ -26,7 +27,23 @@
       bottom: 0
       padding: .9rem
       line-height: 1.1
-      font-size: 2.8vh
+      font-size: 2vw
       font-weight: 800
       color: white
       text-shadow: 2px 3px black;
+
+@media screen and (max-width: 738px)
+  .card
+    &__content
+      &--title
+        font-size: 7vw
+@media screen and (min-width: 738px)
+  .card
+    &__content
+      &--title
+        font-size: 3.5vw
+@media screen and (min-width: 1047px)
+  .card
+    &__content
+      &--title
+        font-size: 3vh

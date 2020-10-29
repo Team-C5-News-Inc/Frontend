@@ -36,7 +36,6 @@ const useNews = () => {
       }
     }
   }, []);
-
   return { news };
 };
 
