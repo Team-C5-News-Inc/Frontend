@@ -5,7 +5,10 @@ import { newsAPI, callNewsApi } from '../requests.js';
 
 const useNews = () => {
   // use state to handle the state
-  const [news, setNews] = useState({ data: [{ title: '', images: '' }] });
+  const [news, setNews] = useState({
+    data: [{ title: '', images: '' }],
+    loading: true,
+  });
 
   useEffect((option = 0) => {
     // set implementation
@@ -15,8 +18,14 @@ const useNews = () => {
 
         const fetchData = () =>
           newsAPI
-            .get(getInitialNews())
-            .then((response) => setNews(response?.data));
+            .get(getInitialNews('?page=10'))
+            .then((response) =>
+              setNews({
+                data: response?.data.data,
+                info: response?.data.info,
+                loading: false,
+              }),
+            );
 
         fetchData();
       }
