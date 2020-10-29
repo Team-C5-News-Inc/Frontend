@@ -35,7 +35,7 @@ exports[`<Card/> mount matches the snap shot 1`] = `
                 count={1}
                 duration={1.2}
                 height={320}
-                width={380}
+                width={null}
                 wrapper={null}
               >
                 <span>
@@ -67,7 +67,6 @@ exports[`<Card/> mount matches the snap shot 1`] = `
                     style={
                       Object {
                         "height": 320,
-                        "width": 380,
                       }
                     }
                   >
@@ -76,7 +75,6 @@ exports[`<Card/> mount matches the snap shot 1`] = `
                       style={
                         Object {
                           "height": 320,
-                          "width": 380,
                         }
                       }
                     >

@@ -20,7 +20,7 @@ describe('<Card/> mount', () => {
     expect(wrapper.exists()).toBe(true);
   });
 
-  it('is rendering the skeleton?', () => {
+  it('is rendering the skeleton? ', () => {
     expect(wrapper.find('CardSkeleton').length).toBe(1);
   });
 

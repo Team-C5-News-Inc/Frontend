@@ -7,7 +7,7 @@ const CardSkeleton = () => {
   return (
     <SkeletonTheme color="#36404e" highlightColor="#2E2E32">
       <div className="card" aria-label="card" >
-        <Skeleton width={380} height={320}/>
+        <Skeleton height={320}/>
       </div>
     </SkeletonTheme>
   )

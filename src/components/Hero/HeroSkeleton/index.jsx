@@ -10,9 +10,11 @@ const HeroSkeleton = () => {
         aria-label="hero content"
         className={'home__hero-container'}
       >
-        <Skeleton width={1200} height={320}/>
+        <div className="home__hero-image">
+          <Skeleton height={320}/>
+        </div>
       </div>
-    </SkeletonTheme> 
+    </SkeletonTheme>
   )
 };
 

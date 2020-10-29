@@ -29,11 +29,11 @@ const Footer = () => (
       <Link className="about-link" to="/about">
         <h2>About</h2>
       </Link>
-      <Link className="team-link" to="/team">
-        <h2>Team</h2>
-      </Link>
       <Link className="policy-link" to="/Privacy_Policy">
         <h2>Privacy Policy</h2>
+      </Link>
+      <Link className="team-link" to="/team">
+        <h2>Team</h2>
       </Link>
     </div>
     <p className="footer__comments">
