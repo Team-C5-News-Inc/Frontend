@@ -16,7 +16,7 @@ const ArticleStructure = () => {
   const { name } = useParams()
   // use effect
   useEffect(() => {
-    setNew$(news?.data?.find(item => item?.author === name && item))
+    setNew$(news?.data?.find(item => item?._id === name && item))
   }, [])
 
   return (

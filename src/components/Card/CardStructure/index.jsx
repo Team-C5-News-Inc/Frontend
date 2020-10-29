@@ -3,6 +3,7 @@ import React from 'react';
 
 const CardStructure = ({ images = ['https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80'], title }) => {
   const [src] = images
+  console.log(src)
 
   return (
     <div className="card" aria-label="card" >
@@ -13,7 +14,7 @@ const CardStructure = ({ images = ['https://images.unsplash.com/photo-1441974231
         <img
           aria-label="card image"
           className="card__content--image"
-          src={`https://${src}`}
+          src={`http://${src}`}
           alt={`not found +${title}`}
         />
         <h2

@@ -19,7 +19,7 @@ const Grid = () => {
       <ResponsiveMasonry columnsCountBreakPoints={{ 480: 1, 700: 2, 1000: 3 }}>
         <Masonry gutter="20px">
           {news?.data?.map((card, i) => (
-            <Link id="RouterNavLink" key={i} to={`/article/${card?.author}`}>
+            <Link id="RouterNavLink" key={i} to={`/article/${card?._id}`}>
               <Card
                 aria-label={'card'}
                 aria-required="true"
