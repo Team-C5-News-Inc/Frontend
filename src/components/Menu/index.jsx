@@ -15,11 +15,6 @@ const Menu = () => {
         <ul className="menu__list">
           <li className="menu__list-item">Category</li>
           <li className="menu__list-item">Category</li>
-          <li className="menu__list-item">Category</li>
-          <li className="menu__list-item">Category</li>
-          <li className="menu__list-item">Category</li>
-          <li className="menu__list-item">Category</li>
-          <li className="menu__list-item">Category</li>
         </ul>
       </div>
     </>
