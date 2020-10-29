@@ -7,21 +7,36 @@ exports[`<Footer /> matches the snap shot 1`] = `
   <div
     className="footer__social"
   >
-    <img
-      alt="Facebook"
-      className="footer__social--icons"
-      src="https://www.flaticon.es/svg/static/icons/svg/733/733605.svg"
-    />
-    <img
-      alt="Twitter"
-      className="footer__social--icons"
-      src="https://www.flaticon.es/svg/static/icons/svg/733/733635.svg"
-    />
-    <img
-      alt="Instagram"
-      className="footer__social--icons"
-      src="https://www.flaticon.es/svg/static/icons/svg/87/87390.svg"
-    />
+    <a
+      href="https://platzi.com/home"
+      target="_blank"
+    >
+      <img
+        alt="Platzi"
+        className="footer__social--icons"
+        src="https://static.platzi.com/mf-landings/image/isotipoPlatzi-442ccc1186a9806e18c9889cc301ffe1.png"
+      />
+    </a>
+    <a
+      href="https://github.com/Team-C5-cheaPlatzi"
+      target="_blank"
+    >
+      <img
+        alt="GitHub"
+        className="footer__social--icons"
+        src="https://www.flaticon.es/svg/static/icons/svg/733/733609.svg"
+      />
+    </a>
+    <a
+      href="https://www.notion.so/Team-master5-7-inc-News-Inc-project-7340af6d026b4eb8a3f0099888a890a6"
+      target="_blank"
+    >
+      <img
+        alt="Notion"
+        className="footer__social--icons"
+        src="https://yt3.ggpht.com/a/AATXAJzPBXMraj8Xr2kYz3zAGBE8I4RbIRMHV1aY2Bu8dw=s88-c-k-c0x00ffffff-no-rj"
+      />
+    </a>
   </div>
   <Logo
     className="footer__logo"
@@ -35,6 +50,14 @@ exports[`<Footer /> matches the snap shot 1`] = `
     >
       <h2>
         About
+      </h2>
+    </Link>
+    <Link
+      className="policy-link"
+      to="/Privacy_Policy"
+    >
+      <h2>
+        Privacy Policy
       </h2>
     </Link>
     <Link

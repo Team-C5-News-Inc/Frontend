@@ -46,7 +46,7 @@ describe('<Footer /> mount', () => {
     expect(wrapper.find('Link').first().prop('to')).toBe('/about');
   });
 
-  it("the Footer's link component has the correct route?", () => {
+  it('should Footer link component has the correct route?', () => {
     expect(wrapper.find('Link').last().prop('to')).toBe('/team');
   });
 });
