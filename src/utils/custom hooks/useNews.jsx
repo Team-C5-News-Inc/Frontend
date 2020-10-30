@@ -84,7 +84,6 @@ const useNews = () => {
             }
             }
           `;
-          const url = 'https://backend-platzi-news.herokuapp.com/search';
           const opts = {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -92,7 +91,12 @@ const useNews = () => {
           };
           fetch(uri, opts)
             .then((res) => res.json())
-            .then(console.log)
+            .then((response) =>
+              setNews({
+                data: response?.data?.searchNews,
+                loading: false,
+              }),
+            )
             .catch(console.error);
         }
         break;
