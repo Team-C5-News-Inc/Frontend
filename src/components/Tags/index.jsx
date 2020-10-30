@@ -5,18 +5,19 @@ import { Link } from 'react-router-dom';
 // import context
 import { Context } from '../../utils/Context/index.jsx';
 //import styles
-import './styles.styl'
+import './styles.styl';
 
 const Tags = ({ text }) => {
-  const { setAction } = useContext(Context)
+  // use context
+  const { setAction } = useContext(Context);
 
   return (
     <Link to="/" onClick={() => setAction({ option: 1, action: text })}>
-      <div className="tag" aria-label="tag" >
+      <div className="tag" aria-label="tag">
         {text}
       </div>
     </Link>
-  )
-}
+  );
+};
 
 export default Tags;

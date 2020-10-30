@@ -1,24 +1,37 @@
 // import react
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+// import link
+import { Link } from 'react-router-dom';
+// import context
+import { Context } from '../../utils/Context/index.jsx';
 // import styles
-import './styles.styl'
+import './styles.styl';
 
 // create and export Home page
 const Menu = () => {
   // use state
   const [showMenu, setShowMenu] = useState(undefined);
+  // use context
+  const { setAction } = useContext(Context);
 
   return (
     <>
-      <i onClick={() => setShowMenu(value => !value)} className="fa fa-angle-down fa-4x" />
+      <i
+        onClick={() => setShowMenu((value) => !value)}
+        className="fa fa-angle-down fa-4x"
+      />
       <div className={`menu ${showMenu ? 'slide-left' : 'slide-right'}`}>
         <ul className="menu__list">
-          <li className="menu__list-item">Category</li>
+          <li className="menu__list-item">
+            <Link to="/" onClick={() => setAction({ option: 2, action: 'Mundo' })}>
+              Mundo
+            </Link>
+          </li>
           <li className="menu__list-item">Category</li>
         </ul>
       </div>
     </>
-  )
-}
+  );
+};
 
 export default Menu;

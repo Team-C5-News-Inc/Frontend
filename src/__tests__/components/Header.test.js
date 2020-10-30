@@ -63,6 +63,6 @@ describe('<Header /> mount', () => {
   });
 
   it('does the header link component has the correct route?', () => {
-    expect(wrapper.find('Link').prop('to')).toBe('/');
+    expect(wrapper.find('Link').first().prop('to')).toBe('/');
   });
 });

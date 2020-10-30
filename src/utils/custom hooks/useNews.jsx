@@ -38,20 +38,42 @@ const useNews = () => {
           fetchData();
         }
         break;
-      case 1: {
-        const getInitialNews = callNewsApi('news');
+      case 1:
+        {
+          const getInitialNews = callNewsApi('news');
 
-        const fetchData = () =>
-          newsAPI.get(getInitialNews(`?tags=${action.action}`)).then((response) =>
-            setNews({
-              data: response?.data.data,
-              info: response?.data.info,
-              loading: false,
-            }),
-          );
+          const fetchData = () =>
+            newsAPI
+              .get(getInitialNews(`?tags=${action.action}`))
+              .then((response) =>
+                setNews({
+                  data: response?.data.data,
+                  info: response?.data.info,
+                  loading: false,
+                }),
+              );
 
-        fetchData();
-      }
+          fetchData();
+        }
+        break;
+      case 2:
+        {
+          const getInitialNews = callNewsApi('news');
+
+          const fetchData = () =>
+            newsAPI
+              .get(getInitialNews(`?category=${action.action}`))
+              .then((response) =>
+                setNews({
+                  data: response?.data.data,
+                  info: response?.data.info,
+                  loading: false,
+                }),
+              );
+
+          fetchData();
+        }
+        break;
     }
   }, [action]);
   return { news, setAction };

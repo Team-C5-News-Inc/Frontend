@@ -1,28 +1,71 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Menu /> matches the snap shot 1`] = `
-<Menu>
-  <i
-    className="fa fa-angle-down fa-4x"
-    onClick={[Function]}
-  />
-  <div
-    className="menu slide-left"
-  >
-    <ul
-      className="menu__list"
+<ContextProvider>
+  <HashRouter>
+    <Router
+      history={
+        Object {
+          "action": "POP",
+          "block": [Function],
+          "createHref": [Function],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
     >
-      <li
-        className="menu__list-item"
-      >
-        Category
-      </li>
-      <li
-        className="menu__list-item"
-      >
-        Category
-      </li>
-    </ul>
-  </div>
-</Menu>
+      <Menu>
+        <i
+          className="fa fa-angle-down fa-4x"
+          onClick={[Function]}
+        />
+        <div
+          className="menu slide-left"
+        >
+          <ul
+            className="menu__list"
+          >
+            <li
+              className="menu__list-item"
+            >
+              <Link
+                onClick={[Function]}
+                to="/"
+              >
+                <LinkAnchor
+                  href="#/"
+                  navigate={[Function]}
+                  onClick={[Function]}
+                >
+                  <a
+                    href="#/"
+                    onClick={[Function]}
+                  >
+                    Mundo
+                  </a>
+                </LinkAnchor>
+              </Link>
+            </li>
+            <li
+              className="menu__list-item"
+            >
+              Category
+            </li>
+          </ul>
+        </div>
+      </Menu>
+    </Router>
+  </HashRouter>
+</ContextProvider>
 `;
