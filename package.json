@@ -47,7 +47,6 @@
 		"eslint-plugin-react": "^7.21.4",
 		"eslint-plugin-react-hooks": "^4.1.2",
 		"file-loader": "^6.1.1",
-		"graphql-request": "^3.3.0",
 		"html-webpack-plugin": "^4.5.0",
 		"husky": "^4.3.0",
 		"jest": "^26.5.3",
@@ -65,6 +64,8 @@
 	"dependencies": {
 		"axios": "^0.21.0",
 		"disqus-react": "^1.0.10",
+		"graphql-hooks": "^5.0.0",
+		"graphql-request": "^3.3.0",
 		"react": "^16.14.0",
 		"react-dom": "^16.14.0",
 		"react-loading-skeleton": "^2.1.1",

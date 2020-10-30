@@ -1,9 +1,14 @@
 // import axios
 import axios from 'axios';
 
-//create the instance
+// create the instance
 export const newsAPI = axios.create({
   baseURL: 'https://backend-platzi-news.herokuapp.com/api',
+});
+
+// create the instance
+export const searchApi = axios.create({
+  baseURL: 'https://backend-platzi-news.herokuapp.com/search',
 });
 
 /**
@@ -11,6 +16,5 @@ export const newsAPI = axios.create({
  * @param {string} route
  */
 export const callNewsApi = (route = 'news') => {
-  return (variable = '') => `/${route}${variable}`
-}
-
+  return (variable = '') => `/${route}${variable}`;
+};

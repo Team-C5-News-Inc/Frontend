@@ -16,15 +16,33 @@ const useNews = () => {
     ],
     loading: true,
   });
+  // use state to handle the state
+  const [action, setAction] = useState({ option: 0, action: 'mexico' });
 
-  useEffect((option = 0) => {
+  useEffect(() => {
     // set implementation
-    switch (option) {
-      case 0: {
+    switch (action.option) {
+      case 0:
+        {
+          const getInitialNews = callNewsApi('news');
+
+          const fetchData = () =>
+            newsAPI.get(getInitialNews()).then((response) =>
+              setNews({
+                data: response?.data.data,
+                info: response?.data.info,
+                loading: false,
+              }),
+            );
+
+          fetchData();
+        }
+        break;
+      case 1: {
         const getInitialNews = callNewsApi('news');
 
         const fetchData = () =>
-          newsAPI.get(getInitialNews()).then((response) =>
+          newsAPI.get(getInitialNews(`?tags=${action.action}`)).then((response) =>
             setNews({
               data: response?.data.data,
               info: response?.data.info,
@@ -35,8 +53,8 @@ const useNews = () => {
         fetchData();
       }
     }
-  }, []);
-  return { news };
+  }, [action]);
+  return { news, setAction };
 };
 
 export default useNews;
