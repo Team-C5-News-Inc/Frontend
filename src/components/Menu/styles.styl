@@ -5,7 +5,7 @@
   position: fixed;
   right: -520px;
   top: 20%;
-  background: lightGray;
+  // background: lightGray;
   height: 40vh;
   width: 20%;
   z-index: 11;
@@ -22,13 +22,16 @@
 
 .menu__list-item
   position: relative
-  display: inline-block
+  display: block
+  align-items: center
   width: 100vw
   height: 5vh
   text-align: center
   padding: .5rem
+  background: rgba(46, 46, 50, .95)
   &:hover
     border: 1px solid white
+    background: rgba(46, 46, 50, 1)
 
 .slide-left
   animation: slide-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
