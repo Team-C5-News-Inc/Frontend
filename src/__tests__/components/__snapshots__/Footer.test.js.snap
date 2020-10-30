@@ -8,8 +8,6 @@ exports[`<Footer /> matches the snap shot 1`] = `
     className="footer__social"
   >
     <a
-      aria-label="external link"
-      aria-required="true"
       href="https://platzi.com/home"
       rel="noreferrer"
       target="_blank"
@@ -21,8 +19,6 @@ exports[`<Footer /> matches the snap shot 1`] = `
       />
     </a>
     <a
-      aria-label="external link"
-      aria-required="true"
       href="https://github.com/Team-C5-cheaPlatzi"
       rel="noreferrer"
       target="_blank"
@@ -34,8 +30,6 @@ exports[`<Footer /> matches the snap shot 1`] = `
       />
     </a>
     <a
-      aria-label="external link"
-      aria-required="true"
       href="https://www.notion.so/Team-master5-7-inc-News-Inc-project-7340af6d026b4eb8a3f0099888a890a6"
       rel="noreferrer"
       target="_blank"
@@ -56,8 +50,6 @@ exports[`<Footer /> matches the snap shot 1`] = `
     className="footer__subtitle"
   >
     <Link
-      aria-label="internal link"
-      aria-required="true"
       className="about-link"
       to="/about"
     >
@@ -66,8 +58,6 @@ exports[`<Footer /> matches the snap shot 1`] = `
       </h2>
     </Link>
     <Link
-      aria-label="internal link"
-      aria-required="true"
       className="policy-link"
       to="/Privacy_Policy"
     >
@@ -76,8 +66,6 @@ exports[`<Footer /> matches the snap shot 1`] = `
       </h2>
     </Link>
     <Link
-      aria-label="internal link"
-      aria-required="true"
       className="team-link"
       to="/team"
     >

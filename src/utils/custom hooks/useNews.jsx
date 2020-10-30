@@ -19,7 +19,7 @@ const useNews = () => {
     loading: true,
   });
   // use state to handle the state
-  const [action, setAction] = useState({ option: 3, action: 'america' });
+  const [action, setAction] = useState({ option: 0, action: 'america' });
 
   useEffect(() => {
     // set implementation

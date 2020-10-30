@@ -17,8 +17,6 @@ const Footer = () => (
   <footer className="footer">
     <div className="footer__social">
       <a
-        aria-label="external link"
-        aria-required="true"
         rel="noreferrer"
         href="https://platzi.com/home"
         target="_blank"
@@ -26,8 +24,6 @@ const Footer = () => (
         <img className="footer__social--icons" src={Platzi} alt="Platzi" />
       </a>
       <a
-        aria-label="external link"
-        aria-required="true"
         rel="noreferrer"
         href="https://github.com/Team-C5-cheaPlatzi"
         target="_blank"
@@ -35,8 +31,6 @@ const Footer = () => (
         <img className="footer__social--icons" src={GitHub} alt="GitHub" />
       </a>
       <a
-        aria-label="external link"
-        aria-required="true"
         rel="noreferrer"
         href="https://www.notion.so/Team-master5-7-inc-News-Inc-project-7340af6d026b4eb8a3f0099888a890a6"
         target="_blank"
@@ -47,24 +41,21 @@ const Footer = () => (
     <Logo aria-label="logo" aria-required="true" className="footer__logo" />
     <div className="footer__subtitle">
       <Link
-        aria-label="internal link"
-        aria-required="true"
         className="about-link"
-        to="/about">
+        to="/about"
+      >
         <h2>About</h2>
       </Link>
       <Link
-        aria-label="internal link"
-        aria-required="true"
         className="policy-link"
-        to="/Privacy_Policy">
+        to="/Privacy_Policy"
+      >
         <h2>Privacy Policy</h2>
       </Link>
       <Link
-        aria-label="internal link"
-        aria-required="true"
         className="team-link"
-        to="/team">
+        to="/team"
+      >
         <h2>Team</h2>
       </Link>
     </div>
