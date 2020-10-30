@@ -1,9 +1,7 @@
 // use react hooks
 import { useEffect, useState } from 'react';
 // import request tools
-import { newsAPI, callNewsApi, client } from '../requests.js';
-//import apollo client
-import { gql } from '@apollo/client';
+import { newsAPI, callNewsApi, uri } from '../requests.js';
 
 const useNews = () => {
   // use state to handle the state
@@ -78,23 +76,24 @@ const useNews = () => {
         break;
       case 3:
         {
-          client
-            .query({
-              query: gql`
-								query {
-									searchNews(keyword: ${action && `"${action.action}"`}) {
-                    title
-                    images
-									}
-                }
-              `,
-            })
-            .then((response) =>
-              setNews({
-                data: response.data.searchNews,
-                loading: false,
-              }),
-            );
+          const query = `
+            query {
+              searchNews(keyword: ${action && `"${action.action}"`}){
+                title
+                images
+            }
+            }
+          `;
+          const url = 'https://backend-platzi-news.herokuapp.com/search';
+          const opts = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ query }),
+          };
+          fetch(uri, opts)
+            .then((res) => res.json())
+            .then(console.log)
+            .catch(console.error);
         }
         break;
     }
