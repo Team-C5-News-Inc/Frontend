@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 // import request tools
 import { newsAPI, callNewsApi, uri } from '../requests.js';
+global.fetch = require('node-fetch');
 
 const useNews = () => {
   // use state to handle the state
@@ -19,8 +20,8 @@ const useNews = () => {
 
   // use state to handle the state
   const [action, setAction] = useState({
-    option: 5,
-    action: 'america',
+    option: 0,
+    action: 'México',
   });
 
   useEffect(() => {
@@ -84,7 +85,16 @@ const useNews = () => {
             query {
               searchNews(keyword: ${action && `"${action.action}"`}){
                 title
+                subtitle
+                host
+                body
                 images
+                category
+                tags
+                author
+                publication_date
+                news_url
+                _id
             }
             }
           `;
