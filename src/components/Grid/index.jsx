@@ -1,5 +1,5 @@
 // import React
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 // import masonry
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 // import card`/article/${i}`
@@ -13,6 +13,13 @@ import './styles.styl';
 
 const Grid = () => {
   const { news } = useContext(Context);
+  const { setAction } = useContext(Context);
+  const [count, setCount] = useState(1)
+
+  const nextPage = () => {
+    setCount(count + 1)
+    setAction({ option: 4, action: count })
+  }
 
   return (
     <div className="masonry">
@@ -30,6 +37,11 @@ const Grid = () => {
           ))}
         </Masonry>
       </ResponsiveMasonry>
+      <section className="masonry__loading">
+        <button onClick={nextPage} id="lazy" className="masonry__loading--button" >
+          Más noticias
+        </button>
+      </section>
     </div>
   );
 };

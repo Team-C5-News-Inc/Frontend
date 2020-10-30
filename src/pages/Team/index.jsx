@@ -1,5 +1,5 @@
 // import react
-import React from 'react';
+import React, { useEffect } from 'react';
 // import Hero
 import Hero from '../../components/Hero/index.jsx';
 // import masonry
@@ -7,11 +7,9 @@ import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 // import styles
 import './styles.styl';
 
-
-
 // create and export Team page
 const Team = () => {
-
+  useEffect(() => window.scrollTo(0, 0), []);
   return (
     <div className="team__grid">
       <ResponsiveMasonry columnsCountBreakPoints={{ 480: 1, 700: 2 }}>

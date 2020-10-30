@@ -4,6 +4,8 @@ import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 // import context
 import { Context } from '../../utils/Context/index.jsx';
+// import categories data
+import { categories } from '../../utils/data/categories.js';
 // import styles
 import './styles.styl';
 
@@ -22,12 +24,16 @@ const Menu = () => {
       />
       <div className={`menu ${showMenu ? 'slide-left' : 'slide-right'}`}>
         <ul className="menu__list">
-          <li className="menu__list-item">
-            <Link to="/" onClick={() => setAction({ option: 2, action: 'Mundo' })}>
-              Mundo
-            </Link>
-          </li>
-          <li className="menu__list-item">Category</li>
+          {categories?.map((category, i) => (
+            <li key={i} className="menu__list-item">
+              <Link
+                to="/"
+                onClick={() => setAction({ option: 2, action: `${category}` })}
+              >
+                {category}
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
     </>
@@ -35,3 +41,11 @@ const Menu = () => {
 };
 
 export default Menu;
+
+/**
+ *           <li className="menu__list-item">
+            <Link to="/" onClick={() => setAction({ option: 2, action: 'Mundo' })}>
+              Mundo
+            </Link>
+          </li>
+ */

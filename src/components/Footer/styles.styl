@@ -19,18 +19,19 @@
     margin: 15px 10px 0px
   &__subtitle
     display: flex
-    justify-content: space-around
+    justify-content: space-between
     font-weight: 200
     font-family: Font1
-    width: 30%
+    width: 40%
     margin-bottom: 20px
+    text-align: center
     a
       text-decoration: none
       color: white
-  &__subtitle h2
-    font-family: Font1
-    font-weight: 500
-    font-size: 2rem
+    h2
+      font-family: Font1
+      font-weight: 500
+      font-size: 2rem
   &__comments
     text-align: center
     font-weight: 400
@@ -44,12 +45,15 @@
 	.footer
     &__social--icons
       width: 25px
-      background-color: transparent
-      border-radius: 30%
-      padding: 2px
-      border: 2px solid black
-      margin: 15px 10px 0px
-@media screen and (max-width: 761px)
+
+@media screen and (max-width: 520px)
+	.footer
+    &__subtitle
+      width: 50%
+      h2
+        font-size: 1.5rem
+
+@media screen and (max-width: 1000px)
 	.footer
 		&__subtitle
       flex-direction: column

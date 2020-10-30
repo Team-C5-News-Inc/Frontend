@@ -26,8 +26,8 @@ describe('<Grid/>', () => {
     expect(wrapper.find('.masonry').exists()).toBe(true);
   });
 
-  it('Only one child?', () => {
-    expect(wrapper.find('.masonry').children().length).toBe(1);
+  it('Has two children?', () => {
+    expect(wrapper.find('.masonry').children().length).toBe(2);
   });
 
   it('Is there a ResponsiveMasonry element?', () => {
@@ -48,5 +48,12 @@ describe('<Grid/>', () => {
 
   it('Is there a link component?', () => {
     expect(wrapper.find('Link').exists()).toBe(true);
+  });
+
+  it('Is there a container for lazy loading button?', () => {
+    expect(wrapper.find('.masonry__loading').exists()).toBe(true);
+  });
+  it('Is there a button for lazy loading?', () => {
+    expect(wrapper.find('.masonry__loading--button').exists()).toBe(true);
   });
 });
