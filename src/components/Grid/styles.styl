@@ -3,6 +3,39 @@
 .masonry
   width: 1200px
   margin: 0 auto
+  &__loading
+    width: 100%
+    display: flex
+    justify-content: center
+    &--button
+      display:inline-block;
+      padding:0.5em 3em
+      border:0.16em solid #FFFFFF;
+      background: color_primary
+      box-sizing: border-box;
+      text-decoration:none;
+      text-transform:uppercase;
+      font-family:Font1
+      font-weight:400;
+      font-size: 3vh
+      color:#FFFFFF;
+      text-align:center;
+      transition: all 0.15s;
+      margin: 2rem auto
+      &:hover
+        color:#DDDDDD;
+        border-color:#DDDDDD;
+        cursor: pointer
+      &:active
+        color:#BBBBBB;
+        border-color:#BBBBBB;
+
+@media all and (max-width:30em)
+  .masonry
+    &__loading
+      &--button
+        display:block
+        margin:0.4em auto
 
 @media screen and (max-width: 1200px)
   .masonry

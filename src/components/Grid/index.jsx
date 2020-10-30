@@ -30,6 +30,11 @@ const Grid = () => {
           ))}
         </Masonry>
       </ResponsiveMasonry>
+      <section className="masonry__loading">
+        <button onClick={''} id="lazy" className="masonry__loading--button" >
+          Más noticias
+        </button>
+      </section>
     </div>
   );
 };
