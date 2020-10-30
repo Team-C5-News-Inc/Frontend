@@ -5,12 +5,13 @@
   position: fixed;
   right: -520px;
   top: 20%;
-  background: lightGray;
+  // background: lightGray;
   height: 40vh;
   width: 20%;
   z-index: 11;
   font-family: Font1;
   overflow: auto;
+  border: 1px solid white
 
 .menu__list
   list-style: none;
@@ -20,8 +21,17 @@
   flex-direction: column;
 
 .menu__list-item
-  font-size: 2rem
-  padding: .4rem
+  position: relative
+  display: block
+  align-items: center
+  width: 100vw
+  height: 5vh
+  text-align: center
+  padding: .5rem
+  background: rgba(46, 46, 50, .95)
+  &:hover
+    border: 1px solid white
+    background: rgba(46, 46, 50, 1)
 
 .slide-left
   animation: slide-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;

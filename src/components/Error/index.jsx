@@ -1,4 +1,6 @@
+// import react
 import React from 'react';
+// import styles
 import './styles.styl';
 
 const Error = ({ message, subtitle }) => (

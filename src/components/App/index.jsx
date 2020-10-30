@@ -16,6 +16,8 @@ import Layout from '../Layout/index.jsx';
 import Error from '../Error/index.jsx';
 // import page privacy policy
 import Policy from '../Policy/index.jsx';
+// import page SearchF
+import SearchF from '../../pages/SearchF/index.jsx';
 
 //create and export app component
 const App = () => {
@@ -38,10 +40,13 @@ const App = () => {
           <Route path="/Privacy_Policy">
             <Policy />
           </Route>
+          <Route path="/fail">
+            <SearchF message="No se han encontrado coincidencias con tu busqueda" subtitle="Sigue navegando, tenemos muchas más noticias:)"/>
+          </Route>
           <Route>
             <Error
               message="ERROR 404"
-              subtitle="Ups looks like a problem </3"
+              subtitle="Esta página no existe, sigue navegando, tenemos muchas más noticias:)"
             />
           </Route>
         </Switch>

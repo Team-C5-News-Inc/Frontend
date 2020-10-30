@@ -28,7 +28,8 @@ const Menu = () => {
             <li key={i} className="menu__list-item">
               <Link
                 to="/"
-                onClick={() => setAction({ option: 2, action: `${category}` })}>
+                onClick={() => setAction({ option: 2, action: `${category}` })}
+              >
                 {category}
               </Link>
             </li>
