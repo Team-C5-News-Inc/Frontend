@@ -53,6 +53,17 @@ describe('<Grid/>', () => {
   it('Is there a container for lazy loading button?', () => {
     expect(wrapper.find('.masonry__loading').exists()).toBe(true);
   });
+
+  it('Is there a button?', () => {
+    expect(wrapper.find('button').exists()).toBe(true);
+  });
+
+  it('Is there a button?', () => {
+    wrapper.find('button').simulate('click')
+
+    expect(wrapper.find('button').prop('className')).toBe('masonry__loading--button 2');
+  });
+
   it('Is there a button for lazy loading?', () => {
     expect(wrapper.find('.masonry__loading--button').exists()).toBe(true);
   });
