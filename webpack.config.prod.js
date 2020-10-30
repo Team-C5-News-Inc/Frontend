@@ -14,5 +14,6 @@ module.exports = merge(baseConfig, {
     'react-dom': 'ReactDOM',
     'react-router-dom': 'ReactRouterDOM',
     axios: 'axios',
+    '@babel/polyfill': /@babel\/\polyfill/gmi
   }
 })
