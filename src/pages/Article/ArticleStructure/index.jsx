@@ -18,6 +18,7 @@ const ArticleStructure = () => {
   const { name } = useParams();
   // use effect
   useEffect(() => {
+    window.scrollTo(0, 0)
     setNew$(news?.data?.find((item) => item?._id === name && item));
   }, []);
 

@@ -18,7 +18,7 @@ const Grid = () => {
 
   const nextPage = () => {
     setCount(count + 1)
-    setAction({ option: 4, next: count })
+    setAction({ option: 4, action: count })
   }
 
   return (
