@@ -17,19 +17,19 @@ const useNews = () => {
     loading: true,
   });
   // use state to handle the state
-  const [action, setAction] = useState({ option: 0, action: 'america' });
+  const [action, setAction] = useState({ option: 0, action: 'america', next: 1 });
 
   useEffect(() => {
     // set implementation
     switch (action.option) {
       case 0:
         {
-          const getInitialNews = callNewsApi('news?page=1');
+          const getInitialNews = callNewsApi('news');
 
           const fetchData = () =>
             newsAPI.get(getInitialNews()).then((response) =>
               setNews({
-                data: [... response?.data.data],
+                data: response?.data.data,
                 info: response?.data.info,
                 loading: false,
               }),
@@ -98,6 +98,22 @@ const useNews = () => {
               }),
             )
             .catch(console.error);
+        }
+        break;
+      case 4:
+        {
+          const getInitialNews = callNewsApi(`news?page=${action.next}`);
+
+          const fetchData = () =>
+            newsAPI.get(getInitialNews()).then((response) =>
+              setNews({
+                data: [].concat(response?.data.data),
+                info: response?.data.info,
+                loading: false,
+              }),
+            );
+
+          fetchData();
         }
         break;
     }
