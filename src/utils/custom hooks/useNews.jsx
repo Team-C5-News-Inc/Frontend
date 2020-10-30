@@ -24,12 +24,12 @@ const useNews = () => {
     switch (action.option) {
       case 0:
         {
-          const getInitialNews = callNewsApi('news');
+          const getInitialNews = callNewsApi('news?page=1');
 
           const fetchData = () =>
             newsAPI.get(getInitialNews()).then((response) =>
               setNews({
-                data: response?.data.data,
+                data: [... response?.data.data],
                 info: response?.data.info,
                 loading: false,
               }),
