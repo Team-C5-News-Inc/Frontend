@@ -7,7 +7,7 @@ import { Context } from '../../../utils/Context/index.jsx';
 // import disqus
 import { DiscussionEmbed } from 'disqus-react';
 //import tag component
-import Tags from '../../../components/Tags/index.jsx'
+import Tags from '../../../components/Tags/index.jsx';
 
 const ArticleStructure = () => {
   // use state
@@ -32,7 +32,7 @@ const ArticleStructure = () => {
             /^https?:\/\/|^http?:\/\//.test(new$?.images[0]) ?
               new$?.images[0] :
               `${/^www?:\/\//.test(new$?.images[0])}` &&
-							`https://${new$?.images[0]}`
+						`https://${new$?.images[0]}`
           }`}
           className="post__content--image"
         />
@@ -42,28 +42,28 @@ const ArticleStructure = () => {
           ))}
         </div>
         <div className="post__content--quote">
-          <a href="{url}">
+          <a href={new$?.news_url}>
             <h3>Ir al post original</h3>
           </a>
         </div>
         <div className="post__content--tags">
           <h4 className="post__content--tagsTitle">Tags:</h4>
           <div className="post__content--tagsContainer">
-            <Tags text="Economia"/>
+            {new$?.tags?.map((element, i) => (
+              <Tags key={i} text={element} />
+            ))}
           </div>
         </div>
       </section>
       <section className="post__comments">
         <DiscussionEmbed
           shortname="news-inc"
-          config={
-            {
-              url: `http://localhost:3000/#/article/${new$?._id}`,
-              identifier: new$?._id,
-              title: new$?.title,
-              language: 'en'
-            }
-          }
+          config={{
+            url: `http://localhost:3000/#/article/${new$?._id}`,
+            identifier: new$?._id,
+            title: new$?.title,
+            language: 'en',
+          }}
         />
       </section>
     </article>

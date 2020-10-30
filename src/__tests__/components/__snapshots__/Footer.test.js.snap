@@ -9,6 +9,7 @@ exports[`<Footer /> matches the snap shot 1`] = `
   >
     <a
       href="https://platzi.com/home"
+      rel="noreferrer"
       target="_blank"
     >
       <img
@@ -19,6 +20,7 @@ exports[`<Footer /> matches the snap shot 1`] = `
     </a>
     <a
       href="https://github.com/Team-C5-cheaPlatzi"
+      rel="noreferrer"
       target="_blank"
     >
       <img
@@ -29,6 +31,7 @@ exports[`<Footer /> matches the snap shot 1`] = `
     </a>
     <a
       href="https://www.notion.so/Team-master5-7-inc-News-Inc-project-7340af6d026b4eb8a3f0099888a890a6"
+      rel="noreferrer"
       target="_blank"
     >
       <img
@@ -39,6 +42,8 @@ exports[`<Footer /> matches the snap shot 1`] = `
     </a>
   </div>
   <Logo
+    aria-label="logo"
+    aria-required="true"
     className="footer__logo"
   />
   <div
@@ -70,6 +75,8 @@ exports[`<Footer /> matches the snap shot 1`] = `
     </Link>
   </div>
   <p
+    aria-label="rights"
+    aria-required="true"
     className="footer__comments"
   >
     2020 by Masters INC. Proudly created with React JS
