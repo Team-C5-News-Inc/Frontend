@@ -16,12 +16,11 @@ const useNews = () => {
     ],
     loading: true,
   });
-  console.log(news);
+
   // use state to handle the state
   const [action, setAction] = useState({
-    option: 0,
+    option: 5,
     action: 'america',
-    next: 1,
   });
 
   useEffect(() => {
@@ -121,6 +120,8 @@ const useNews = () => {
           fetchData();
         }
         break;
+      default:
+        return '';
     }
   }, [action]);
   return { news, setAction };
