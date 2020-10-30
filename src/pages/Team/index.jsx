@@ -7,6 +7,8 @@ import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 // import styles
 import './styles.styl';
 
+
+
 // create and export Team page
 const Team = () => {
 

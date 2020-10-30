@@ -1,7 +1,9 @@
 // use react hooks
 import { useEffect, useState } from 'react';
 // import request tools
-import { newsAPI, callNewsApi } from '../requests.js';
+import { newsAPI, callNewsApi, client } from '../requests.js';
+//import apollo client
+import { gql } from '@apollo/client';
 
 const useNews = () => {
   // use state to handle the state
@@ -17,7 +19,7 @@ const useNews = () => {
     loading: true,
   });
   // use state to handle the state
-  const [action, setAction] = useState({ option: 0, action: 'mexico' });
+  const [action, setAction] = useState({ option: 0, action: 'america' });
 
   useEffect(() => {
     // set implementation
@@ -72,6 +74,27 @@ const useNews = () => {
               );
 
           fetchData();
+        }
+        break;
+      case 3:
+        {
+          client
+            .query({
+              query: gql`
+								query {
+									searchNews(keyword: ${action && `"${action.action}"`}) {
+                    title
+                    images
+									}
+                }
+              `,
+            })
+            .then((response) =>
+              setNews({
+                data: response.data.searchNews,
+                loading: false,
+              }),
+            );
         }
         break;
     }

@@ -1,6 +1,5 @@
 // import react
 import React from 'react';
-
 // import useNews custom hooks
 import useNews from '../custom hooks/useNews.jsx'
 
@@ -12,6 +11,7 @@ const ContextProvider = ({ children }) => {
   const { news, setAction } = useNews()
 
   return (
+    //<Context.Provider value={{ news, client}}>
     <Context.Provider value={{ news, setAction }}>
       {children}
     </Context.Provider>
