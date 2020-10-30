@@ -1,7 +1,8 @@
 @import "../../stylus/variables.styl"
 
 .container
-  width: 100vw
+  width: 95%
+  margin: 0 auto
   height: 70vh
   display: flex
   align-items: center
@@ -18,7 +19,7 @@
     text-align: center
     color: darkGray
     font-weight: 700
-    font-size: 3rem
+    font-size: 3vw
 
 .container__animated
   animation-duration: 2.5s
@@ -49,25 +50,25 @@
     font-size: 6rem
     font-weight: 600
   .container__subtitle
-    font-size: 2.5rem
+    font-size: 4vw
 
-@media screen and (max-width: 425px)
+@media screen and (max-width: 480px)
   .container__text
     font-size: 4rem
     font-weight: 500
-  .container__subtitle
-    font-size: 2rem
+  // .container__subtitle
+  //   font-size: 2rem
 
 @media screen and (max-width: 375px)
   .container__text
     font-size: 3rem
     font-weight: 500
-  .container__subtitle
-    font-size: 2rem
+  // .container__subtitle
+  //   font-size: 2rem
 
 @media screen and (max-width: 320px)
   .container__text
     font-size: 2.8rem
     font-weight: 500
-  .container__subtitle
-    font-size: 1.8rem
+  // .container__subtitle
+  //   font-size: 1.8rem
