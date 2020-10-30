@@ -11,6 +11,7 @@
   z-index: 11;
   font-family: Font1;
   overflow: auto;
+  border: 1px solid white
 
 .menu__list
   list-style: none;
@@ -20,8 +21,14 @@
   flex-direction: column;
 
 .menu__list-item
-  font-size: 2rem
-  padding: .4rem
+  position: relative
+  display: inline-block
+  width: 100vw
+  height: 5vh
+  text-align: center
+  padding: .5rem
+  &:hover
+    border: 1px solid white
 
 .slide-left
   animation: slide-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
