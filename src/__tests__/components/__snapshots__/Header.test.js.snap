@@ -1,37 +1,44 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Header /> shallow matches the snap shot 1`] = `
-<header
-  className="header"
+<ContextProvider
+  value={
+    Object {
+      "news": Object {
+        "data": Array [
+          Object {
+            "images": "",
+            "title": "",
+          },
+          Object {
+            "images": "",
+            "title": "",
+          },
+          Object {
+            "images": "",
+            "title": "",
+          },
+          Object {
+            "images": "",
+            "title": "",
+          },
+          Object {
+            "images": "",
+            "title": "",
+          },
+          Object {
+            "images": "",
+            "title": "",
+          },
+        ],
+        "loading": true,
+      },
+      "setAction": [Function],
+    }
+  }
 >
-  <nav
-    className="nav"
-  >
-    <Link
-      to="/"
-    >
-      <Logo
-        className="nav__logo"
-      />
-    </Link>
-    <ul
-      className="nav__right"
-    >
-      <li
-        className="nav__right--search"
-      >
-        <Search />
-      </li>
-      <li
-        className="nav__right--menu"
-      >
-        <span
-          id="arrow"
-        >
-          <Menu />
-        </span>
-      </li>
-    </ul>
-  </nav>
-</header>
+  <HashRouter>
+    <Header />
+  </HashRouter>
+</ContextProvider>
 `;

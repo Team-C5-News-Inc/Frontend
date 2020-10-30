@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Tags /> matches the snap shot 1`] = `
+<ContextProvider>
+  <HashRouter>
+    <Router
+      history={
+        Object {
+          "action": "POP",
+          "block": [Function],
+          "createHref": [Function],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+    >
+      <Tags>
+        <Link
+          onClick={[Function]}
+          to="/"
+        >
+          <LinkAnchor
+            href="#/"
+            navigate={[Function]}
+            onClick={[Function]}
+          >
+            <a
+              href="#/"
+              onClick={[Function]}
+            >
+              <div
+                aria-label="tag"
+                className="tag"
+              />
+            </a>
+          </LinkAnchor>
+        </Link>
+      </Tags>
+    </Router>
+  </HashRouter>
+</ContextProvider>
+`;

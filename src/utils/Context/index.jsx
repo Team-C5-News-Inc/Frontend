@@ -1,6 +1,5 @@
 // import react
 import React from 'react';
-
 // import useNews custom hooks
 import useNews from '../custom hooks/useNews.jsx'
 
@@ -9,10 +8,11 @@ const Context = React.createContext()
 
 // create context provider and export it
 const ContextProvider = ({ children }) => {
-  const { news } = useNews()
+  const { news, setAction } = useNews()
 
   return (
-    <Context.Provider value={{ news }}>
+    //<Context.Provider value={{ news, client}}>
+    <Context.Provider value={{ news, setAction }}>
       {children}
     </Context.Provider>
   )
