@@ -2,7 +2,7 @@
 import React from 'react';
 // import render method
 import ReactDom from 'react-dom';
-// import babel polyfill
+// import babel polyfill <3
 import '@babel/polyfill';
 // import app component
 import App from './components/App/index.jsx';

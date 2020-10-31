@@ -38,8 +38,8 @@ const Grid = () => {
         </Masonry>
       </ResponsiveMasonry>
       <section className="masonry__loading">
-        <button onClick={nextPage} id="lazy" className="masonry__loading--button" >
-          Más noticias
+        <button onClick={nextPage} id="lazy" className={`masonry__loading--button ${count}`} >
+          More news
         </button>
       </section>
     </div>

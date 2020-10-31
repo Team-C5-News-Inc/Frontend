@@ -1,25 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Search /> matches the snap shot 1`] = `
-<Search>
-  <div>
-    <div
-      className="searchformOff slide_search-left searchform"
-    >
-      <input
-        name="search"
-        placeholder="Search"
-        type="search"
-      />
+<ContextProvider>
+  <Search>
+    <div>
+      <div
+        className="searchformOff off"
+      >
+        <input
+          name="search"
+          onChange={[Function]}
+          onKeyPress={[Function]}
+          placeholder="Search"
+          type="search"
+          value="random"
+        />
+      </div>
+      <a
+        className="search"
+        onClick={[Function]}
+      >
+        <i
+          className="fa fa-search fa-2x"
+        />
+      </a>
     </div>
-    <a
-      className="search"
-      onClick={[Function]}
-    >
-      <i
-        className="fa fa-search fa-2x"
-      />
-    </a>
-  </div>
-</Search>
+  </Search>
+</ContextProvider>
 `;
