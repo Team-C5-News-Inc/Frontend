@@ -17,7 +17,6 @@ const CardStructure = ({ images = [], title }) => {
               `${/^www?:\/\//.test(Newsrc)}` &&
                 `https://${Newsrc}`
           }`}
-                
         />
         <h2 aria-label="image title" className="card__content--title">
           {title}
