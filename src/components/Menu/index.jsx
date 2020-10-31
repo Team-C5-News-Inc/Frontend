@@ -29,7 +29,8 @@ const Menu = () => {
               <Link
                 className="menu__list-link"
                 to="/"
-                onClick={() => setAction({ option: 2, action: `${category}` })}>
+                onClick={() => setAction({ option: 2, action: `${category}` })}
+              >
                 {category}
               </Link>
             </li>
