@@ -97,7 +97,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    Internacional
+                    Cartones
                   </a>
                 </LinkAnchor>
               </Link>
@@ -119,7 +119,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    Mundo curioso
+                    Mundo
                   </a>
                 </LinkAnchor>
               </Link>
@@ -141,7 +141,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    Cartones
+                    Empresas
                   </a>
                 </LinkAnchor>
               </Link>
@@ -163,7 +163,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    estados
+                    Colombia
                   </a>
                 </LinkAnchor>
               </Link>
@@ -185,7 +185,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    nación
+                    Internacionales
                   </a>
                 </LinkAnchor>
               </Link>
@@ -207,7 +207,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    Mundo
+                    Tecnología
                   </a>
                 </LinkAnchor>
               </Link>
@@ -229,7 +229,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    Bogota
+                    Gestión
                   </a>
                 </LinkAnchor>
               </Link>
@@ -251,7 +251,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    universal deportes
+                    Deportes
                   </a>
                 </LinkAnchor>
               </Link>
@@ -273,7 +273,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    Empresas
+                    Judicial
                   </a>
                 </LinkAnchor>
               </Link>
@@ -295,7 +295,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    Colombia
+                    Entretenimiento
                   </a>
                 </LinkAnchor>
               </Link>
@@ -317,7 +317,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    Internacionales
+                    Economía
                   </a>
                 </LinkAnchor>
               </Link>
@@ -339,7 +339,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    Tecnologia
+                    Arte e ideas
                   </a>
                 </LinkAnchor>
               </Link>
@@ -361,7 +361,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    Tecnología
+                    Política
                   </a>
                 </LinkAnchor>
               </Link>
@@ -383,7 +383,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    Sector financiero
+                    Viral
                   </a>
                 </LinkAnchor>
               </Link>
@@ -405,7 +405,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    Opinion
+                    Santander
                   </a>
                 </LinkAnchor>
               </Link>
@@ -427,7 +427,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    Gestión
+                    Actualidad
                   </a>
                 </LinkAnchor>
               </Link>
@@ -449,534 +449,6 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    Finanzas personales
-                  </a>
-                </LinkAnchor>
-              </Link>
-            </li>
-            <li
-              className="menu__list-item"
-              key="19"
-            >
-              <Link
-                onClick={[Function]}
-                to="/"
-              >
-                <LinkAnchor
-                  href="#/"
-                  navigate={[Function]}
-                  onClick={[Function]}
-                >
-                  <a
-                    href="#/"
-                    onClick={[Function]}
-                  >
-                    Kids
-                  </a>
-                </LinkAnchor>
-              </Link>
-            </li>
-            <li
-              className="menu__list-item"
-              key="20"
-            >
-              <Link
-                onClick={[Function]}
-                to="/"
-              >
-                <LinkAnchor
-                  href="#/"
-                  navigate={[Function]}
-                  onClick={[Function]}
-                >
-                  <a
-                    href="#/"
-                    onClick={[Function]}
-                  >
-                    Deportes
-                  </a>
-                </LinkAnchor>
-              </Link>
-            </li>
-            <li
-              className="menu__list-item"
-              key="21"
-            >
-              <Link
-                onClick={[Function]}
-                to="/"
-              >
-                <LinkAnchor
-                  href="#/"
-                  navigate={[Function]}
-                  onClick={[Function]}
-                >
-                  <a
-                    href="#/"
-                    onClick={[Function]}
-                  >
-                    mundo
-                  </a>
-                </LinkAnchor>
-              </Link>
-            </li>
-            <li
-              className="menu__list-item"
-              key="22"
-            >
-              <Link
-                onClick={[Function]}
-                to="/"
-              >
-                <LinkAnchor
-                  href="#/"
-                  navigate={[Function]}
-                  onClick={[Function]}
-                >
-                  <a
-                    href="#/"
-                    onClick={[Function]}
-                  >
-                    Judicial
-                  </a>
-                </LinkAnchor>
-              </Link>
-            </li>
-            <li
-              className="menu__list-item"
-              key="23"
-            >
-              <Link
-                onClick={[Function]}
-                to="/"
-              >
-                <LinkAnchor
-                  href="#/"
-                  navigate={[Function]}
-                  onClick={[Function]}
-                >
-                  <a
-                    href="#/"
-                    onClick={[Function]}
-                  >
-                    Área metropolitana
-                  </a>
-                </LinkAnchor>
-              </Link>
-            </li>
-            <li
-              className="menu__list-item"
-              key="24"
-            >
-              <Link
-                onClick={[Function]}
-                to="/"
-              >
-                <LinkAnchor
-                  href="#/"
-                  navigate={[Function]}
-                  onClick={[Function]}
-                >
-                  <a
-                    href="#/"
-                    onClick={[Function]}
-                  >
-                    Revista imef
-                  </a>
-                </LinkAnchor>
-              </Link>
-            </li>
-            <li
-              className="menu__list-item"
-              key="25"
-            >
-              <Link
-                onClick={[Function]}
-                to="/"
-              >
-                <LinkAnchor
-                  href="#/"
-                  navigate={[Function]}
-                  onClick={[Function]}
-                >
-                  <a
-                    href="#/"
-                    onClick={[Function]}
-                  >
-                    ciencia y salud
-                  </a>
-                </LinkAnchor>
-              </Link>
-            </li>
-            <li
-              className="menu__list-item"
-              key="26"
-            >
-              <Link
-                onClick={[Function]}
-                to="/"
-              >
-                <LinkAnchor
-                  href="#/"
-                  navigate={[Function]}
-                  onClick={[Function]}
-                >
-                  <a
-                    href="#/"
-                    onClick={[Function]}
-                  >
-                    Justicia
-                  </a>
-                </LinkAnchor>
-              </Link>
-            </li>
-            <li
-              className="menu__list-item"
-              key="27"
-            >
-              <Link
-                onClick={[Function]}
-                to="/"
-              >
-                <LinkAnchor
-                  href="#/"
-                  navigate={[Function]}
-                  onClick={[Function]}
-                >
-                  <a
-                    href="#/"
-                    onClick={[Function]}
-                  >
-                    cultura
-                  </a>
-                </LinkAnchor>
-              </Link>
-            </li>
-            <li
-              className="menu__list-item"
-              key="28"
-            >
-              <Link
-                onClick={[Function]}
-                to="/"
-              >
-                <LinkAnchor
-                  href="#/"
-                  navigate={[Function]}
-                  onClick={[Function]}
-                >
-                  <a
-                    href="#/"
-                    onClick={[Function]}
-                  >
-                    metrópoli
-                  </a>
-                </LinkAnchor>
-              </Link>
-            </li>
-            <li
-              className="menu__list-item"
-              key="29"
-            >
-              <Link
-                onClick={[Function]}
-                to="/"
-              >
-                <LinkAnchor
-                  href="#/"
-                  navigate={[Function]}
-                  onClick={[Function]}
-                >
-                  <a
-                    href="#/"
-                    onClick={[Function]}
-                  >
-                    cartera
-                  </a>
-                </LinkAnchor>
-              </Link>
-            </li>
-            <li
-              className="menu__list-item"
-              key="30"
-            >
-              <Link
-                onClick={[Function]}
-                to="/"
-              >
-                <LinkAnchor
-                  href="#/"
-                  navigate={[Function]}
-                  onClick={[Function]}
-                >
-                  <a
-                    href="#/"
-                    onClick={[Function]}
-                  >
-                    Entretenimiento
-                  </a>
-                </LinkAnchor>
-              </Link>
-            </li>
-            <li
-              className="menu__list-item"
-              key="31"
-            >
-              <Link
-                onClick={[Function]}
-                to="/"
-              >
-                <LinkAnchor
-                  href="#/"
-                  navigate={[Function]}
-                  onClick={[Function]}
-                >
-                  <a
-                    href="#/"
-                    onClick={[Function]}
-                  >
-                    Ciencia y tecnologia
-                  </a>
-                </LinkAnchor>
-              </Link>
-            </li>
-            <li
-              className="menu__list-item"
-              key="32"
-            >
-              <Link
-                onClick={[Function]}
-                to="/"
-              >
-                <LinkAnchor
-                  href="#/"
-                  navigate={[Function]}
-                  onClick={[Function]}
-                >
-                  <a
-                    href="#/"
-                    onClick={[Function]}
-                  >
-                    Economía
-                  </a>
-                </LinkAnchor>
-              </Link>
-            </li>
-            <li
-              className="menu__list-item"
-              key="33"
-            >
-              <Link
-                onClick={[Function]}
-                to="/"
-              >
-                <LinkAnchor
-                  href="#/"
-                  navigate={[Function]}
-                  onClick={[Function]}
-                >
-                  <a
-                    href="#/"
-                    onClick={[Function]}
-                  >
-                    Tendencias
-                  </a>
-                </LinkAnchor>
-              </Link>
-            </li>
-            <li
-              className="menu__list-item"
-              key="34"
-            >
-              <Link
-                onClick={[Function]}
-                to="/"
-              >
-                <LinkAnchor
-                  href="#/"
-                  navigate={[Function]}
-                  onClick={[Function]}
-                >
-                  <a
-                    href="#/"
-                    onClick={[Function]}
-                  >
-                    Arte e ideas
-                  </a>
-                </LinkAnchor>
-              </Link>
-            </li>
-            <li
-              className="menu__list-item"
-              key="35"
-            >
-              <Link
-                onClick={[Function]}
-                to="/"
-              >
-                <LinkAnchor
-                  href="#/"
-                  navigate={[Function]}
-                  onClick={[Function]}
-                >
-                  <a
-                    href="#/"
-                    onClick={[Function]}
-                  >
-                    Política
-                  </a>
-                </LinkAnchor>
-              </Link>
-            </li>
-            <li
-              className="menu__list-item"
-              key="36"
-            >
-              <Link
-                onClick={[Function]}
-                to="/"
-              >
-                <LinkAnchor
-                  href="#/"
-                  navigate={[Function]}
-                  onClick={[Function]}
-                >
-                  <a
-                    href="#/"
-                    onClick={[Function]}
-                  >
-                    espectáculos
-                  </a>
-                </LinkAnchor>
-              </Link>
-            </li>
-            <li
-              className="menu__list-item"
-              key="37"
-            >
-              <Link
-                onClick={[Function]}
-                to="/"
-              >
-                <LinkAnchor
-                  href="#/"
-                  navigate={[Function]}
-                  onClick={[Function]}
-                >
-                  <a
-                    href="#/"
-                    onClick={[Function]}
-                  >
-                    Nacional
-                  </a>
-                </LinkAnchor>
-              </Link>
-            </li>
-            <li
-              className="menu__list-item"
-              key="38"
-            >
-              <Link
-                onClick={[Function]}
-                to="/"
-              >
-                <LinkAnchor
-                  href="#/"
-                  navigate={[Function]}
-                  onClick={[Function]}
-                >
-                  <a
-                    href="#/"
-                    onClick={[Function]}
-                  >
-                    Economia
-                  </a>
-                </LinkAnchor>
-              </Link>
-            </li>
-            <li
-              className="menu__list-item"
-              key="39"
-            >
-              <Link
-                onClick={[Function]}
-                to="/"
-              >
-                <LinkAnchor
-                  href="#/"
-                  navigate={[Function]}
-                  onClick={[Function]}
-                >
-                  <a
-                    href="#/"
-                    onClick={[Function]}
-                  >
-                    Viral
-                  </a>
-                </LinkAnchor>
-              </Link>
-            </li>
-            <li
-              className="menu__list-item"
-              key="40"
-            >
-              <Link
-                onClick={[Function]}
-                to="/"
-              >
-                <LinkAnchor
-                  href="#/"
-                  navigate={[Function]}
-                  onClick={[Function]}
-                >
-                  <a
-                    href="#/"
-                    onClick={[Function]}
-                  >
-                    Santander
-                  </a>
-                </LinkAnchor>
-              </Link>
-            </li>
-            <li
-              className="menu__list-item"
-              key="41"
-            >
-              <Link
-                onClick={[Function]}
-                to="/"
-              >
-                <LinkAnchor
-                  href="#/"
-                  navigate={[Function]}
-                  onClick={[Function]}
-                >
-                  <a
-                    href="#/"
-                    onClick={[Function]}
-                  >
-                    Actualidad
-                  </a>
-                </LinkAnchor>
-              </Link>
-            </li>
-            <li
-              className="menu__list-item"
-              key="42"
-            >
-              <Link
-                onClick={[Function]}
-                to="/"
-              >
-                <LinkAnchor
-                  href="#/"
-                  navigate={[Function]}
-                  onClick={[Function]}
-                >
-                  <a
-                    href="#/"
-                    onClick={[Function]}
-                  >
                     Autos
                   </a>
                 </LinkAnchor>
@@ -984,29 +456,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
             </li>
             <li
               className="menu__list-item"
-              key="43"
-            >
-              <Link
-                onClick={[Function]}
-                to="/"
-              >
-                <LinkAnchor
-                  href="#/"
-                  navigate={[Function]}
-                  onClick={[Function]}
-                >
-                  <a
-                    href="#/"
-                    onClick={[Function]}
-                  >
-                    Salud
-                  </a>
-                </LinkAnchor>
-              </Link>
-            </li>
-            <li
-              className="menu__list-item"
-              key="44"
+              key="19"
             >
               <Link
                 onClick={[Function]}
