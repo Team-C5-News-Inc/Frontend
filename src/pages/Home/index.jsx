@@ -21,16 +21,18 @@ const Home = () => {
     setNew$(news?.data?.[Math.floor(Math.random() * news?.data?.length)]);
   }, [news]);
 
+  const Newsrc = (!new$?.images[0]) ? 'https://blog.davidrojo.es/wp-content/uploads/2011/04/file-not-found.jpg' : new$?.images[0];
+
   return (
     <>
       <Link to={`/article/${new$?._id}`}>
         <Hero
           caption={new$?.title}
           background={`${
-            /^https?:\/\/|^http?:\/\//.test(new$?.images[0]) ?
-              new$?.images[0] :
-              `${/^www?:\/\//.test(new$?.images[0])}` &&
-							`https://${new$?.images[0]}`
+            /^https?:\/\/|^http?:\/\//.test(Newsrc) ?
+              Newsrc :
+              `${/^www?:\/\//.test(Newsrc)}` &&
+							`https://${Newsrc}`
           }`}
         />
       </Link>
