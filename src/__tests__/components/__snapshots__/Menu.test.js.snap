@@ -56,7 +56,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    Opinión
+                    Actualidad
                   </a>
                 </LinkAnchor>
               </Link>
@@ -81,7 +81,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    Estados
+                    Arte e ideas
                   </a>
                 </LinkAnchor>
               </Link>
@@ -106,7 +106,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    Cartones
+                    Autos
                   </a>
                 </LinkAnchor>
               </Link>
@@ -131,7 +131,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    Mundo
+                    Cartones
                   </a>
                 </LinkAnchor>
               </Link>
@@ -156,7 +156,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    Empresas
+                    Colombia
                   </a>
                 </LinkAnchor>
               </Link>
@@ -181,7 +181,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    Colombia
+                    Deportes
                   </a>
                 </LinkAnchor>
               </Link>
@@ -206,7 +206,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    Internacionales
+                    Economía
                   </a>
                 </LinkAnchor>
               </Link>
@@ -231,7 +231,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    Tecnología
+                    Empresas
                   </a>
                 </LinkAnchor>
               </Link>
@@ -256,7 +256,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    Gestión
+                    Entretenimiento
                   </a>
                 </LinkAnchor>
               </Link>
@@ -281,7 +281,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    Deportes
+                    Estados
                   </a>
                 </LinkAnchor>
               </Link>
@@ -306,7 +306,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    Judicial
+                    Gestión
                   </a>
                 </LinkAnchor>
               </Link>
@@ -331,7 +331,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    Entretenimiento
+                    Internacionales
                   </a>
                 </LinkAnchor>
               </Link>
@@ -356,7 +356,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    Economía
+                    Judicial
                   </a>
                 </LinkAnchor>
               </Link>
@@ -381,7 +381,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    Arte e ideas
+                    Mercados
                   </a>
                 </LinkAnchor>
               </Link>
@@ -406,7 +406,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    Política
+                    Mundo
                   </a>
                 </LinkAnchor>
               </Link>
@@ -431,7 +431,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    Viral
+                    Opinión
                   </a>
                 </LinkAnchor>
               </Link>
@@ -456,7 +456,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    Santander
+                    Política
                   </a>
                 </LinkAnchor>
               </Link>
@@ -481,7 +481,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    Actualidad
+                    Santander
                   </a>
                 </LinkAnchor>
               </Link>
@@ -506,7 +506,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    Autos
+                    Tecnología
                   </a>
                 </LinkAnchor>
               </Link>
@@ -531,7 +531,7 @@ exports[`<Menu /> matches the snap shot 1`] = `
                     href="#/"
                     onClick={[Function]}
                   >
-                    Mercados
+                    Viral
                   </a>
                 </LinkAnchor>
               </Link>
