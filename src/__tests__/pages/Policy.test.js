@@ -4,7 +4,7 @@ import { mount } from 'enzyme';
 // import toJson
 import toJson from 'enzyme-to-json';
 // import app component
-import Policy from '../../components/Policy/index.jsx';
+import Policy from '../../pages/Policy/index.jsx';
 
 describe('<Policy />', () => {
   const wrapper = mount(<Policy />);

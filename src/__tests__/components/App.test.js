@@ -25,6 +25,6 @@ describe('<App />', () => {
   })
 
   it('are switch has six children?', () => {
-    expect(wrapper.find('Switch').children().length).toBe(7)
+    expect(wrapper.find('Switch').children().length).toBe(6)
   })
 });

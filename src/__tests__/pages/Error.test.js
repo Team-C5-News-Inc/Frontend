@@ -2,7 +2,7 @@ import React from 'react';
 // import shallow
 import { shallow } from 'enzyme';
 // import app component
-import Error from '../../../components/Error/index.jsx';
+import Error from '../../pages/Error/index.jsx';
 
 describe('<Error />', () => {
   const wrapper = shallow(<Error />);
