@@ -20,7 +20,10 @@ const ArticleStructure = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
     setNew$(news?.data?.find((item) => item?._id === name && item));
+
   }, []);
+
+  const Newsrc = (!new$?.images[0]) ? 'https://blog.davidrojo.es/wp-content/uploads/2011/04/file-not-found.jpg' : new$?.images[0];
 
   return (
     <article className="post">
@@ -30,10 +33,10 @@ const ArticleStructure = () => {
         </div>
         <img
           src={`${
-            /^https?:\/\/|^http?:\/\//.test(new$?.images[0]) ?
-              new$?.images[0] :
-              `${/^www?:\/\//.test(new$?.images[0])}` &&
-						`https://${new$?.images[0]}`
+            /^https?:\/\/|^http?:\/\//.test(Newsrc) ?
+              Newsrc :
+              `${/^www?:\/\//.test(Newsrc)}` &&
+						`https://${Newsrc}`
           }`}
           className="post__content--image"
         />
