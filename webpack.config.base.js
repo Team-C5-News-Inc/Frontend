@@ -39,6 +39,7 @@ module.exports = {
     new HtmlWebPackPlugin({
       title: 'NEWS INC',
       template: './public/index.html',
+      favicon: './src/assets/Favicon/favicon-32x32.png'
     }),
   ]
 };
