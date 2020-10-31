@@ -22,6 +22,13 @@ const ArticleStructure = () => {
     setNew$(news?.data?.find((item) => item?._id === name && item));
   }, []);
 
+  const config = {
+    url: `https://news-inc.web.app/article/${new$?._id}`,
+    identifier: new$?.title_id,
+    title: new$?.title,
+    language: 'en'
+  }
+
   return (
     <article className="post">
       <section className="post__content">
@@ -59,12 +66,7 @@ const ArticleStructure = () => {
       <section className="post__comments">
         <DiscussionEmbed
           shortname="news-inc"
-          config={{
-            url: `http://localhost:3000/#/article/${new$?._id}`,
-            identifier: new$?._id,
-            title: new$?.title,
-            language: 'en',
-          }}
+          config={config}
         />
       </section>
     </article>
