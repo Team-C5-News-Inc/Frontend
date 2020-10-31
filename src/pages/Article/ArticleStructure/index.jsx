@@ -29,6 +29,7 @@ const ArticleStructure = () => {
     title: new$?.title,
     language: 'en'
   }
+
   const Newsrc = (!new$?.images[0]) ? 'https://blog.davidrojo.es/wp-content/uploads/2011/04/file-not-found.jpg' : new$?.images[0];
 
   return (
