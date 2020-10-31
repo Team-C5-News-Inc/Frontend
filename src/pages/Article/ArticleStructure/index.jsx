@@ -38,7 +38,9 @@ const ArticleStructure = () => {
           className="post__content--image"
         />
         <div className="post__content--text">
-          <p>{new$?.body}</p>
+          {new$?.body?.map((paragraph, i) => (
+            <p key={i}>{paragraph}</p>
+          ))}
         </div>
         <div className="post__content--quote">
           <a href={new$?.news_url}>
