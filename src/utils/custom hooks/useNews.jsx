@@ -19,7 +19,7 @@ const useNews = () => {
 
   // use state to handle the state
   const [action, setAction] = useState({
-    option: 5,
+    option: 0,
     action: 'america',
   });
 
