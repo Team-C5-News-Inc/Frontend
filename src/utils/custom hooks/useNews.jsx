@@ -2,7 +2,6 @@
 import { useEffect, useState } from 'react';
 // import request tools
 import { newsAPI, callNewsApi, uri } from '../requests.js';
-global.fetch = require('node-fetch');
 
 const useNews = () => {
   // use state to handle the state
