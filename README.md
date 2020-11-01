@@ -66,3 +66,5 @@ News inc is an online newspaper that publishes news on a large scale every day (
 
 ## Deploy 
 We deploy our app in firebase :fire:, see deploy [here](https://news-inc.web.app/#/)
+
+### See documentation in notion :first_place_medal: [see](https://www.notion.so/Team-master5-7-inc-News-Inc-project-7340af6d026b4eb8a3f0099888a890a6) 
