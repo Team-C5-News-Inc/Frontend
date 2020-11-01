@@ -3,6 +3,8 @@ import React from 'react';
 import { shallow } from 'enzyme';
 // import app component
 import About from '../../pages/About/index.jsx';
+// import toJson
+import toJson from 'enzyme-to-json';
 
 describe('<About />', () => {
   const wrapper = shallow(<About />);
@@ -21,5 +23,9 @@ describe('<About />', () => {
 
   it('are have one child?', () => {
     expect(wrapper.children().length).toBe(1)
+  });
+
+  it('matches the snap shot', () => {
+    expect(toJson(wrapper)).toMatchSnapshot();
   });
 });

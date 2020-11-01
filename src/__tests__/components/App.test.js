@@ -4,6 +4,8 @@ import React from 'react';
 import { shallow } from 'enzyme';
 // import app component
 import App from '../../components/App/index.jsx';
+// import toJson
+import toJson from 'enzyme-to-json';
 
 describe('<App />', () => {
   const wrapper = shallow(<App />);
@@ -27,4 +29,8 @@ describe('<App />', () => {
   it('are switch has six children?', () => {
     expect(wrapper.find('Switch').children().length).toBe(6)
   })
+
+  it('matches the snap shot', () => {
+    expect(toJson(wrapper)).toMatchSnapshot();
+  });
 });

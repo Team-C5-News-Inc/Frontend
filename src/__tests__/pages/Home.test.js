@@ -7,6 +7,8 @@ import { ContextProvider } from '../../utils/Context/index.jsx';
 import { HashRouter } from 'react-router-dom';
 // import app component
 import Home from '../../pages/Home/index.jsx';
+// import toJson
+import toJson from 'enzyme-to-json';
 
 describe('<Home />', () => {
   const wrapper = mount(
@@ -33,4 +35,7 @@ describe('<Home />', () => {
     expect(wrapper.find('Grid')).toBeTruthy()
   });
 
+  it('matches the snap shot', () => {
+    expect(toJson(wrapper)).toMatchSnapshot();
+  });
 });

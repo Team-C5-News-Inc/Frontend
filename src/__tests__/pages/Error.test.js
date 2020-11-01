@@ -3,6 +3,8 @@ import React from 'react';
 import { shallow } from 'enzyme';
 // import app component
 import Error from '../../pages/Error/index.jsx';
+// import toJson
+import toJson from 'enzyme-to-json';
 
 describe('<Error />', () => {
   const wrapper = shallow(<Error />);
@@ -21,5 +23,9 @@ describe('<Error />', () => {
 
   it('are have two child?', () => {
     expect(wrapper.children().length).toBe(2);
+  });
+
+  it('matches the snap shot', () => {
+    expect(toJson(wrapper)).toMatchSnapshot();
   });
 });
