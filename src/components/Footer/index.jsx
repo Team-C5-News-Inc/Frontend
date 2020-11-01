@@ -3,16 +3,15 @@ import React from 'react';
 // import link component
 import { Link } from 'react-router-dom';
 // import icons
-const Platzi =
-	'https://static.platzi.com/mf-landings/image/isotipoPlatzi-442ccc1186a9806e18c9889cc301ffe1.png';
+const Platzi = 'https://static.platzi.com/mf-landings/image/isotipoPlatzi-442ccc1186a9806e18c9889cc301ffe1.png';
 const GitHub = 'https://www.flaticon.es/svg/static/icons/svg/733/733609.svg';
-const Notion =
-	'https://yt3.ggpht.com/a/AATXAJzPBXMraj8Xr2kYz3zAGBE8I4RbIRMHV1aY2Bu8dw=s88-c-k-c0x00ffffff-no-rj';
+const Notion = 'https://yt3.ggpht.com/a/AATXAJzPBXMraj8Xr2kYz3zAGBE8I4RbIRMHV1aY2Bu8dw=s88-c-k-c0x00ffffff-no-rj';
 // import logo
 import Logo from '../../assets/Logo/index.js';
 // import styles
 import './styles.styl';
 
+//Creates Footer component
 const Footer = () => (
   <footer className="footer">
     <div className="footer__social">
@@ -65,4 +64,5 @@ const Footer = () => (
   </footer>
 );
 
+//exports Footer component
 export default Footer;

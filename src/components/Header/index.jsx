@@ -13,8 +13,9 @@ import { Context } from '../../utils/Context/index.jsx';
 // import header styles
 import './styles.styl';
 
-//create and export app component
+//Creates Header component
 const Header = () => {
+  //Calls the global context
   const { setAction } = useContext(Context);
 
   return (
@@ -38,4 +39,5 @@ const Header = () => {
   );
 };
 
+//Exports Header component
 export default Header;
