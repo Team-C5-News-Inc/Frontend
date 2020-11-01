@@ -13,6 +13,8 @@ News inc is an online newspaper that publishes news on a large scale every day (
   - assets :baggage_claim: 
   - components :computer: 
   - pages :page_facing_up: 
+  - stylus :sailboat: 
+  - utils :100: 
 --- 
 ### What technologies we use?
 
@@ -33,31 +35,33 @@ News inc is an online newspaper that publishes news on a large scale every day (
 
 --- 
 #### How to install it?
-1. ``` npm i ```
+1. ``` gh repo clone Team-C5-cheaPlatzi/Frontend ```
+#### How to set up it?
+2. ``` npm i ```
 #### How to run it?
-2. ``` npm run dev```
+3. ``` npm run dev```
 #### How to test it?
-2. ``` npm t```
+4. ``` npm t```
 
 --- 
 ### Components
 - App
 - Card
-- Error
 - Footer
 - Grid
 - Header
 - Hero
 - Layout
 - Menu
-- Policy
 - Search
 - Tags
 
 ### Pages
 - About :information_source: 
 - Article :art: 
+- Error :interrobang: 
 - Home :house: 
+- Policy  :police_car: 
 - Team :100: 
 
 ## Deploy 
