@@ -29,7 +29,7 @@ const Menu = () => {
               <Link
                 className="menu__list-link"
                 to="/"
-                onClick={() => setAction({ option: 2, action: `${category}`}, setShowMenu((value) => !value)) /*Call the API of the selected category and hide the menu */}
+                onClick={() => setAction({ option: 2, action: `${category}` }, setShowMenu((value) => !value)) /*Call the API of the selected category and hide the menu */}
               >
                 {category}
               </Link>
