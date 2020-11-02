@@ -41,6 +41,7 @@ exports[`<Article ...props/> matches the snap shot 1`] = `
               className="post__content--image"
               src="https://blog.davidrojo.es/wp-content/uploads/2011/04/file-not-found.jpg"
             />
+            <p />
             <div
               className="post__content--text"
             />

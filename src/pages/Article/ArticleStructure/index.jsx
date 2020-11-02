@@ -47,6 +47,7 @@ const ArticleStructure = () => {
           }`}
           className="post__content--image"
         />
+        <p>{new$?.publication_date}</p>
         <div className="post__content--text">
           {new$?.body?.map((paragraph, i) => (
             <p key={i}>{paragraph}</p>
