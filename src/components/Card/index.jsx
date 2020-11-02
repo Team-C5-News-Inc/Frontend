@@ -14,6 +14,7 @@ const CardStructure = React.lazy(() => import('./CardStructure/index.jsx'))
 
 //Creates Card component
 const Card = ({ images, title }) => {
+  //Use context
   const { news } = useContext(Context);
 
   useEffect(() => {
@@ -31,5 +32,5 @@ const Card = ({ images, title }) => {
   );
 };
 
-//exports the component
+//Exports the component
 export default Card;
