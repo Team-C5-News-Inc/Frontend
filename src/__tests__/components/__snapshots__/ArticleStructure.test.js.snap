@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Article ...props/> matches the snap shot 1`] = `
+<ContextProvider>
+  <HashRouter>
+    <Router
+      history={
+        Object {
+          "action": "POP",
+          "block": [Function],
+          "createHref": [Function],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+    >
+      <ArticleStructure>
+        <article
+          className="post"
+        >
+          <section
+            className="post__content"
+          >
+            <div
+              className="post__content--headline"
+            >
+              <h1 />
+            </div>
+            <img
+              className="post__content--image"
+              src="https://blog.davidrojo.es/wp-content/uploads/2011/04/file-not-found.jpg"
+            />
+            <p />
+            <div
+              className="post__content--text"
+            />
+            <div
+              className="post__content--quote"
+            >
+              <a>
+                <h3>
+                  Ir al post original
+                </h3>
+              </a>
+            </div>
+            <div
+              className="post__content--tags"
+            >
+              <h4
+                className="post__content--tagsTitle"
+              >
+                Tags:
+              </h4>
+              <div
+                className="post__content--tagsContainer"
+              />
+            </div>
+          </section>
+          <section
+            className="post__comments"
+          >
+            <DiscussionEmbed
+              config={
+                Object {
+                  "identifier": undefined,
+                  "language": "en",
+                  "title": "",
+                  "url": "https://news-inc.web.app/article/undefined",
+                }
+              }
+              shortname="news-inc"
+            >
+              <div
+                config={
+                  Object {
+                    "identifier": undefined,
+                    "language": "en",
+                    "title": "",
+                    "url": "https://news-inc.web.app/article/undefined",
+                  }
+                }
+                id="disqus_thread"
+                shortname="news-inc"
+              />
+            </DiscussionEmbed>
+          </section>
+        </article>
+      </ArticleStructure>
+    </Router>
+  </HashRouter>
+</ContextProvider>
+`;

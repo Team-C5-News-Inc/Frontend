@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Error /> matches the snap shot 1`] = `
+<div
+  className="container"
+>
+  <h1
+    className="container__text container__animated rubberBand"
+  />
+  <h2
+    className="container__subtitle"
+  />
+</div>
+`;

@@ -27,4 +27,8 @@ describe('<Article ...props/>', () => {
   it('is the headline rendering?', () => {
     expect(wrapper.find('.post__content--headline').exists()).toBe(true)
   });
+
+  it('matches the snap shot', () => {
+    expect(toJson(wrapper)).toMatchSnapshot();
+  });
 });

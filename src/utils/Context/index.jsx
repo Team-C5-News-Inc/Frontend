@@ -11,7 +11,6 @@ const ContextProvider = ({ children }) => {
   const { news, setAction } = useNews()
 
   return (
-    //<Context.Provider value={{ news, client}}>
     <Context.Provider value={{ news, setAction }}>
       {children}
     </Context.Provider>
