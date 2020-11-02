@@ -2,6 +2,8 @@
 import { useEffect, useState } from 'react';
 // import request tools
 import { newsAPI, callNewsApi, uri } from '../requests.js';
+// import categories
+import { categories } from '../data/categories.js';
 
 const useNews = () => {
   // use state to handle the state
@@ -31,13 +33,21 @@ const useNews = () => {
           const getInitialNews = callNewsApi('news');
 
           const fetchData = () =>
-            newsAPI.get(getInitialNews()).then((response) =>
-              setNews({
-                data: response?.data.data,
-                info: response?.data.info,
-                loading: false,
-              }),
-            );
+            newsAPI
+              .get(
+                getInitialNews(
+                  `?category=${
+                    categories[Math.floor(Math.random() * categories.length)]
+                  }`,
+                ),
+              )
+              .then((response) =>
+                setNews({
+                  data: response?.data.data,
+                  info: response?.data.info,
+                  loading: false,
+                }),
+              );
 
           fetchData();
         }
