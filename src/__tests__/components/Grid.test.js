@@ -8,6 +8,8 @@ import Grid from '../../components/Grid';
 import { HashRouter as Router } from 'react-router-dom'
 // import context provider
 import { ContextProvider } from '../../utils/Context/index.jsx';
+// import toJson
+import toJson from 'enzyme-to-json';
 
 describe('<Grid/>', () => {
   const wrapper = mount(
@@ -66,5 +68,9 @@ describe('<Grid/>', () => {
 
   it('Is there a button for lazy loading?', () => {
     expect(wrapper.find('.masonry__loading--button').exists()).toBe(true);
+  });
+
+  it('matches the snap shot', () => {
+    expect(toJson(wrapper)).toMatchSnapshot();
   });
 });

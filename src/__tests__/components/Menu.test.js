@@ -33,7 +33,6 @@ describe('<Menu />', () => {
   });
 
   it('is there a class named slide left?', () => {
-    // expect(wrapper.find('div').props)
 
     wrapper.find('i').simulate('click');
 

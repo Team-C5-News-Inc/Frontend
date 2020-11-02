@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Layout /> matches the snap shot 1`] = `
+<Fragment>
+  <Header />
+  <Footer />
+</Fragment>
+`;

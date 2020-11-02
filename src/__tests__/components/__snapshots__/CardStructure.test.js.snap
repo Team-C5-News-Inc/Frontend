@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CardStructure/> matches the snap shot 1`] = `
+<CardStructure>
+  <div
+    aria-label="card"
+    className="card"
+  >
+    <div
+      aria-label="card content"
+      className="card__content"
+    >
+      <img
+        aria-label="card image"
+        className="card__content--image"
+        src="https://blog.davidrojo.es/wp-content/uploads/2011/04/file-not-found.jpg"
+      />
+      <h2
+        aria-label="image title"
+        className="card__content--title"
+      />
+    </div>
+  </div>
+</CardStructure>
+`;

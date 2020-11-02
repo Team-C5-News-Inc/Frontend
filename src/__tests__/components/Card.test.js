@@ -1,7 +1,7 @@
 // import react
 import React from 'react';
 // import shallow
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 // import toJson
 import toJson from 'enzyme-to-json';
 // import context

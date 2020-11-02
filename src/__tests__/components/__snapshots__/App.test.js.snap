@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> matches the snap shot 1`] = `
+<HashRouter
+  basename="/"
+>
+  <Layout>
+    <Switch>
+      <Route
+        exact={true}
+        path="/"
+      >
+        <Home />
+      </Route>
+      <Route
+        path="/team"
+      >
+        <Team />
+      </Route>
+      <Route
+        path="/about"
+      >
+        <About />
+      </Route>
+      <Route
+        exact={true}
+        path="/article/:name"
+      >
+        <Article />
+      </Route>
+      <Route
+        path="/Privacy_Policy"
+      >
+        <Policy />
+      </Route>
+      <Route>
+        <Error
+          message="ERROR 404"
+          subtitle="This page does not exist, keep browsing, we have much more news :)"
+        />
+      </Route>
+    </Switch>
+  </Layout>
+</HashRouter>
+`;

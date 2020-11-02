@@ -22,4 +22,7 @@ describe('<Layout />', () => {
     expect(wrapper.find('Header').exists()).toBe(true);
   });
 
+  it('matches the snap shot', () => {
+    expect(toJson(wrapper)).toMatchSnapshot();
+  });
 });
