@@ -63,7 +63,7 @@ describe('<Grid/>', () => {
   it('Is there a button?', () => {
     wrapper.find('button').simulate('click')
 
-    expect(wrapper.find('button').prop('className')).toBe('masonry__loading--button 2');
+    expect(wrapper.find('button').prop('className')).toBe('masonry__loading--button 3');
   });
 
   it('Is there a button for lazy loading?', () => {

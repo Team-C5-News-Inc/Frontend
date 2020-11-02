@@ -783,7 +783,7 @@ exports[`<Grid/> matches the snap shot 1`] = `
             className="masonry__loading"
           >
             <button
-              className="masonry__loading--button 2"
+              className="masonry__loading--button 3"
               id="lazy"
               onClick={[Function]}
             >

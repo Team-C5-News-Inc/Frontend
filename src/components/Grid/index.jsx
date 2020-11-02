@@ -16,7 +16,7 @@ const Grid = () => {
   //Call to global context
   const { news } = useContext(Context);
   const { setAction } = useContext(Context);
-  const [count, setCount] = useState(1)
+  const [count, setCount] = useState(2)
   //Sets next page to call on the api
   const nextPage = () => {
     setCount(count + 1)
