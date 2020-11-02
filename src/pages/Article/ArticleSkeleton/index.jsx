@@ -1,3 +1,4 @@
+/* This component is the one that allows to carry out the layout prior to loading the elements such as images or texts, it is important so that the page does not show a messy appearance while it is loading */
 // import react
 import React from 'react';
 //import react-loading-skeleton

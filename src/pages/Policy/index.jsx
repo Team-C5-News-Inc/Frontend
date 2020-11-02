@@ -1,7 +1,12 @@
+/* This page displays the data policies that will be handled on our WEB site. */
+// Import library React
 import React, { useEffect } from 'react';
+// Import styles
 import './styles.styl';
 
+// create and export Policy page
 const Policy = () => {
+	// This line of code allows that when loading the page it begins to visualize from the beginning, that is to say from top to bottom
   useEffect(() => window.scrollTo(0, 0), []);
   return (
     <main className="text">
