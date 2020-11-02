@@ -32,7 +32,6 @@ const ArticleStructure = () => {
   }
 
   const Newsrc = (!new$?.images[0]) ? 'https://blog.davidrojo.es/wp-content/uploads/2011/04/file-not-found.jpg' : new$?.images[0];
-
   return (
     <article className="post">
       <section className="post__content">
@@ -48,7 +47,6 @@ const ArticleStructure = () => {
           }`}
           className="post__content--image"
         />
-        <p>{new$?.publication_date}</p>
         <div className="post__content--text">
           {new$?.body?.map((paragraph, i) => (
             <p key={i}>{paragraph}</p>
