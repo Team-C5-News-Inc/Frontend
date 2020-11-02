@@ -17,6 +17,7 @@ const ArticleStructure = () => {
   // use ref hooks
   const { name } = useParams();
   // use effect
+  // This line of code allows that when loading the page it begins to visualize from the beginning, that is to say from top to bottom
   useEffect(() => {
     window.scrollTo(0, 0)
     setNew$(news?.data?.find((item) => item?._id === name && item));

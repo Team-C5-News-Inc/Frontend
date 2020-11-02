@@ -1,3 +1,4 @@
+/* This page aims to present the members of the team that developed this WEB team */
 // import react
 import React, { useEffect } from 'react';
 // import Hero
@@ -9,6 +10,7 @@ import './styles.styl';
 
 // create and export Team page
 const Team = () => {
+  // This line of code allows that when loading the page it begins to visualize from the beginning, that is to say from top to bottom
   useEffect(() => window.scrollTo(0, 0), []);
   return (
     <div className="team__grid">
