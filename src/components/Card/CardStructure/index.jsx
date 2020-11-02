@@ -1,6 +1,7 @@
 // import react
 import React from 'react';
 
+//Creates the card structure component
 const CardStructure = ({ images = [], title }) => {
   const [src] = images;
   const Newsrc = (!src) ? 'https://blog.davidrojo.es/wp-content/uploads/2011/04/file-not-found.jpg' : src;
@@ -26,4 +27,5 @@ const CardStructure = ({ images = [], title }) => {
   );
 };
 
+//exports the component
 export default CardStructure;

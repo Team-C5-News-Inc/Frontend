@@ -1,5 +1,7 @@
+// Import stylus variables
 @import "../../stylus/variables.styl";
 
+//styles for card component
 .card
   width: 100%
   display: inline-block
@@ -9,7 +11,6 @@
   &__content
     position: relative
     z-index: 2
-    // background: linear-gradient(0deg, black 50%, transparent)
     background-color: rgba(0,0,0,.8)
     border-radius: 5px
     &:hover
@@ -32,6 +33,7 @@
       color: white
       text-shadow: 2px 3px black;
 
+//Media queries for responsiveness
 @media screen and (max-width: 738px)
   .card
     &__content

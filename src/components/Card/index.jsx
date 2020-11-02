@@ -9,8 +9,10 @@ import { Context } from '../../utils/Context/index.jsx';
 // import styles
 import './styles.styl';
 
+//For the render to be dynamic
 const CardStructure = React.lazy(() => import('./CardStructure/index.jsx'))
 
+//Creates Card component
 const Card = ({ images, title }) => {
   const { news } = useContext(Context);
 
@@ -19,7 +21,7 @@ const Card = ({ images, title }) => {
       news.loading = false;
     };
   }, []);
-
+  //Until it gets the data, shows the skeleton
   return news?.loading ? (
     <CardSkeleton />
   ) : (
@@ -29,4 +31,5 @@ const Card = ({ images, title }) => {
   );
 };
 
+//exports the component
 export default Card;

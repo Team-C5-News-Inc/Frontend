@@ -11,16 +11,19 @@ import { Context } from '../../utils/Context/index.jsx';
 // import styles
 import './styles.styl';
 
+//Creates Grid component
 const Grid = () => {
+  //Call to global context
   const { news } = useContext(Context);
   const { setAction } = useContext(Context);
   const [count, setCount] = useState(1)
-
+  //Sets next page to call on the api
   const nextPage = () => {
     setCount(count + 1)
     setAction({ option: 4, action: count })
   }
 
+  //Masonry layout for cards
   return (
     <div className="masonry">
       <ResponsiveMasonry columnsCountBreakPoints={{ 480: 1, 700: 2, 1000: 3 }}>
@@ -46,4 +49,5 @@ const Grid = () => {
   );
 };
 
+//exports the component
 export default Grid;
