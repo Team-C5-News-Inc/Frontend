@@ -35,11 +35,7 @@ const useNews = () => {
           const fetchData = () =>
             newsAPI
               .get(
-                getInitialNews(
-                  `?category=${
-                    categories[Math.floor(Math.random() * categories.length)]
-                  }`,
-                ),
+                getInitialNews(),
               )
               .then((response) =>
                 setNews({
