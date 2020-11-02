@@ -5,6 +5,7 @@ import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
 
 const HeroSkeleton = () => {
   return (
+    /*Skeleton parameterization */
     <SkeletonTheme color="#36404e" highlightColor="#2E2E32">
       <div
         aria-label="hero content"
