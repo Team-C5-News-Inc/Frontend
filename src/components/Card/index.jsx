@@ -8,6 +8,7 @@ import { Context } from '../../utils/Context/index.jsx';
 import './styles.styl';
 
 // import CardStructure for the render to be dynamic
+
 const CardStructure = React.lazy(() => import('./CardStructure/index.jsx'))
 
 //Creates Card component
@@ -31,4 +32,5 @@ const Card = ({ images, title }) => {
 };
 
 //Exports the component
+        
 export default Card;

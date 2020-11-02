@@ -11,6 +11,7 @@ import './styles.styl';
 
 // create and export Hero component
 const Hero = ({ background, caption }) => {
+  //use Context  
   const { news } = useContext(Context);
 
   useEffect(() => {
@@ -19,6 +20,7 @@ const Hero = ({ background, caption }) => {
     };
   }, []);
 
+  //validate the value of the loading and thus determine which component to render
   return news?.loading ? (
     <HeroSkeleton />
   ) : (

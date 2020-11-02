@@ -1,3 +1,4 @@
+/* This page presents the technologies used for its development both in the backend and in the prontend and also in data science */
 // import react
 import React, { useEffect } from 'react';
 // import styles
@@ -5,6 +6,7 @@ import './styles.styl';
 
 // create and export
 const About = () => {
+  // This line of code allows that when loading the page it begins to visualize from the beginning, that is to say from top to bottom
   useEffect(() => window.scrollTo(0, 0), []);
   return (
     <article className="about">

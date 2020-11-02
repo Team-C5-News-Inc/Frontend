@@ -13,22 +13,22 @@ const Search = () => {
   const [search, setSearch] = useState('');
   // use context
   const { setAction } = useContext(Context);
-
+  //Call API to consult for keyword
   const callAPI = (value) => {
     setAction({ option: 3, action: `'&${value}'`, redirect: true });
-
+    //Value for defect
     setSearch('')
   };
 
   return (
     <div>
       <div
-        className={`searchformOff ${
+        className={`searchformOff ${/*Validate the status and determine if the search engine is shown or hidden*/
           showSearch ? 'slide_search-left searchform' : 'off'
         }`}
       >
         <input
-          onKeyPress={(ev) => {
+          onKeyPress={(ev) => {/*Pressing the enter key calls the callAPI function with the entered value*/
             if (ev.key === 'Enter') {
               callAPI(search)
               ev.preventDefault();

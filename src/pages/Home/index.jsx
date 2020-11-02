@@ -1,3 +1,4 @@
+/* This is the page that will serve as the cover of the WEB site, it is the first page that will be displayed when loading */
 /* eslint-disable max-len */
 // import react
 import React, { useContext, useEffect, useState } from 'react';

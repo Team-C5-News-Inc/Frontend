@@ -12,7 +12,7 @@ const Tags = ({ text }) => {
   const { setAction } = useContext(Context);
 
   return (
-    <Link to="/" onClick={() => setAction({ option: 1, action: text })}>
+    <Link to="/" onClick={() => setAction({ option: 1, action: text }) /*Calls the API of the selected tag*/ }>
       <div className="tag" aria-label="tag">
         {text}
       </div>

@@ -22,14 +22,14 @@ const Menu = () => {
         onClick={() => setShowMenu((value) => !value)}
         className="fa fa-angle-down fa-4x"
       />
-      <div className={`menu ${showMenu ? 'slide-left' : 'slide-right'}`}>
+      <div className={`menu ${showMenu ? 'slide-left' : 'slide-right'}`} /*Show/Hide Menu*/>
         <ul className="menu__list">
           {categories?.map((category, i) => (
             <li key={i} className="menu__list-item">
               <Link
                 className="menu__list-link"
                 to="/"
-                onClick={() => setAction({ option: 2, action: `${category}` })}
+                onClick={() => setAction({ option: 2, action: `${category}`}, setShowMenu((value) => !value)) /*Call the API of the selected category and hide the menu */}
               >
                 {category}
               </Link>
