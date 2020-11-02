@@ -2,6 +2,8 @@
 import React, { useState, useContext } from 'react';
 // import context
 import { Context } from '../../utils/Context/index.jsx';
+//import useHistory
+import { useHistory } from "react-router-dom";
 // import styles
 import './styles.styl';
 
@@ -13,11 +15,15 @@ const Search = () => {
   const [search, setSearch] = useState('');
   // use context
   const { setAction } = useContext(Context);
+  //useHistory
+  const history = useHistory();
   //Call API to consult for keyword
   const callAPI = (value) => {
     setAction({ option: 3, action: `'&${value}'`, redirect: true });
     //Value for defect
     setSearch('')
+    //redirect to Home
+    history.push('/')
   };
 
   return (
